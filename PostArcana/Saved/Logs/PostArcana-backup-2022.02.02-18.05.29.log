@@ -1,0 +1,1476 @@
+﻿Log file open, 02/02/22 12:52:41
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: PostArcana
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 20 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.293842
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PixWinPlugin
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin TextureFormatOodle
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin OpenImageDenoise
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OpenXREyeTracker
+LogPluginManager: Mounting plugin OpenXRHandTracking
+LogPluginManager: Mounting plugin OpenXR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin Takes
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.59.0
+LogInit: Build: ++UE4+Release-4.27-CL-17155196
+LogInit: Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Net CL: 17155196
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz, GPU: NVIDIA GeForce GTX 1660 Ti
+LogInit: Compiled (64-bit): Aug 13 2021 06:13:13
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:524][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.02.02-17.52.42:524][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.02.02-17.52.42:525][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:525][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:575][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:575][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.02.02-17.52.42:575][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.02.02-17.52.42:575][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.02.02-17.52.42:576][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.02.02-17.52.42:577][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.02.02-17.52.42:578][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.02.02-17.52.42:579][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.02.02-17.52.42:580][  0]LogInit: Selected Device Profile: [Windows]
+[2022.02.02-17.52.42:580][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.02.02-17.52.42:580][  0]LogHAL: Display: Platform has ~ 16 GB [17118568448 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.02.02-17.52.42:580][  0]LogInit: Going up to parent DeviceProfile []
+[2022.02.02-17.52.42:580][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.02.02-17.52.42:580][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.02.02-17.52.42:581][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.02.02-17.52.42:582][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.02.02-17.52.42:583][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Scalability.ini]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.02.02-17.52.42:584][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.02.02-17.52.42:585][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.02.02-17.52.42:585][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.02.02-17.52.42:585][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.02.02-17.52.42:585][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.02.02-17.52.42:585][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Engine.ini]
+[2022.02.02-17.52.42:585][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Config/Windows/Editor.ini]
+[2022.02.02-17.52.42:585][  0]LogInit: Computer: DESKTOP-CAG7BIR
+[2022.02.02-17.52.42:585][  0]LogInit: User: sebco
+[2022.02.02-17.52.42:585][  0]LogInit: CPU Page size=4096, Cores=6
+[2022.02.02-17.52.42:585][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.02.02-17.52.42:585][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.02.02-17.52.42:585][  0]LogMemory: Platform Memory Stats for Windows
+[2022.02.02-17.52.42:585][  0]LogMemory: Process Physical Memory: 142.27 MB used, 142.27 MB peak
+[2022.02.02-17.52.42:585][  0]LogMemory: Process Virtual Memory: 122.07 MB used, 122.07 MB peak
+[2022.02.02-17.52.42:585][  0]LogMemory: Physical Memory: 11509.28 MB used,  4816.26 MB free, 16325.54 MB total
+[2022.02.02-17.52.42:585][  0]LogMemory: Virtual Memory: 134210472.00 MB used,  7259.76 MB free, 134217728.00 MB total
+[2022.02.02-17.52.42:596][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.02.02-17.52.42:736][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.02.02-17.52.42:737][  0]LogInit: Using OS detected language (en-US).
+[2022.02.02-17.52.42:737][  0]LogInit: Using OS detected locale (en-CA).
+[2022.02.02-17.52.42:740][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2022.02.02-17.52.42:921][  0]LogInit: Setting process to per monitor DPI aware
+[2022.02.02-17.52.42:948][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.02.02-17.52.42:972][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.02.02-17.52.42:972][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.02.02-17.52.43:093][  0]LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+[2022.02.02-17.52.43:155][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.02.02-17.52.43:155][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.02.02-17.52.43:155][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.02.02-17.52.43:155][  0]LogD3D11RHI: D3D11 adapters:
+[2022.02.02-17.52.43:278][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1660 Ti' (Feature Level 11_0)
+[2022.02.02-17.52.43:278][  0]LogD3D11RHI:       5991/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2022.02.02-17.52.43:283][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.02.02-17.52.43:283][  0]LogD3D11RHI:       0/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.02.02-17.52.43:283][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2022.02.02-17.52.43:290][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.02.02-17.52.43:290][  0]LogD3D11RHI:     GPU DeviceId: 0x2182 (for the marketing name, search the web for "GPU Device Id")
+[2022.02.02-17.52.43:291][  0]LogWindows: EnumDisplayDevices:
+[2022.02.02-17.52.43:291][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1660 Ti' (P:0 D:1)
+[2022.02.02-17.52.43:291][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1660 Ti' (P:0 D:1)
+[2022.02.02-17.52.43:291][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1660 Ti' (P:1 D:1)
+[2022.02.02-17.52.43:291][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1660 Ti' (P:0 D:0)
+[2022.02.02-17.52.43:292][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.02.02-17.52.43:292][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1660 Ti
+[2022.02.02-17.52.43:292][  0]LogD3D11RHI:   Driver Version: 511.23 (internal:30.0.15.1123, unified:511.23)
+[2022.02.02-17.52.43:292][  0]LogD3D11RHI:      Driver Date: 1-10-2022
+[2022.02.02-17.52.43:292][  0]LogRHI: Texture pool is 4193 MB (70% of 5991 MB)
+[2022.02.02-17.52.43:357][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.02.02-17.52.43:358][  0]LogD3D11RHI: Async texture creation enabled
+[2022.02.02-17.52.43:358][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.02.02-17.52.43:359][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061086).
+[2022.02.02-17.52.43:380][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2022.02.02-17.52.43:424][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.02.02-17.52.43:687][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.02.02-17.52.43:710][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.02.02-17.52.43:732][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.02.02-17.52.43:732][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.02.02-17.52.43:743][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.02.02-17.52.43:748][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2022.02.02-17.52.43:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.02.02-17.52.43:758][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.02.02-17.52.43:768][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2022.02.02-17.52.43:774][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2022.02.02-17.52.43:779][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2022.02.02-17.52.43:803][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2022.02.02-17.52.43:803][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2022.02.02-17.52.43:812][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2022.02.02-17.52.43:818][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2022.02.02-17.52.43:824][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2022.02.02-17.52.43:829][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2022.02.02-17.52.43:839][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.02.02-17.52.43:839][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.02.02-17.52.43:849][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.02.02-17.52.43:855][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.02.02-17.52.43:860][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.02.02-17.52.43:866][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.02.02-17.52.43:866][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.02.02-17.52.43:878][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.02.02-17.52.43:926][  0]LogTextureFormatOodle: Display: Oodle Texture 2.9.0 init RDO Off
+[2022.02.02-17.52.43:977][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.02.02-17.52.43:977][  0]LogShaderCompilers: Guid format shader working directory is -17 characters bigger than the processId version (D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Intermediate/Shaders/WorkingDirectory/17036/).
+[2022.02.02-17.52.43:978][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/sebco/AppData/Local/Temp/UnrealShaderWorkingDir/8694F6374A60B3BC2A0479A54F3E70A7/'.
+[2022.02.02-17.52.43:978][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2022.02.02-17.52.43:978][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.02.02-17.52.43:978][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.02.02-17.52.44:694][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.02.02-17.52.44:748][  0]LogDerivedDataCache: Loaded boot cache 0.05s 100MB C:/Users/sebco/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc.
+[2022.02.02-17.52.44:748][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/sebco/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc
+[2022.02.02-17.52.44:748][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.02.02-17.52.44:748][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.02.02-17.52.44:748][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.02.02-17.52.44:748][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.02.02-17.52.44:764][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.02.02-17.52.44:764][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.02.02-17.52.44:764][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.02.02-17.52.44:775][  0]LogDerivedDataCache: Speed tests for C:/Users/sebco/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
+[2022.02.02-17.52.44:777][  0]LogDerivedDataCache: Display: Performance to C:/Users/sebco/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=1477.10MBs, RandomWriteSpeed=99.76MBs. Assigned SpeedClass 'Local'
+[2022.02.02-17.52.44:779][  0]LogDerivedDataCache: Using Local data cache path C:/Users/sebco/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.02.02-17.52.44:780][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.02.02-17.52.44:780][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.02.02-17.52.44:825][  0]LogSlate: Using FreeType 2.10.0
+[2022.02.02-17.52.44:826][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.02.02-17.52.44:849][  0]LogAssetRegistry: FAssetRegistry took 0.0039 seconds to start up
+[2022.02.02-17.52.45:063][  0]LogInit: Selected Device Profile: [Windows]
+[2022.02.02-17.52.45:063][  0]LogInit: Active device profile: [000001CE99090700][000001CE97D5CCC0 49] Windows
+[2022.02.02-17.52.45:063][  0]LogInit: Profiles: [000001CE99090700][000001CE97D5CCC0 49] Windows, [000001CE9904B700][000001CE97BB4E40 49] WindowsNoEditor, [000001CE99093300][000001CE97A90FC0 49] WindowsServer, [000001CE99048F00][000001CE97A43140 49] WindowsClient, [000001CE99093500][000001CE97A532C0 49] IOS, [000001CE99007F00][000001CE97A57440 49] iPadAir, [000001CE9904BB00][000001CE97A5B5C0 49] iPadAir2, [000001CE98FB8500][000001CE8D915880 49] IPadPro, [000001CE98FB8600][000001CE8D9118C0 49] iPadAir3, [000001CE99004100][000001CE8D919A40 49] iPadAir4, [000001CE98FBAC00][000001CE8D91DBC0 49] iPadMini2, [000001CE99006500][000001CE8C7CE1C0 49] iPadMini3, [000001CE98FBB400][000001CE97A5E340 49] iPadMini4, [000001CE99004F00][000001CE97A664C0 49] iPadMini5, [000001CE98FABE00][000001CE97A6E780 49] iPhone6, [000001CE98FABF00][000001CE97A6A7C0 49] iPodTouch6, [000001CE99093900][000001CE97D58A40 49] iPhone7, [000001CE99092100][000001CE97A72A80 49] iPodTouch7, [000001CE98FA8400][000001CE97A76BC0 49] iPhone5S, [000001CE98FBBD00][000001CE8D930D00 49] iPhone6Plus, [000001CE99093400][000001CE8D938E80 49] iPhone6S, [000001CE98FBA000][000001CE8D93D000 49] iPhone6SPlus, [000001CE99090900][000001CE8D941180 49] iPhone7Plus, [000001CE98FB8E00][000001CE9816B300 49] iPhoneSE, [000001CE99090200][000001CE95583480 49] iPhone8, [000001CE98FBA400][000001CE97A63600 49] iPhone8Plus, [000001CE99091E00][000001CE8D921780 49] iPhoneX, [000001CE98FBBE00][000001CE9942D900 49] iPhoneXS, [000001CE99091600][000001CE99431A80 49] iPhoneXSMax, [000001CE98FBA500][000001CE99435C00 49] iPhoneXR, [000001CE99092A00][000001CE99438200 49] iPhone11, [000001CE98FBBA00][000001CE9943C380 49] iPhone11Pro, [000001CE99090F00][000001CE99440500 49] iPhone11ProMax, [000001CE98FBA300][000001CE99444680 49] iPhoneSE2, [000001CE99092700][000001CE99448800 49] iPhone12Mini, [000001CE98FB8700][000001CE95586980 49] iPhone12, [000001CE99093100][000001CE9558AB00 49] iPhone12Pro, [000001CE98FBB500][000001CE8D934C40 49] iPhone12ProMax, [000001CE99090800][000001CE9558ED80 49] iPadPro105, [000001CE98FB9C00][000001CE95592EC0 49] iPadPro129, [000001CE99090300][000001CE9559B040 49] iPadPro97, [000001CE98FB9D00][000001CE9559F1C0 49] iPadPro2_129, [000001CE99090C00][000001CE955A3340 49] iPad5, [000001CE98FBB000][000001CE955A74C0 49] iPad6, [000001CE99092C00][000001CE955AB640 49] iPad7, [000001CE98FBAE00][000001CE97B6F7C0 49] iPad8, [000001CE99091800][000001CE97B73940 49] iPadPro11, [000001CE98FB9B00][000001CE97B77AC0 49] iPadPro2_11, [000001CE99091500][000001CE97B7A0C0 49] iPadPro3_129, [000001CE98FBA700][000001CE97B7E240 49] iPadPro4_129, [000001CE99090100][000001CE97B823C0 49] AppleTV, [000001CE98FBAB00][000001CE97B86540 49] AppleTV4K, [000001CE99091B00][000001CE97B8A6C0 49] TVOS, [000001CE98FB8900][000001CE97B8E840 49] Mac, [000001CE99091700][000001CE97B929C0 49] MacClient, [000001CE98FBAF00][000001CE97B96B40 49] MacNoEditor, [000001CE99090D00][000001CE97B9ACC0 49] MacServer, [000001CE98FB8300][000001CE95596E00 49] Linux, [000001CE99092E00][000001CE97B9EF40 49] LinuxAArch64, [000001CE98FB9500][000001CE97BA3080 49] LinuxNoEditor, [000001CE99092400][000001CE97BA71C0 49] LinuxAArch64NoEditor, [000001CE98FB8200][000001CE8C797340 49] LinuxClient, [000001CE99092D00][000001CE8C79B4C0 49] LinuxAArch64Client, [000001CE98FB8C00][000001CE8C79F640 49] LinuxServer, [000001CE99090400][000001CE8C7A37C0 49] LinuxAArch64Server, [000001CE98FB9000][000001CE8C7A7940 49] Android, [000001CE99007900][000001CE8C7ABAC0 49] Android_Low, [000001CE98FA9B00][000001CE8C7AE0C0 49] Android_Mid, [000001CE99007000][000001CE8C7B2240 49] Android_High, [000001CE98FAA300][000001CE8C7B63C0 49] Android_Default, [000001CE99006000][000001CE8C7BA540 49] Android_Adreno4xx, [000001CE98FA8100][000001CE8C7BE6C0 49] Android_Adreno5xx_Low, [000001CE99004B00][000001CE8C7C2840 49] Android_Adreno5xx, [000001CE98FA9800][000001CE8C7C69C0 49] Android_Adreno6xx, [000001CE99005100][000001CE8C7CAB40 49] Android_Adreno6xx_Vulkan, [000001CE98FA8800][000001CE97CB4CC0 49] Android_Mali_T6xx, [000001CE99007600][000001CE97CB8E40 49] Android_Mali_T7xx, [000001CE98FA8D00][000001CE8C792F80 49] Android_Mali_T8xx, [000001CE99007C00][000001CE97CBD0C0 49] Android_Mali_G71, [000001CE98FA9500][000001CE97CC1200 49] Android_Mali_G72, [000001CE99007E00][000001CE97CC5340 49] Android_Mali_G72_Vulkan, [000001CE98FABD00][000001CE97CCD4C0 49] Android_Mali_G76, [000001CE99007A00][000001CE97CD1640 49] Android_Mali_G76_Vulkan, [000001CE98FAB600][000001CE97CD57C0 49] Android_Mali_G77, [000001CE99006200][000001CE97CD9940 49] Android_Mali_G77_Vulkan, [000001CE98FA9200][000001CE97CDDAC0 49] Android_Mali_G78, [000001CE99004A00][000001CE97CE00C0 49] Android_Mali_G78_Vulkan, [000001CE98FAB000][000001CE97CE4240 49] Android_Mali_G710, [000001CE99005400][000001CE97CE83C0 49] Android_Mali_G710_Vulkan, [000001CE98FA8700][000001CE97CEC540 49] Android_Vulkan_SM5, [000001CE99005800][000001CE97CF06C0 49] Android_PowerVR_G6xxx, [000001CE98FA8E00][000001CE97CF4840 49] Android_PowerVR_GT7xxx, [000001CE99004200][000001CE97CF89C0 49] Android_PowerVR_GE8xxx, [000001CE98FA8600][000001CE97CFCB40 49] Android_PowerVR_GM9xxx, [000001CE99006600][000001CE97D00CC0 49] Android_PowerVR_GM9xxx_Vulkan, [000001CE98FB8F00][000001CE97D04E40 49] Android_TegraK1, [000001CE99006A00][000001CE97D08FC0 49] Android_Unknown_Vulkan, [000001CE98FB8D00][000001CE97D0D140 49] Lumin, [000001CE99005200][000001CE97CC9280 49] Lumin_Desktop, [000001CE98FB8B00][000001CE97D113C0 49] HoloLens, 
+[2022.02.02-17.52.45:197][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.02.02-17.52.45:197][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.02.02-17.52.45:197][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.02.02-17.52.45:197][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.02.02-17.52.45:197][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.02.02-17.52.45:219][  0]LogNetVersion: PostArcana 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 2183151138)
+[2022.02.02-17.52.45:559][  0]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/MapTemplates/Sky/DaylightAmbientCubemap.DaylightAmbientCubemap', its maximum texture size has been explicitly set to 512.
+[2022.02.02-17.52.45:607][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.02.02-17.52.45:612][  0]LogUObjectArray: 17178 objects as part of root set at end of initial load.
+[2022.02.02-17.52.45:612][  0]LogUObjectAllocator: 4301856 out of 0 bytes used by permanent object pool.
+[2022.02.02-17.52.45:612][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.02.02-17.52.45:914][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 7525088F4A4F3418AD528DBE5886ADBF | Instance: FF3A66F145C2FB63D8DE16922599A6AB (DESKTOP-CAG7BIR-17036).
+[2022.02.02-17.52.45:933][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2022.02.02-17.52.45:933][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png
+[2022.02.02-17.52.45:933][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2022.02.02-17.52.45:933][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2022.02.02-17.52.45:933][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2022.02.02-17.52.45:933][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png
+[2022.02.02-17.52.45:933][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2022.02.02-17.52.45:933][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png
+[2022.02.02-17.52.45:933][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2022.02.02-17.52.45:933][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png
+[2022.02.02-17.52.45:934][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2022.02.02-17.52.45:934][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png
+[2022.02.02-17.52.45:934][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2022.02.02-17.52.45:934][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png
+[2022.02.02-17.52.45:934][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2022.02.02-17.52.45:934][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png
+[2022.02.02-17.52.45:934][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2022.02.02-17.52.45:934][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png
+[2022.02.02-17.52.45:952][  0]LogPython: Using Python 3.7.7
+[2022.02.02-17.52.46:540][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.02.02-17.52.46:550][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.02.02-17.52.47:023][  0]SourceControl: Source control is disabled
+[2022.02.02-17.52.47:023][  0]SourceControl: Source control is disabled
+[2022.02.02-17.52.47:028][  0]SourceControl: Source control is disabled
+[2022.02.02-17.52.47:032][  0]SourceControl: Source control is disabled
+[2022.02.02-17.52.47:036][  0]SourceControl: Source control is disabled
+[2022.02.02-17.52.47:133][  0]LogUProjectInfo: Found projects:
+[2022.02.02-17.52.47:199][  0]LogOpenImageDenoise: OIDN starting up
+[2022.02.02-17.52.47:274][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.02.02-17.52.47:302][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.02.02-17.52.47:302][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.02.02-17.52.47:451][  0]LogCollectionManager: Loaded 0 collections in 0.001623 seconds
+[2022.02.02-17.52.47:482][  0]LogFileCache: Scanning file cache for directory 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/Collections/' took 0.00s
+[2022.02.02-17.52.47:482][  0]LogFileCache: Scanning file cache for directory 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Developers/sebco/Collections/' took 0.00s
+[2022.02.02-17.52.47:482][  0]LogFileCache: Scanning file cache for directory 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Collections/' took 0.00s
+[2022.02.02-17.52.47:482][  0]LogOcInput: OculusInput pre-init called
+[2022.02.02-17.52.47:647][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2022.02.02-17.52.47:647][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png
+[2022.02.02-17.52.47:647][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2022.02.02-17.52.47:647][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png
+[2022.02.02-17.52.47:647][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2022.02.02-17.52.47:647][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png
+[2022.02.02-17.52.47:647][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2022.02.02-17.52.47:647][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png
+[2022.02.02-17.52.47:647][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2022.02.02-17.52.47:647][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png
+[2022.02.02-17.52.47:647][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2022.02.02-17.52.47:648][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2022.02.02-17.52.47:648][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png
+[2022.02.02-17.52.47:648][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2022.02.02-17.52.47:648][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png
+[2022.02.02-17.52.47:648][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2022.02.02-17.52.47:648][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png
+[2022.02.02-17.52.47:648][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2022.02.02-17.52.47:708][  0]LogEngine: Initializing Engine...
+[2022.02.02-17.52.47:787][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2022.02.02-17.52.47:814][  0]LogHMD: Optional extension XR_VARJO_quad_views is not available
+[2022.02.02-17.52.47:814][  0]LogHMD: Warning: Required extension XR_EXT_eye_gaze_interaction is not available
+[2022.02.02-17.52.47:814][  0]LogHMD: Could not enable all required OpenXR extensions for OpenXREyeTracker on current system. This plugin will be loaded but ignored, but will be enabled on a target platform that supports the required extension.
+[2022.02.02-17.52.47:844][  0]LogHMD: Failed to create an OpenXR instance, result is XR_ERROR_RUNTIME_FAILURE. Please check if you have an OpenXR runtime installed. The following extensions were enabled:
+[2022.02.02-17.52.47:844][  0]LogHMD: - XR_KHR_D3D11_enable
+[2022.02.02-17.52.47:844][  0]LogHMD: - XR_KHR_D3D12_enable
+[2022.02.02-17.52.47:845][  0]LogHMD: - XR_KHR_opengl_enable
+[2022.02.02-17.52.47:845][  0]LogHMD: - XR_KHR_vulkan_enable
+[2022.02.02-17.52.47:845][  0]LogHMD: - XR_KHR_composition_layer_depth
+[2022.02.02-17.52.47:845][  0]LogHMD: - XR_KHR_visibility_mask
+[2022.02.02-17.52.47:845][  0]LogHMD: - XR_EXT_hand_tracking
+[2022.02.02-17.52.47:845][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2022.02.02-17.52.47:846][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.02.02-17.52.47:953][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.02.02-17.52.47:961][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.02.02-17.52.47:975][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.02.02-17.52.47:979][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2022.02.02-17.52.47:980][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2022.02.02-17.52.47:980][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.02.02-17.52.47:980][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.02.02-17.52.47:980][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.02-17.52.47:981][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.02-17.52.47:981][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.02-17.52.47:981][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.02-17.52.47:981][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.02-17.52.47:981][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.02-17.52.47:981][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.02-17.52.47:981][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.02-17.52.47:981][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.02-17.52.47:981][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.02-17.52.47:981][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.02-17.52.47:982][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.02-17.52.48:004][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.02-17.52.48:004][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.02.02-17.52.48:032][  0]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2022.02.02-17.52.48:033][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.02-17.52.48:035][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.02-17.52.48:035][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.02-17.52.48:036][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.02-17.52.48:036][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.02-17.52.48:036][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.02-17.52.48:038][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.02-17.52.48:038][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.02-17.52.48:038][  0]LogInit: FAudioDevice initialized.
+[2022.02.02-17.52.48:039][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.02.02-17.52.48:039][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.02.02-17.52.48:114][  0]LogDerivedDataCache: Saved boot cache 0.08s 100MB C:/Users/sebco/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc.
+[2022.02.02-17.52.48:117][  0]LogInit: Texture streaming: Enabled
+[2022.02.02-17.52.48:133][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.27.0-17155196+++UE4+Release-4.27
+[2022.02.02-17.52.48:139][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.02.02-17.52.48:141][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={D50C6738-4CCD-C98A-3583-5A962C96772D}
+[2022.02.02-17.52.48:141][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2022.02.02-17.52.48:143][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2022.02.02-17.52.48:163][  0]LogInit: Transaction tracking system initialized
+[2022.02.02-17.52.48:193][  0]BlueprintLog: New page: Editor Load
+[2022.02.02-17.52.48:271][  0]LocalizationService: Localization service is disabled
+[2022.02.02-17.52.48:299][  0]TimingProfiler: Initialize
+[2022.02.02-17.52.48:300][  0]TimingProfiler: OnSessionChanged
+[2022.02.02-17.52.48:300][  0]LoadingProfiler: Initialize
+[2022.02.02-17.52.48:300][  0]LoadingProfiler: OnSessionChanged
+[2022.02.02-17.52.48:300][  0]NetworkingProfiler: Initialize
+[2022.02.02-17.52.48:300][  0]NetworkingProfiler: OnSessionChanged
+[2022.02.02-17.52.48:300][  0]MemoryProfiler: Initialize
+[2022.02.02-17.52.48:300][  0]MemoryProfiler: OnSessionChanged
+[2022.02.02-17.52.48:444][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2022.02.02-17.52.48:445][  0]LogCook: Display: Mobile HDR setting 1
+[2022.02.02-17.52.48:652][  0]LogFileCache: Scanning file cache for directory 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/' took 0.00s
+[2022.02.02-17.52.48:770][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2022.02.02-17.52.48:770][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png
+[2022.02.02-17.52.48:770][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2022.02.02-17.52.48:770][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2022.02.02-17.52.48:770][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png
+[2022.02.02-17.52.48:771][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2022.02.02-17.52.48:771][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png
+[2022.02.02-17.52.48:771][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png
+[2022.02.02-17.52.48:771][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2022.02.02-17.52.48:771][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png
+[2022.02.02-17.52.48:771][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2022.02.02-17.52.48:771][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png
+[2022.02.02-17.52.48:771][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2022.02.02-17.52.48:771][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2022.02.02-17.52.48:771][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2022.02.02-17.52.48:771][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png
+[2022.02.02-17.52.48:771][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png
+[2022.02.02-17.52.48:826][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2022.02.02-17.52.48:826][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.02.02-17.52.48:829][  0]SourceControl: Source control is disabled
+[2022.02.02-17.52.48:829][  0]LogUnrealEdMisc: Loading editor; pre map load, took 7.631
+[2022.02.02-17.52.48:829][  0]Cmd: MAP LOAD FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.02.02-17.52.48:829][  0]LightingResults: New page: Lighting Build
+[2022.02.02-17.52.48:830][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.52.48:830][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.52.48:831][  0]MapCheck: New page: Map Check
+[2022.02.02-17.52.48:831][  0]LightingResults: New page: Lighting Build
+[2022.02.02-17.52.48:835][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.02-17.52.48:838][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2022.02.02-17.52.48:888][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'TestMap'.
+[2022.02.02-17.52.48:889][  0]LogAIModule: Creating AISystem for world TestMap
+[2022.02.02-17.52.48:898][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.02.02-17.52.48:906][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.02.02-17.52.48:907][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.02.02-17.52.48:907][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.104ms to complete.
+[2022.02.02-17.52.48:907][  0]LogFileHelpers: Loading map 'TestMap' took 0.078
+[2022.02.02-17.52.48:909][  0]LogUnrealEdMisc: Total Editor Startup Time, took 7.711
+[2022.02.02-17.52.49:027][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.52.49:033][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.52.49:040][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.52.49:046][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.52.49:058][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0087 seconds. Added 3829 classes and 930 folders.
+[2022.02.02-17.52.49:061][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.02.02-17.52.49:062][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.02.02-17.52.49:062][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:062][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.02.02-17.52.49:062][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/FP_FirstPerson.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:062][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/FP_FirstPerson.upack)
+[2022.02.02-17.52.49:062][  0]LogPakFile: OnPakFileMounted2Time == 0.000156
+[2022.02.02-17.52.49:063][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.02.02-17.52.49:063][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:063][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.02.02-17.52.49:063][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/FP_FirstPersonBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:063][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/FP_FirstPersonBP.upack)
+[2022.02.02-17.52.49:063][  0]LogPakFile: OnPakFileMounted2Time == 0.000125
+[2022.02.02-17.52.49:064][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2022.02.02-17.52.49:064][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:064][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2022.02.02-17.52.49:064][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/MobileStarterContent.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:064][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/MobileStarterContent.upack)
+[2022.02.02-17.52.49:064][  0]LogPakFile: OnPakFileMounted2Time == 0.000123
+[2022.02.02-17.52.49:065][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.02.02-17.52.49:065][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:065][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.02.02-17.52.49:065][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/StarterContent.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:065][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/StarterContent.upack)
+[2022.02.02-17.52.49:065][  0]LogPakFile: OnPakFileMounted2Time == 0.000121
+[2022.02.02-17.52.49:066][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.02.02-17.52.49:066][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:066][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.02.02-17.52.49:066][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_2DSideScroller.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:066][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_2DSideScroller.upack)
+[2022.02.02-17.52.49:066][  0]LogPakFile: OnPakFileMounted2Time == 0.000127
+[2022.02.02-17.52.49:066][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.02.02-17.52.49:066][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:067][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.02.02-17.52.49:067][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_2DSideScrollerBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:067][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_2DSideScrollerBP.upack)
+[2022.02.02-17.52.49:067][  0]LogPakFile: OnPakFileMounted2Time == 0.000118
+[2022.02.02-17.52.49:067][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.02.02-17.52.49:067][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:067][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.02.02-17.52.49:067][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Flying.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:067][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Flying.upack)
+[2022.02.02-17.52.49:068][  0]LogPakFile: OnPakFileMounted2Time == 0.000115
+[2022.02.02-17.52.49:068][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.02.02-17.52.49:068][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:068][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.02.02-17.52.49:068][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_FlyingBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:068][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_FlyingBP.upack)
+[2022.02.02-17.52.49:068][  0]LogPakFile: OnPakFileMounted2Time == 0.000129
+[2022.02.02-17.52.49:069][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.02.02-17.52.49:069][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:069][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.02.02-17.52.49:069][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_HandheldARBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:069][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_HandheldARBP.upack)
+[2022.02.02-17.52.49:069][  0]LogPakFile: OnPakFileMounted2Time == 0.000118
+[2022.02.02-17.52.49:070][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.02.02-17.52.49:070][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:070][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.02.02-17.52.49:070][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Puzzle.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:070][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Puzzle.upack)
+[2022.02.02-17.52.49:070][  0]LogPakFile: OnPakFileMounted2Time == 0.000115
+[2022.02.02-17.52.49:071][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.02.02-17.52.49:071][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:071][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.02.02-17.52.49:071][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_PuzzleBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:071][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_PuzzleBP.upack)
+[2022.02.02-17.52.49:071][  0]LogPakFile: OnPakFileMounted2Time == 0.000121
+[2022.02.02-17.52.49:071][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.02.02-17.52.49:071][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:072][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.02.02-17.52.49:072][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Rolling.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:072][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Rolling.upack)
+[2022.02.02-17.52.49:072][  0]LogPakFile: OnPakFileMounted2Time == 0.000122
+[2022.02.02-17.52.49:072][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.02.02-17.52.49:072][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:072][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.02.02-17.52.49:072][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_RollingBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:072][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_RollingBP.upack)
+[2022.02.02-17.52.49:073][  0]LogPakFile: OnPakFileMounted2Time == 0.000121
+[2022.02.02-17.52.49:073][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.02.02-17.52.49:073][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:073][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.02.02-17.52.49:073][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_SideScroller.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:073][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_SideScroller.upack)
+[2022.02.02-17.52.49:073][  0]LogPakFile: OnPakFileMounted2Time == 0.000115
+[2022.02.02-17.52.49:074][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.02.02-17.52.49:074][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:074][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.02.02-17.52.49:074][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_SideScrollerBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:074][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_SideScrollerBP.upack)
+[2022.02.02-17.52.49:074][  0]LogPakFile: OnPakFileMounted2Time == 0.000111
+[2022.02.02-17.52.49:075][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.02.02-17.52.49:075][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:075][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.02.02-17.52.49:075][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_ThirdPerson.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:075][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_ThirdPerson.upack)
+[2022.02.02-17.52.49:075][  0]LogPakFile: OnPakFileMounted2Time == 0.000122
+[2022.02.02-17.52.49:076][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.02.02-17.52.49:076][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:076][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.02.02-17.52.49:076][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_ThirdPersonBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:076][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_ThirdPersonBP.upack)
+[2022.02.02-17.52.49:076][  0]LogPakFile: OnPakFileMounted2Time == 0.000115
+[2022.02.02-17.52.49:076][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.02.02-17.52.49:076][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:076][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.02.02-17.52.49:076][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TopDown.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:077][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TopDown.upack)
+[2022.02.02-17.52.49:077][  0]LogPakFile: OnPakFileMounted2Time == 0.000118
+[2022.02.02-17.52.49:077][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.02.02-17.52.49:077][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:077][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.02.02-17.52.49:077][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TopDownBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:077][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TopDownBP.upack)
+[2022.02.02-17.52.49:077][  0]LogPakFile: OnPakFileMounted2Time == 0.000121
+[2022.02.02-17.52.49:078][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.02.02-17.52.49:078][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:078][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.02.02-17.52.49:078][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TwinStick.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:078][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TwinStick.upack)
+[2022.02.02-17.52.49:078][  0]LogPakFile: OnPakFileMounted2Time == 0.000118
+[2022.02.02-17.52.49:079][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.02.02-17.52.49:079][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:079][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.02.02-17.52.49:079][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TwinStickBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:079][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_TwinStickBP.upack)
+[2022.02.02-17.52.49:079][  0]LogPakFile: OnPakFileMounted2Time == 0.000119
+[2022.02.02-17.52.49:079][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.02.02-17.52.49:080][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:080][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.02.02-17.52.49:080][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Vehicle.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:080][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_Vehicle.upack)
+[2022.02.02-17.52.49:080][  0]LogPakFile: OnPakFileMounted2Time == 0.000153
+[2022.02.02-17.52.49:080][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2022.02.02-17.52.49:081][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:081][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2022.02.02-17.52.49:081][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VehicleAdv.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:081][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VehicleAdv.upack)
+[2022.02.02-17.52.49:081][  0]LogPakFile: OnPakFileMounted2Time == 0.000124
+[2022.02.02-17.52.49:081][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.02.02-17.52.49:081][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:081][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.02.02-17.52.49:082][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VehicleAdvBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:082][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VehicleAdvBP.upack)
+[2022.02.02-17.52.49:082][  0]LogPakFile: OnPakFileMounted2Time == 0.000122
+[2022.02.02-17.52.49:082][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.02.02-17.52.49:082][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:082][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.02.02-17.52.49:082][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VehicleBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:082][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VehicleBP.upack)
+[2022.02.02-17.52.49:082][  0]LogPakFile: OnPakFileMounted2Time == 0.000126
+[2022.02.02-17.52.49:083][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.02.02-17.52.49:083][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.02.02-17.52.49:083][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.02.02-17.52.49:083][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VirtualRealityBP.upack' (chunk index -1, root 'root:/') mounted
+[2022.02.02-17.52.49:083][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:C:/Program Files/Epic Games/UE_4.27/FeaturePacks/TP_VirtualRealityBP.upack)
+[2022.02.02-17.52.49:083][  0]LogPakFile: OnPakFileMounted2Time == 0.000124
+[2022.02.02-17.52.49:123][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.02.02-17.52.49:124][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2022.02.02-17.52.49:145][  0]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.02.02-17.52.49:145][  0]LogSlate: Took 0.000122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.02.02-17.52.49:148][  0]LogSlate: Took 0.000129 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.02.02-17.52.49:249][  0]LogRenderer: Reallocating scene render targets to support 1220x636 Format 10 NumSamples 1 (Frame:1).
+[2022.02.02-17.52.49:296][  0]LogSlate: Took 0.000140 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.02.02-17.52.49:342][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.02.02-17.52.49:342][  0]LogLoad: (Engine Initialization) Total time: 8.14 seconds
+[2022.02.02-17.52.49:342][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.02.02-17.52.49:381][  0]LogAssetRegistry: Asset discovery search completed in 4.5334 seconds
+[2022.02.02-17.52.49:385][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2022.02.02-17.52.49:387][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.02.02-17.53.00:537][876]LogSlate: Took 0.000135 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.02.02-17.53.00:620][876]LogSlate: Took 0.000166 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.02.02-17.53.01:744][950]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2022.02.02-17.53.24:874][492]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox.BP_HealBox
+[2022.02.02-17.53.25:042][492]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 126 classes and 0 folders.
+[2022.02.02-17.53.25:815][492]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2022.02.02-17.53.25:895][492]LogRenderer: Reallocating scene render targets to support 1220x712 Format 10 NumSamples 1 (Frame:1).
+[2022.02.02-17.53.28:095][633]BlueprintLog: New page: Compile BP_HealBox
+[2022.02.02-17.53.28:127][633]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2022.02.02-17.53.28:139][633]LogSlate: Took 0.000146 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.02.02-17.53.29:051][676]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox.uasset" SILENT=true
+[2022.02.02-17.53.29:054][676]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBoxA4B5C37846408C7D2A1E13A35E25D922.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox.uasset'
+[2022.02.02-17.53.29:081][676]AssetCheck: New page: Asset Save: BP_HealBox
+[2022.02.02-17.53.29:081][676]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox.BP_HealBox
+[2022.02.02-17.53.29:788][726]LogSlate: Window 'BP_HealBox' being destroyed
+[2022.02.02-17.53.29:813][726]LogSlate: Window 'BP_HealBox' being destroyed
+[2022.02.02-17.53.29:815][726]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.53.29:815][726]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.53.37:082][426]LogContentBrowser: Attempting asset rename: BP_HealBox -> BP_HealBox150
+[2022.02.02-17.53.37:106][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:106][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.SKEL_BP_HealBox150_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.SKEL_BP_HealBox150_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.SKEL_BP_HealBox150_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.SKEL_BP_HealBox150_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:107][426]LogMetaData: Removing '/Game/Testing/StatTestObjs/BP_HealBox150.SKEL_BP_HealBox150_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox.PackageMetaData'
+[2022.02.02-17.53.37:125][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox150" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset" SILENT=true
+[2022.02.02-17.53.37:132][426]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox1500806F68940A4FE9341D2E783A1896086.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset'
+[2022.02.02-17.53.37:195][426]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2022.02.02-17.53.37:218][426]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2022.02.02-17.53.37:231][426]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2022.02.02-17.53.37:262][426]AssetCheck: New page: Asset Save: BP_HealBox150
+[2022.02.02-17.53.37:262][426]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.53.44:442][ 53]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.53.46:728][184]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.53.46:766][184]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.53.46:766][184]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.53.46:817][184]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.53.50:921][415]LogSlate: Took 0.000151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.02.02-17.54.16:826][915]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.02-17.54.27:916][647]BlueprintLog: New page: Compile BP_DamageBox150
+[2022.02.02-17.54.27:948][647]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2022.02.02-17.54.28:562][675]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox15097573A3849AE84BBBCB0D99FA5B600C2.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_DamageBox150.uasset'
+[2022.02.02-17.54.28:588][675]AssetCheck: New page: Asset Save: BP_DamageBox150
+[2022.02.02-17.54.28:588][675]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.54.31:283][863]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.54.31:309][863]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.54.31:311][863]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.54.31:311][863]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.54.32:661][985]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.54.34:382][ 80]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.54.34:418][ 80]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.54.34:419][ 80]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.54.34:484][ 80]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.55.03:434][655]LogSlate: Window 'Color Picker' being destroyed
+[2022.02.02-17.55.11:334][163]BlueprintLog: New page: Compile BP_HealBox150
+[2022.02.02-17.55.11:365][163]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2022.02.02-17.55.11:805][183]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox150" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset" SILENT=true
+[2022.02.02-17.55.11:808][183]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox150143D365C4AE715C63D65E29AC93492BF.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset'
+[2022.02.02-17.55.11:834][183]AssetCheck: New page: Asset Save: BP_HealBox150
+[2022.02.02-17.55.11:834][183]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.55.13:096][272]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.55.13:121][272]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.55.13:123][272]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.55.13:124][272]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.55.14:709][430]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.55.27:178][164]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.55.27:204][164]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.55.27:206][164]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.55.27:206][164]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.55.29:807][380]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.55.41:923][189]BlueprintLog: New page: Compile BP_HealBox150
+[2022.02.02-17.55.41:954][189]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2022.02.02-17.55.42:353][208]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox150" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset" SILENT=true
+[2022.02.02-17.55.42:357][208]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox150C64AEB3341EAADD6960D1890526E411D.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset'
+[2022.02.02-17.55.42:376][208]AssetCheck: New page: Asset Save: BP_HealBox150
+[2022.02.02-17.55.42:376][208]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.55.46:741][500]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.55.46:768][500]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.55.46:770][500]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.55.46:770][500]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.55.57:979][796]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.04:437][523]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.05:249][615]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.06:214][730]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.06:830][803]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.07:429][874]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.07:787][916]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.56.08:127][956]LogEditorViewport: Clicking on Actor (LMB): BP_DamageBox150_C (BP_DamageBox150)
+[2022.02.02-17.56.12:634][491]LogEditorViewport: Clicking on Actor (CTRL LMB): BP_HealBox150_C (BP_HealBox150)
+[2022.02.02-17.56.19:999][349]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.02-17.56.20:007][349]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.02-17.56.20:008][349]PIE: New page: PIE session: TestMap (Feb. 2, 2022, 7:56:20 a.m.)
+[2022.02.02-17.56.20:013][349]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2022.02.02-17.56.20:017][349]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2022.02.02-17.56.20:018][349]LogPlayLevel: Creating play world package: /Game/Testing/UEDPIE_0_TestMap
+[2022.02.02-17.56.20:031][349]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012975s)
+[2022.02.02-17.56.20:033][349]LogAIModule: Creating AISystem for world TestMap
+[2022.02.02-17.56.20:034][349]LogPlayLevel: PIE: World Init took: (0.002822s)
+[2022.02.02-17.56.20:035][349]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Testing/TestMap.TestMap to /Game/Testing/UEDPIE_0_TestMap.TestMap (0.016501s)
+[2022.02.02-17.56.20:054][349]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2022.02.02-17.56.20:060][349]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2022.02.02-17.56.20:060][349]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.02-17.56.20:060][349]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.02-17.56.20:060][349]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.02-17.56.20:060][349]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.02-17.56.20:061][349]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.02-17.56.20:061][349]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.02-17.56.20:061][349]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.02-17.56.20:061][349]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.02-17.56.20:061][349]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.02-17.56.20:061][349]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.02-17.56.20:061][349]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.02-17.56.20:062][349]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.02-17.56.20:067][349]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.02-17.56.20:067][349]LogAudioMixer: Display: 1: FrontRight
+[2022.02.02-17.56.20:079][349]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2022.02.02-17.56.20:079][349]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.02-17.56.20:079][349]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.02-17.56.20:079][349]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.02-17.56.20:079][349]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.02-17.56.20:079][349]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.02-17.56.20:079][349]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.02-17.56.20:083][349]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.02-17.56.20:083][349]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.02-17.56.20:083][349]LogInit: FAudioDevice initialized.
+[2022.02.02-17.56.20:083][349]LogAudio: Display: Audio Device (ID: 2) registered with world 'TestMap'.
+[2022.02.02-17.56.20:093][349]LogLoad: Game class is 'PostArcanaGameMode'
+[2022.02.02-17.56.20:100][349]LogWorld: Bringing World /Game/Testing/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.02.02-12.56.20
+[2022.02.02-17.56.20:102][349]LogWorld: Bringing up level for play took: 0.003570
+[2022.02.02-17.56.20:103][349]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2022.02.02-17.56.20:121][349]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2022.02.02-17.56.20:123][349]PIE: Server logged in
+[2022.02.02-17.56.20:126][349]PIE: Play in editor total start time 0.123 seconds.
+[2022.02.02-17.56.26:536][ 74]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.56.26:537][ 74]LogWorld: BeginTearingDown for /Game/Testing/UEDPIE_0_TestMap
+[2022.02.02-17.56.26:537][ 74]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.56.26:537][ 74]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.56.26:549][ 74]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.02-17.56.26:561][ 74]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.56.26:576][ 74]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.02-17.56.26:581][ 74]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.02-17.56.26:583][ 74]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.02-17.56.26:586][ 74]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.56.26:623][ 74]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2022.02.02-17.56.26:650][ 75]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2022.02.02-17.56.28:484][258]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.56.41:459][ 92]BlueprintLog: New page: Compile BP_DamageBox150
+[2022.02.02-17.56.41:545][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2022.02.02-17.56.42:059][115]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox1504E74669E4CF5036A1CA47FA6BBC65C06.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_DamageBox150.uasset'
+[2022.02.02-17.56.42:078][115]AssetCheck: New page: Asset Save: BP_DamageBox150
+[2022.02.02-17.56.42:078][115]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.56.42:934][175]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.56.42:960][175]LogSlate: Window 'BP_DamageBox150' being destroyed
+[2022.02.02-17.56.42:991][175]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.56.42:991][175]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.56.44:215][292]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.56.50:094][634]BlueprintLog: New page: Compile BP_HealBox150
+[2022.02.02-17.56.50:150][634]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
+[2022.02.02-17.56.51:377][693]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox150" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset" SILENT=true
+[2022.02.02-17.56.51:380][693]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox1505F94669347930D60340F768A041F2082.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox150.uasset'
+[2022.02.02-17.56.51:406][693]AssetCheck: New page: Asset Save: BP_HealBox150
+[2022.02.02-17.56.51:406][693]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox150.BP_HealBox150
+[2022.02.02-17.56.57:818][ 93]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.56.57:844][ 93]LogSlate: Window 'BP_HealBox150' being destroyed
+[2022.02.02-17.56.57:846][ 93]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.56.57:846][ 93]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.56.58:960][200]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.02-17.56.58:965][200]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.02-17.56.58:965][200]PIE: New page: PIE session: TestMap (Feb. 2, 2022, 7:56:58 a.m.)
+[2022.02.02-17.56.58:991][200]LogPlayLevel: Creating play world package: /Game/Testing/UEDPIE_0_TestMap
+[2022.02.02-17.56.58:999][200]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008951s)
+[2022.02.02-17.56.59:000][200]LogAIModule: Creating AISystem for world TestMap
+[2022.02.02-17.56.59:001][200]LogPlayLevel: PIE: World Init took: (0.001127s)
+[2022.02.02-17.56.59:001][200]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Testing/TestMap.TestMap to /Game/Testing/UEDPIE_0_TestMap.TestMap (0.010492s)
+[2022.02.02-17.56.59:019][200]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2022.02.02-17.56.59:021][200]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.02-17.56.59:021][200]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.02-17.56.59:022][200]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.02-17.56.59:022][200]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.02-17.56.59:022][200]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.02-17.56.59:022][200]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.02-17.56.59:022][200]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.02-17.56.59:027][200]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.02-17.56.59:028][200]LogAudioMixer: Display: 1: FrontRight
+[2022.02.02-17.56.59:038][200]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2022.02.02-17.56.59:038][200]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.02-17.56.59:038][200]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.02-17.56.59:038][200]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.02-17.56.59:039][200]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.02-17.56.59:039][200]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.02-17.56.59:039][200]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.02-17.56.59:041][200]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.02-17.56.59:041][200]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.02-17.56.59:041][200]LogInit: FAudioDevice initialized.
+[2022.02.02-17.56.59:042][200]LogAudio: Display: Audio Device (ID: 3) registered with world 'TestMap'.
+[2022.02.02-17.56.59:056][200]LogLoad: Game class is 'PostArcanaGameMode'
+[2022.02.02-17.56.59:057][200]LogWorld: Bringing World /Game/Testing/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.02.02-12.56.59
+[2022.02.02-17.56.59:058][200]LogWorld: Bringing up level for play took: 0.001445
+[2022.02.02-17.56.59:058][200]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2022.02.02-17.56.59:061][200]PIE: Server logged in
+[2022.02.02-17.56.59:062][200]PIE: Play in editor total start time 0.098 seconds.
+[2022.02.02-17.57.05:361][949]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.57.05:362][949]LogWorld: BeginTearingDown for /Game/Testing/UEDPIE_0_TestMap
+[2022.02.02-17.57.05:362][949]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.57.05:362][949]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.57.05:374][949]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.02-17.57.05:385][949]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.57.05:398][949]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.02-17.57.05:399][949]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.02-17.57.05:400][949]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.02-17.57.05:402][949]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-17.57.05:406][949]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2022.02.02-17.57.05:452][951]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2022.02.02-17.57.49:329][119]LogContentBrowser: Deferred new asset file creation: BP_DamageBox151
+[2022.02.02-17.57.49:342][119]LogContentBrowser: Creating deferred item: BP_DamageBox151
+[2022.02.02-17.57.53:817][656]LogContentBrowser: Attempting asset rename: BP_DamageBox151 -> BP_DamageBox50
+[2022.02.02-17.57.53:837][656]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2022.02.02-17.57.53:848][656]LogContentBrowser: End creating deferred item BP_DamageBox151
+[2022.02.02-17.57.59:885][206]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_DamageBox50.BP_DamageBox50
+[2022.02.02-17.58.14:092][ 69]BlueprintLog: New page: Compile BP_DamageBox50
+[2022.02.02-17.58.14:127][ 69]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2022.02.02-17.58.14:712][ 96]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox5055603EAE487BEE00220CA18DDB54802C.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_DamageBox50.uasset'
+[2022.02.02-17.58.14:740][ 96]AssetCheck: New page: Asset Save: BP_DamageBox50
+[2022.02.02-17.58.14:740][ 96]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_DamageBox50.BP_DamageBox50
+[2022.02.02-17.58.17:111][262]LogSlate: Window 'BP_DamageBox50' being destroyed
+[2022.02.02-17.58.17:136][262]LogSlate: Window 'BP_DamageBox50' being destroyed
+[2022.02.02-17.58.17:138][262]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.58.17:138][262]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.58.20:590][511]LogContentBrowser: Deferred new asset file creation: BP_DamageBox151
+[2022.02.02-17.58.20:605][511]LogContentBrowser: Creating deferred item: BP_DamageBox151
+[2022.02.02-17.58.26:559][226]LogContentBrowser: Attempting asset rename: BP_DamageBox151 -> BP_DamageBox250
+[2022.02.02-17.58.26:578][226]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2022.02.02-17.58.26:586][226]LogContentBrowser: End creating deferred item BP_DamageBox151
+[2022.02.02-17.58.27:755][335]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_DamageBox250.BP_DamageBox250
+[2022.02.02-17.58.42:027][118]BlueprintLog: New page: Compile BP_DamageBox250
+[2022.02.02-17.58.42:061][118]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2022.02.02-17.58.43:574][203]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox2505AADADEF4532AD5401A95683C9EC1E4A.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_DamageBox250.uasset'
+[2022.02.02-17.58.43:603][203]AssetCheck: New page: Asset Save: BP_DamageBox250
+[2022.02.02-17.58.43:604][203]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_DamageBox250.BP_DamageBox250
+[2022.02.02-17.58.46:115][380]LogSlate: Window 'BP_DamageBox250' being destroyed
+[2022.02.02-17.58.46:141][380]LogSlate: Window 'BP_DamageBox250' being destroyed
+[2022.02.02-17.58.46:142][380]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.58.46:143][380]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.58.49:804][724]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.02.02-17.58.49:819][724]LogContentBrowser: Creating deferred item: NewFolder
+[2022.02.02-17.58.52:582][ 56]LogContentBrowser: Attempting asset rename: NewFolder -> Damage
+[2022.02.02-17.58.52:582][ 56]LogContentBrowser: End creating deferred item NewFolder
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.BP_DamageBox150:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.BP_DamageBox150_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.BP_DamageBox150:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.BP_DamageBox150:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.BP_DamageBox150:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.SKEL_BP_DamageBox150_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:196][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.SKEL_BP_DamageBox150_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.SKEL_BP_DamageBox150_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.SKEL_BP_DamageBox150_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox150.SKEL_BP_DamageBox150_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox150.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox250.SKEL_BP_DamageBox250_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox250.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox250.SKEL_BP_DamageBox250_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox250.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox250.SKEL_BP_DamageBox250_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox250.PackageMetaData'
+[2022.02.02-17.58.56:197][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox250.SKEL_BP_DamageBox250_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox250.PackageMetaData'
+[2022.02.02-17.58.56:198][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox250.SKEL_BP_DamageBox250_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox250.PackageMetaData'
+[2022.02.02-17.58.56:198][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox250.BP_DamageBox250_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox250.PackageMetaData'
+[2022.02.02-17.58.56:199][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox50.SKEL_BP_DamageBox50_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox50.PackageMetaData'
+[2022.02.02-17.58.56:199][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox50.SKEL_BP_DamageBox50_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox50.PackageMetaData'
+[2022.02.02-17.58.56:199][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox50.SKEL_BP_DamageBox50_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox50.PackageMetaData'
+[2022.02.02-17.58.56:199][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox50.SKEL_BP_DamageBox50_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox50.PackageMetaData'
+[2022.02.02-17.58.56:199][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox50.SKEL_BP_DamageBox50_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox50.PackageMetaData'
+[2022.02.02-17.58.56:199][301]LogMetaData: Removing '/Game/Testing/StatTestObjs/Damage/BP_DamageBox50.BP_DamageBox50_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_DamageBox50.PackageMetaData'
+[2022.02.02-17.58.56:223][301]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox150BFD47F674C703F28EE8C44A90507E004.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/Damage/BP_DamageBox150.uasset'
+[2022.02.02-17.58.56:227][301]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox250F7F22BBC4E8AD3EB354C9E9DA554D0FE.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/Damage/BP_DamageBox250.uasset'
+[2022.02.02-17.58.56:232][301]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_DamageBox509DF37ADC4A4F1366174AF884DD45DBC9.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/Damage/BP_DamageBox50.uasset'
+[2022.02.02-17.58.56:311][301]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2022.02.02-17.58.56:330][301]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2022.02.02-17.58.56:344][301]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2022.02.02-17.58.56:365][301]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2022.02.02-17.58.56:378][301]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2022.02.02-17.58.56:416][301]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.02-17.58.56:416][301]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/Damage/BP_DamageBox150.BP_DamageBox150
+[2022.02.02-17.58.56:416][301]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/Damage/BP_DamageBox50.BP_DamageBox50
+[2022.02.02-17.58.56:416][301]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/Damage/BP_DamageBox250.BP_DamageBox250
+[2022.02.02-17.58.58:915][476]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.02.02-17.58.58:930][476]LogContentBrowser: Creating deferred item: NewFolder
+[2022.02.02-17.59.01:400][773]LogContentBrowser: Attempting asset rename: NewFolder -> Heal
+[2022.02.02-17.59.01:400][773]LogContentBrowser: End creating deferred item NewFolder
+[2022.02.02-17.59.04:349][  7]LogContentBrowser: Deferred new asset file creation: BP_HealBox151
+[2022.02.02-17.59.04:366][  7]LogContentBrowser: Creating deferred item: BP_HealBox151
+[2022.02.02-17.59.08:570][452]LogContentBrowser: Attempting asset rename: BP_HealBox151 -> BP_HealBox50
+[2022.02.02-17.59.08:590][452]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2022.02.02-17.59.08:597][452]LogContentBrowser: End creating deferred item BP_HealBox151
+[2022.02.02-17.59.09:897][576]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox50.BP_HealBox50
+[2022.02.02-17.59.18:209][ 64]BlueprintLog: New page: Compile BP_HealBox50
+[2022.02.02-17.59.18:239][ 64]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2022.02.02-17.59.18:895][ 98]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox50" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox50.uasset" SILENT=true
+[2022.02.02-17.59.18:899][ 98]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox50ED685045447981D4C91331A8FEBD6882.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox50.uasset'
+[2022.02.02-17.59.18:924][ 98]AssetCheck: New page: Asset Save: BP_HealBox50
+[2022.02.02-17.59.18:924][ 98]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox50.BP_HealBox50
+[2022.02.02-17.59.20:011][174]LogSlate: Window 'BP_HealBox50' being destroyed
+[2022.02.02-17.59.20:037][174]LogSlate: Window 'BP_HealBox50' being destroyed
+[2022.02.02-17.59.20:070][174]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.59.20:070][174]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.59.22:618][337]LogContentBrowser: Deferred new asset file creation: BP_HealBox151
+[2022.02.02-17.59.22:631][337]LogContentBrowser: Creating deferred item: BP_HealBox151
+[2022.02.02-17.59.27:403][815]LogContentBrowser: Attempting asset rename: BP_HealBox151 -> BP_HealBox250
+[2022.02.02-17.59.27:423][815]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2022.02.02-17.59.27:429][815]LogContentBrowser: End creating deferred item BP_HealBox151
+[2022.02.02-17.59.28:461][914]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Testing/StatTestObjs/BP_HealBox250.BP_HealBox250
+[2022.02.02-17.59.30:119][  1]BlueprintLog: New page: Compile BP_HealBox250
+[2022.02.02-17.59.30:153][  1]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2022.02.02-17.59.44:444][773]BlueprintLog: New page: Compile BP_HealBox250
+[2022.02.02-17.59.44:477][773]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2022.02.02-17.59.45:118][807]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/StatTestObjs/BP_HealBox250" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox250.uasset" SILENT=true
+[2022.02.02-17.59.45:122][807]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox250B3C497994E0911ACED6D5D91FF2BBB62.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/BP_HealBox250.uasset'
+[2022.02.02-17.59.45:151][807]AssetCheck: New page: Asset Save: BP_HealBox250
+[2022.02.02-17.59.45:151][807]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/BP_HealBox250.BP_HealBox250
+[2022.02.02-17.59.46:149][876]LogSlate: Window 'BP_HealBox250' being destroyed
+[2022.02.02-17.59.46:174][876]LogSlate: Window 'BP_HealBox250' being destroyed
+[2022.02.02-17.59.46:201][876]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-17.59.46:201][876]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-17.59.53:816][749]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.59.53:978][761]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-17.59.55:128][898]LogEditorViewport: Clicking on Actor (LMB): BP_DamageBox150_C (BP_DamageBox150)
+[2022.02.02-18.00.09:155][119]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.15:416][843]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.16:344][951]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.17:017][ 31]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.17:523][ 91]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.18:365][191]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.19:222][293]LogEditorViewport: Clicking on Actor (LMB): BP_HealBox50_C (BP_HealBox50)
+[2022.02.02-18.00.23:568][811]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.24:817][957]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.25:421][ 26]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.26:136][111]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.26:695][177]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.27:110][226]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.27:592][283]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.28:390][378]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.00.28:847][432]LogEditorViewport: Clicking on Actor (LMB): BP_HealBox50_C (BP_HealBox50)
+[2022.02.02-18.00.41:484][904]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.42:551][ 19]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.43:025][ 75]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.43:665][151]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.44:431][242]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.45:405][358]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.45:954][423]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.47:661][627]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.58:323][608]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.58:611][642]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.00.59:086][698]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.00:627][882]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.01:151][944]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.01:883][ 31]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.02:466][100]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.02:748][133]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2022.02.02-18.01.03:146][178]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2022.02.02-18.01.07:031][623]LogEditorViewport: Clicking on Actor (LMB): BP_HealBox50_C (BP_HealBox50)
+[2022.02.02-18.01.25:693][804]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.26:342][878]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.27:006][957]LogEditorViewport: Clicking on Actor (LMB): BP_HealBox150_C (BP_HealBox150)
+[2022.02.02-18.01.29:630][268]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.30:320][347]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.30:794][403]LogEditorViewport: Clicking on Actor (LMB): BP_HealBox50_C (BP_HealBox50)
+[2022.02.02-18.01.42:324][727]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.43:359][847]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.01.43:848][905]LogEditorViewport: Clicking on Actor (LMB): BP_HealBox150_C (BP_HealBox150)
+[2022.02.02-18.02.12:242][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.BP_HealBox150_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:242][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.SKEL_BP_HealBox150_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.BP_HealBox150:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.BP_HealBox150:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.BP_HealBox150:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.BP_HealBox150:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.SKEL_BP_HealBox150_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.SKEL_BP_HealBox150_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.SKEL_BP_HealBox150_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:243][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox150.SKEL_BP_HealBox150_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox150.PackageMetaData'
+[2022.02.02-18.02.12:244][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox250.SKEL_BP_HealBox250_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox250.PackageMetaData'
+[2022.02.02-18.02.12:244][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox250.BP_HealBox250_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox250.PackageMetaData'
+[2022.02.02-18.02.12:244][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox250.SKEL_BP_HealBox250_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox250.PackageMetaData'
+[2022.02.02-18.02.12:244][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox250.SKEL_BP_HealBox250_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox250.PackageMetaData'
+[2022.02.02-18.02.12:244][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox250.SKEL_BP_HealBox250_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox250.PackageMetaData'
+[2022.02.02-18.02.12:245][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox250.SKEL_BP_HealBox250_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox250.PackageMetaData'
+[2022.02.02-18.02.12:246][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox50.SKEL_BP_HealBox50_C:UserConstructionScript' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox50.PackageMetaData'
+[2022.02.02-18.02.12:246][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox50.SKEL_BP_HealBox50_C:ReceiveTick' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox50.PackageMetaData'
+[2022.02.02-18.02.12:246][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox50.SKEL_BP_HealBox50_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox50.PackageMetaData'
+[2022.02.02-18.02.12:246][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox50.SKEL_BP_HealBox50_C:ReceiveBeginPlay' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox50.PackageMetaData'
+[2022.02.02-18.02.12:246][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox50.SKEL_BP_HealBox50_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox50.PackageMetaData'
+[2022.02.02-18.02.12:246][818]LogMetaData: Removing '/Game/Testing/StatTestObjs/Heal/BP_HealBox50.BP_HealBox50_C' ref from Metadata '/Game/Testing/StatTestObjs/BP_HealBox50.PackageMetaData'
+[2022.02.02-18.02.12:269][818]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox1501244747747A19A9DDB11F6AD30F93E7A.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/Heal/BP_HealBox150.uasset'
+[2022.02.02-18.02.12:273][818]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox250F1CA22D544994DA864A8859AB54232BA.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/Heal/BP_HealBox250.uasset'
+[2022.02.02-18.02.12:278][818]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/BP_HealBox507D6E861D4BB1B2129D457DBF991266B8.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/StatTestObjs/Heal/BP_HealBox50.uasset'
+[2022.02.02-18.02.12:353][818]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2022.02.02-18.02.12:378][818]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2022.02.02-18.02.12:392][818]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2022.02.02-18.02.12:411][818]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2022.02.02-18.02.12:425][818]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2022.02.02-18.02.12:465][818]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.02-18.02.12:465][818]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/Heal/BP_HealBox150.BP_HealBox150
+[2022.02.02-18.02.12:465][818]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/Heal/BP_HealBox250.BP_HealBox250
+[2022.02.02-18.02.12:465][818]LogContentValidation: Display: Validating Blueprint /Game/Testing/StatTestObjs/Heal/BP_HealBox50.BP_HealBox50
+[2022.02.02-18.02.19:265][395]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.20:415][529]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.21:039][603]LogEditorViewport: Clicking on Actor (LMB): BP_DamageBox150_C (BP_DamageBox150)
+[2022.02.02-18.02.56:536][595]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.57:477][704]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.58:034][770]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.58:707][850]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.59:365][928]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2022.02.02-18.02.59:931][995]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2022.02.02-18.03.00:470][ 56]LogEditorViewport: Clicking on Actor (LMB): BP_DamageBox50_C (BP_DamageBox50)
+[2022.02.02-18.03.08:264][924]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/TestMap" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.02.02-18.03.08:283][924]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2022.02.02-18.03.08:308][924]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/TestMap7DC3F4FC4718CA465CE3D589A825FFA6.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap.umap'
+[2022.02.02-18.03.08:329][924]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/TestMap_BuiltData" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap_BuiltData.uasset" SILENT=true
+[2022.02.02-18.03.09:057][924]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/TestMap_BuiltDataDA15BA2B49F74746D4308787D72409D6.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap_BuiltData.uasset'
+[2022.02.02-18.03.09:081][924]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.02-18.03.09:081][924]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Testing/TestMap_BuiltData.TestMap_BuiltData
+[2022.02.02-18.03.09:081][924]LogContentValidation: Display: Validating World /Game/Testing/TestMap.TestMap
+[2022.02.02-18.03.09:972][ 18]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.02-18.03.09:977][ 18]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.02-18.03.09:977][ 18]PIE: New page: PIE session: TestMap (Feb. 2, 2022, 8:03:09 a.m.)
+[2022.02.02-18.03.10:000][ 18]LogPlayLevel: Creating play world package: /Game/Testing/UEDPIE_0_TestMap
+[2022.02.02-18.03.10:011][ 18]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010164s)
+[2022.02.02-18.03.10:012][ 18]LogAIModule: Creating AISystem for world TestMap
+[2022.02.02-18.03.10:012][ 18]LogPlayLevel: PIE: World Init took: (0.001154s)
+[2022.02.02-18.03.10:012][ 18]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Testing/TestMap.TestMap to /Game/Testing/UEDPIE_0_TestMap.TestMap (0.011706s)
+[2022.02.02-18.03.10:029][ 18]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2022.02.02-18.03.10:030][ 18]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.02-18.03.10:031][ 18]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.02-18.03.10:031][ 18]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.02-18.03.10:031][ 18]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.02-18.03.10:031][ 18]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.02-18.03.10:032][ 18]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.02-18.03.10:032][ 18]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.02-18.03.10:037][ 18]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.02-18.03.10:037][ 18]LogAudioMixer: Display: 1: FrontRight
+[2022.02.02-18.03.10:048][ 18]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2022.02.02-18.03.10:048][ 18]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.02-18.03.10:048][ 18]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.02-18.03.10:048][ 18]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.02-18.03.10:049][ 18]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.02-18.03.10:049][ 18]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.02-18.03.10:049][ 18]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.02.02-18.03.10:051][ 18]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.02-18.03.10:051][ 18]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.02-18.03.10:051][ 18]LogInit: FAudioDevice initialized.
+[2022.02.02-18.03.10:051][ 18]LogAudio: Display: Audio Device (ID: 4) registered with world 'TestMap'.
+[2022.02.02-18.03.10:065][ 18]LogLoad: Game class is 'PostArcanaGameMode'
+[2022.02.02-18.03.10:067][ 18]LogWorld: Bringing World /Game/Testing/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2022.02.02-13.03.10
+[2022.02.02-18.03.10:068][ 18]LogWorld: Bringing up level for play took: 0.001637
+[2022.02.02-18.03.10:068][ 18]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2022.02.02-18.03.10:071][ 18]PIE: Server logged in
+[2022.02.02-18.03.10:072][ 18]PIE: Play in editor total start time 0.096 seconds.
+[2022.02.02-18.04.00:661][ 75]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-18.04.00:662][ 75]LogWorld: BeginTearingDown for /Game/Testing/UEDPIE_0_TestMap
+[2022.02.02-18.04.00:662][ 75]LogWorld: UWorld::CleanupWorld for TestMap, bSessionEnded=true, bCleanupResources=true
+[2022.02.02-18.04.00:662][ 75]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-18.04.00:677][ 75]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.02-18.04.00:689][ 75]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.02-18.04.00:702][ 75]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.02-18.04.00:703][ 75]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.02-18.04.00:704][ 75]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.02-18.04.00:709][ 75]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2022.02.02-18.04.00:735][ 76]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2022.02.02-18.04.03:651][391]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/TestMap" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.02.02-18.04.03:667][391]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2022.02.02-18.04.03:685][391]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/TestMap6F539BCA4DB1DC95424FB9B0E762E8E5.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap.umap'
+[2022.02.02-18.04.03:694][391]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Testing/TestMap_BuiltData" FILE="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap_BuiltData.uasset" SILENT=true
+[2022.02.02-18.04.04:091][391]LogSavePackage: Moving 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Saved/TestMap_BuiltDataBBF07B874A394D54CC1CE190D2348E3B.tmp' to 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Content/Testing/TestMap_BuiltData.uasset'
+[2022.02.02-18.04.04:101][391]AssetCheck: New page: Asset Save: multiple assets
+[2022.02.02-18.04.04:101][391]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Testing/TestMap_BuiltData.TestMap_BuiltData
+[2022.02.02-18.04.04:101][391]LogContentValidation: Display: Validating World /Game/Testing/TestMap.TestMap
+[2022.02.02-18.04.13:492][395]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2022.02.02-18.04.13:514][395]LogContentBrowser: Creating deferred item: NewFolder
+[2022.02.02-18.04.24:934][733]LogContentBrowser: Attempting asset rename: NewFolder -> Mana
+[2022.02.02-18.04.24:934][733]LogContentBrowser: End creating deferred item NewFolder
+[2022.02.02-18.04.58:007][111]Running C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/PostArcana.uproject" -game -rocket -progress
+[2022.02.02-18.04.58:310][111]Discovering modules, targets and source code for project...
+[2022.02.02-18.05.00:515][111]Binding IntelliSense data...
+[2022.02.02-18.05.08:546][111]Binding IntelliSense data... 100%
+[2022.02.02-18.05.08:546][111]Writing project files...
+[2022.02.02-18.05.12:558][111]Writing project files... 100%
+[2022.02.02-18.05.12:699][111]Candidate modules for hot reload:
+[2022.02.02-18.05.12:699][111]  PostArcana
+[2022.02.02-18.05.12:699][111]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=PostArcana,2578 PostArcanaEditor Win64 Development -Project="D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/PostArcana.uproject" "D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/PostArcana.uproject"  -IgnoreJunk]
+[2022.02.02-18.05.14:927][111]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{c199f3e2-e4cf-4067-973a-63c0e875cc3b}.
+[2022.02.02-18.05.28:499][111]CompilerResultsLog: New page: Compilation - Feb. 2, 2022, 8:05:28 a.m.
+[2022.02.02-18.05.28:499][111]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals).
+[2022.02.02-18.05.28:499][111]CompilerResultsLog: Creating makefile for PostArcanaEditor (no existing makefile)
+[2022.02.02-18.05.28:499][111]CompilerResultsLog: Parsing headers for PostArcanaEditor
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:   Running UnrealHeaderTool "D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\PostArcana.uproject" "D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\PostArcanaEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\sebco\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.02.02-18.05.28:500][111]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.02.02-18.05.28:500][111]CompilerResultsLog: Reflection code generated for PostArcanaEditor in 11.5008121 seconds
+[2022.02.02-18.05.28:500][111]CompilerResultsLog: Building PostArcanaEditor...
+[2022.02.02-18.05.28:500][111]CompilerResultsLog: Using Visual Studio 2019 14.29.30139 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.02-18.05.28:500][111]CompilerResultsLog: Building 6 actions with 6 processes...
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:   [1/6] Test_ManaBox.cpp
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:   [2/6] PostArcana.init.gen.cpp
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:   [3/6] Test_ManaBox.gen.cpp
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:   [4/6] UE4Editor-PostArcana-2578.lib
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:      Creating library D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-2578.lib and object D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-2578.exp
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:   [5/6] UE4Editor-PostArcana-2578.dll
+[2022.02.02-18.05.28:500][111]CompilerResultsLog:      Creating library D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-2578.suppressed.lib and object D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-2578.suppressed.exp
+[2022.02.02-18.05.28:501][111]CompilerResultsLog:   [6/6] PostArcanaEditor.target
+[2022.02.02-18.05.28:501][111]CompilerResultsLog: Total time in Parallel executor: 1.88 seconds
+[2022.02.02-18.05.28:501][111]CompilerResultsLog: Total execution time: 15.72 seconds
+[2022.02.02-18.05.28:501][111]LogMainFrame: MainFrame: Module compiling took 15.821 seconds
+[2022.02.02-18.05.28:544][111]LogClass: Could not find existing class Test_ManaBox in package /Script/PostArcana for HotReload, assuming new class
+[2022.02.02-18.05.28:554][111]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'PostArcana' in 0.0002 seconds. Added 8 classes and 2 folders.
+[2022.02.02-18.05.28:559][111]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2022.02.02-18.05.28:655][111]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0090 seconds. Added 3830 classes and 930 folders.
+[2022.02.02-18.05.28:655][111]Display: HotReload took 16.0s.
+[2022.02.02-18.05.28:656][111]Warning: HotReload operation took 16.0s.
+[2022.02.02-18.05.28:783][111]LogVSAccessor: Couldn't get item operations. Visual Studio may still be initializing.
+[2022.02.02-18.05.28:788][111]LogSlate: Window 'Add C++ Class' being destroyed
+[2022.02.02-18.05.29:230][111]LogVSAccessor: Warning: Couldn't goto line number '1' in 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Source/PostArcana/Test_ManaBox.h'
+[2022.02.02-18.05.29:233][111]LogVSAccessor: Warning: Couldn't open file 'D:/Semester 4/HLD2/Post Arcana/W22_The_Hex_Decimals/PostArcana/Source/PostArcana/Test_ManaBox.cpp'.
+[2022.02.02-18.05.29:240][111]LogHotReload: New module detected: UE4Editor-PostArcana-2578.dll
+[2022.02.02-18.05.29:247][111]LogAudioMixer: Resetting audio stream to device id 
+[2022.02.02-18.05.29:262][111]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.02-18.05.29:262][111]LogAudioMixer: Display: 1: FrontRight
+[2022.02.02-18.05.29:320][112]LogHotReload: Starting Hot-Reload from IDE
+[2022.02.02-18.05.29:339][112]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'PostArcana' in 0.0003 seconds. Added 8 classes and 2 folders.
+[2022.02.02-18.05.29:344][112]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.02.02-18.05.29:359][112]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0095 seconds. Added 3830 classes and 930 folders.
+[2022.02.02-18.05.29:363][112]Display: HotReload took  0.0s.

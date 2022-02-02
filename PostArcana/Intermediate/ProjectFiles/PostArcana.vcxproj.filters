@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PostArcana.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F329EC8D-91F2-4DD0-B4AD-A367876AF0B0}</UniqueIdentifier>
+      <UniqueIdentifier>{408C78FF-B6AC-4A53-A31C-7AE00877350E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PostArcana.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{D4C4EADA-C7C9-401D-9EEC-EDAD717AACEE}</UniqueIdentifier>
+      <UniqueIdentifier>{F3D75BC8-DB16-4D45-8C5A-29F73256650F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PostArcana">
-      <UniqueIdentifier>{14C9526E-2550-4BD5-A15E-2A49DE3CB10A}</UniqueIdentifier>
+      <UniqueIdentifier>{25CB7DCA-CA4C-43A7-9E60-8F610081D4B3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PostArcana\GameObject.cpp">
       <Filter>Source\PostArcana</Filter>
@@ -69,6 +69,24 @@
       <Filter>Source\PostArcana</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PostArcana\PostArcanaProjectile.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\Test_DamageBox.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\Test_DamageBox.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\Test_HealBox.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\Test_HealBox.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\Test_ManaBox.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\Test_ManaBox.h">
       <Filter>Source\PostArcana</Filter>
     </ClInclude>
   </ItemGroup>

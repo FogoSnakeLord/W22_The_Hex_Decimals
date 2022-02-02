@@ -18,7 +18,8 @@ AGameObject::AGameObject()
 	Mana = 200;
 	MaxMana = 250;
 	ManaRegen = 1;
-	BaseMoveSpeed = 100;
+	BaseMoveSpeed = 500;
+	BaseSprintSpeed = 1200;
 	Defence = 50;
 	IsAlive = true;
 
@@ -40,7 +41,8 @@ void AGameObject::DisplayStats()
 	GEngine->AddOnScreenDebugMessage(2, .1, FColor::Blue, "Mana - " + FString::FromInt(Mana) + " / " + FString::FromInt(MaxMana), true);
 	GEngine->AddOnScreenDebugMessage(3, .1, FColor::Purple, "ManaRegen - " + FString::FromInt(ManaRegen), true);
 	GEngine->AddOnScreenDebugMessage(4, .1, FColor::Yellow, "BaseMoveSpeed - " + FString::FromInt(BaseMoveSpeed), true);
-	GEngine->AddOnScreenDebugMessage(5, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
+	GEngine->AddOnScreenDebugMessage(5, .1, FColor::Orange, "BaseSprintSpeed - " + FString::FromInt(BaseSprintSpeed), true);
+	GEngine->AddOnScreenDebugMessage(6, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
 }
 
 // Called every frame
@@ -101,6 +103,18 @@ void AGameObject::RegenMana(float DeltaTime) //Test and is Working
 					Mana = MaxMana;
 				}
 			}
+		}
+	}
+}
+
+void AGameObject::GainMana(int ManaAmnt)
+{
+	if (IsAlive && Mana < MaxMana)
+	{
+		Mana += ManaAmnt;
+		if (Mana > MaxMana)
+		{
+			Mana = MaxMana;
 		}
 	}
 }

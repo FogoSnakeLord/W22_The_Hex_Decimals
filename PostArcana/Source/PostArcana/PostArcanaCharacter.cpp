@@ -2,11 +2,15 @@
 
 #include "PostArcanaCharacter.h"
 #include "PostArcanaProjectile.h"
+#include "Test_DamageBox.h"
+#include "Test_HealBox.h"
+#include "Test_ManaBox.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
@@ -84,6 +88,8 @@ APostArcanaCharacter::APostArcanaCharacter()
 	//bUsingMotionControllers = true;
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &APostArcanaCharacter::OnBeginOverlap);
 	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &APostArcanaCharacter::OnEndOverlap);
+
+	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
 }
 
 void APostArcanaCharacter::BeginPlay()
@@ -138,6 +144,9 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAxis("TurnRate", this, &APostArcanaCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &APostArcanaCharacter::LookUpAtRate);
+
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &APostArcanaCharacter::Sprint);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &APostArcanaCharacter::StopSprint);
 }
 
 void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -146,21 +155,30 @@ void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedCompone
 	{
 		if (OtherActor != nullptr)
 		{
-			//AMyDamageBox2* DmgBox = Cast<AMyDamageBox2>(OtherActor);
+			ATest_DamageBox* DmgBox = Cast<ATest_DamageBox>(OtherActor);
 
-			//if (DmgBox != nullptr)
-			//{
-			//	TakeDamage(DmgBox->DMG);
-			//}
+			if (DmgBox != nullptr)
+			{
+				TakeDamage(DmgBox->DMG);
+			}
 		}
 		if (OtherActor != nullptr)
 		{
-			//AMyHealBox* HealBox = Cast<AMyHealBox>(OtherActor);
+			ATest_HealBox* HealBox = Cast<ATest_HealBox>(OtherActor);
 
-			//if (HealBox != nullptr)
-			//{
-			//	Heal(HealBox->HealAmnt);
-			//}
+			if (HealBox != nullptr)
+			{
+				Heal(HealBox->HealAmnt);
+			}
+		}
+		if (OtherActor != nullptr)
+		{
+			ATest_ManaBox* ManaBox = Cast<ATest_ManaBox>(OtherActor);
+
+			if (ManaBox != nullptr)
+			{
+				GainMana(ManaBox->ManaAmnt);
+			}
 		}
 	}
 }
@@ -327,4 +345,14 @@ bool APostArcanaCharacter::EnableTouchscreenMovement(class UInputComponent* Play
 	}
 	
 	return false;
+}
+
+void APostArcanaCharacter::Sprint()
+{
+	GetCharacterMovement()->MaxWalkSpeed = BaseSprintSpeed;
+}
+
+void APostArcanaCharacter::StopSprint()
+{
+	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
 }

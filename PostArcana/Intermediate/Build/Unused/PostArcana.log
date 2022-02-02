@@ -1,15 +1,16 @@
-﻿  Building PostArcanaEditor...
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals).
+  Building PostArcanaEditor...
   Using Visual Studio 2019 14.29.30139 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 6 processes...
-    [1/4] PostArcanaCharacter.cpp
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Source\PostArcana\GameObject.h(52): warning C4263: 'void AGameObject::TakeDamage(int)': member function does not override any base class virtual member function
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Source\PostArcana\GameObject.h(59): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'APawn'; function is hidden
+    [1/4] GameObject.cpp
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\GameObject.h(54): warning C4263: 'void AGameObject::TakeDamage(int)': member function does not override any base class virtual member function
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\GameObject.h(62): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'APawn'; function is hidden
     C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: see declaration of 'APawn::TakeDamage'
     C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: see declaration of 'APawn'
-    [2/4] UE4Editor-PostArcana-0010.lib
-       Creating library D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-0010.lib and object D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-0010.exp
-    [3/4] UE4Editor-PostArcana-0010.dll
-       Creating library D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-0010.suppressed.lib and object D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-0010.suppressed.exp
+    [2/4] UE4Editor-PostArcana.lib
+       Creating library D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana.lib and object D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana.exp
+    [3/4] UE4Editor-PostArcana.dll
+       Creating library D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana.suppressed.lib and object D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana.suppressed.exp
     [4/4] PostArcanaEditor.target
-  Total time in Parallel executor: 2.66 seconds
-  Total execution time: 3.37 seconds
+  Total time in Parallel executor: 1.49 seconds
+  Total execution time: 2.02 seconds

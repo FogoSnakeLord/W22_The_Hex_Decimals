@@ -1,6 +1,6 @@
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Source\PostArcana\PostArcanaProjectile.h
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaProjectile.generated.h
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaProjectile.h
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaProjectile.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h

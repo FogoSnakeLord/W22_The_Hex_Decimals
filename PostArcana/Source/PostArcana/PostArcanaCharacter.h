@@ -152,5 +152,10 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+private:
+
+	void Sprint();
+	void StopSprint();
+
 };
 

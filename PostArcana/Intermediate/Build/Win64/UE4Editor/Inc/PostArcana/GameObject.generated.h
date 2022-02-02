@@ -65,6 +65,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__MaxMana() { return STRUCT_OFFSET(AGameObject, MaxMana); } \
 	FORCEINLINE static uint32 __PPO__ManaRegen() { return STRUCT_OFFSET(AGameObject, ManaRegen); } \
 	FORCEINLINE static uint32 __PPO__BaseMoveSpeed() { return STRUCT_OFFSET(AGameObject, BaseMoveSpeed); } \
+	FORCEINLINE static uint32 __PPO__BaseSprintSpeed() { return STRUCT_OFFSET(AGameObject, BaseSprintSpeed); } \
 	FORCEINLINE static uint32 __PPO__Defence() { return STRUCT_OFFSET(AGameObject, Defence); }
 
 

@@ -1,2 +1,2 @@
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
-D:\Semester 4\HLD2\Post Arcana\PostArcana\Source\PostArcana\PostArcana.h
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
+D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcana.h

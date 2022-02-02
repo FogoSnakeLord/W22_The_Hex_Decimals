@@ -56,6 +56,10 @@ void EmptyLinkFunctionForGeneratedCodeGameObject() {}
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_BaseMoveSpeed;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseSprintSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_BaseSprintSpeed;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Defence_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Defence;
@@ -119,6 +123,13 @@ void EmptyLinkFunctionForGeneratedCodeGameObject() {}
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGameObject_Statics::NewProp_BaseMoveSpeed = { "BaseMoveSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGameObject, BaseMoveSpeed), METADATA_PARAMS(Z_Construct_UClass_AGameObject_Statics::NewProp_BaseMoveSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGameObject_Statics::NewProp_BaseMoveSpeed_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGameObject_Statics::NewProp_BaseSprintSpeed_MetaData[] = {
+		{ "Category", "Stats" },
+		{ "ModuleRelativePath", "GameObject.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGameObject_Statics::NewProp_BaseSprintSpeed = { "BaseSprintSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGameObject, BaseSprintSpeed), METADATA_PARAMS(Z_Construct_UClass_AGameObject_Statics::NewProp_BaseSprintSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGameObject_Statics::NewProp_BaseSprintSpeed_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGameObject_Statics::NewProp_Defence_MetaData[] = {
 		{ "Category", "Stats" },
 		{ "ModuleRelativePath", "GameObject.h" },
@@ -132,6 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeGameObject() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameObject_Statics::NewProp_MaxMana,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameObject_Statics::NewProp_ManaRegen,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameObject_Statics::NewProp_BaseMoveSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameObject_Statics::NewProp_BaseSprintSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGameObject_Statics::NewProp_Defence,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGameObject_Statics::StaticCppClassTypeInfo = {
@@ -161,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeGameObject() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGameObject, 2305593229);
+	IMPLEMENT_CLASS(AGameObject, 1748021068);
 	template<> POSTARCANA_API UClass* StaticClass<AGameObject>()
 	{
 		return AGameObject::StaticClass();

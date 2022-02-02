@@ -38,6 +38,8 @@ protected:
 	UPROPERTY(EditAnywhere, Category = Stats)
 		int BaseMoveSpeed;
 	UPROPERTY(EditAnywhere, Category = Stats)
+		int BaseSprintSpeed;
+	UPROPERTY(EditAnywhere, Category = Stats)
 		int Defence;
 
 	bool IsAlive;
@@ -53,6 +55,7 @@ public:
 	void Heal(int HealAmnt);
 	void UseMana(int Cost);
 	void RegenMana(float DeltaTime);
+	void GainMana(int ManaAmnt);
 
 	bool CheckAlive();
 

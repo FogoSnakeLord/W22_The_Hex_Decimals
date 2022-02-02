@@ -1,0 +1,27 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-PostArcana-2590.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\GameObject.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcana.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaCharacter.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaGameMode.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaHUD.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaProjectile.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Test_DamageBox.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Test_HealBox.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\GameObject.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcana.init.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaCharacter.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaGameMode.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaHUD.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\PostArcanaProjectile.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Test_DamageBox.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Test_HealBox.gen.cpp.obj"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Default.rc2.res"
+/OUT:"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\UE4Editor-PostArcana-2590.lib"
