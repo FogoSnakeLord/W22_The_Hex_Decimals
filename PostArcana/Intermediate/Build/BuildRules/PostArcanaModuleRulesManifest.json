@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Semester 4\\HLD2\\Post Arcana\\PostArcana\\Source\\PostArcana\\PostArcana.Build.cs",
+		"D:\\Semester 4\\HLD2\\Post Arcana\\PostArcana\\Source\\PostArcana.Target.cs",
+		"D:\\Semester 4\\HLD2\\Post Arcana\\PostArcana\\Source\\PostArcanaEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.0"
+}

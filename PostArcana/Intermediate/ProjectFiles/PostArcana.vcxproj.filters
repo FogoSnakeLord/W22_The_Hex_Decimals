@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PostArcana.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F329EC8D-91F2-4DD0-B4AD-A367876AF0B0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PostArcana.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PostArcanaEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{D4C4EADA-C7C9-401D-9EEC-EDAD717AACEE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PostArcana">
+      <UniqueIdentifier>{14C9526E-2550-4BD5-A15E-2A49DE3CB10A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PostArcana\GameObject.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\GameObject.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\PostArcana\PostArcana.Build.cs">
+      <Filter>Source\PostArcana</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PostArcana\PostArcana.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\PostArcana.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\PostArcanaCharacter.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\PostArcanaCharacter.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\PostArcanaGameMode.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\PostArcanaGameMode.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\PostArcanaHUD.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\PostArcanaHUD.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PostArcana\PostArcanaProjectile.cpp">
+      <Filter>Source\PostArcana</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PostArcana\PostArcanaProjectile.h">
+      <Filter>Source\PostArcana</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

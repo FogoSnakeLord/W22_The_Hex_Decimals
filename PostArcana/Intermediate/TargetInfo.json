@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PostArcana",
+			"Path": "D:\\Semester 4\\HLD2\\Post Arcana\\PostArcana\\Source\\PostArcana.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PostArcanaEditor",
+			"Path": "D:\\Semester 4\\HLD2\\Post Arcana\\PostArcana\\Source\\PostArcanaEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
