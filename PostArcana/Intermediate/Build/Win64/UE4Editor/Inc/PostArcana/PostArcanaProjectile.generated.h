@@ -76,7 +76,9 @@ public: \
 
 #define PostArcana_Source_PostArcana_PostArcanaProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CollisionComp() { return STRUCT_OFFSET(APostArcanaProjectile, CollisionComp); } \
-	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(APostArcanaProjectile, ProjectileMovement); }
+	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(APostArcanaProjectile, ProjectileMovement); } \
+	FORCEINLINE static uint32 __PPO__MeshComponent() { return STRUCT_OFFSET(APostArcanaProjectile, MeshComponent); } \
+	FORCEINLINE static uint32 __PPO__Damage() { return STRUCT_OFFSET(APostArcanaProjectile, Damage); }
 
 
 #define PostArcana_Source_PostArcana_PostArcanaProjectile_h_12_PROLOG

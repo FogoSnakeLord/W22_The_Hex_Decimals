@@ -3,9 +3,12 @@
 #include "PostArcanaProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundBase.h"
 
-APostArcanaProjectile::APostArcanaProjectile() 
+APostArcanaProjectile::APostArcanaProjectile()
 {
+	Damage = 10;
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(5.0f);
@@ -25,10 +28,16 @@ APostArcanaProjectile::APostArcanaProjectile()
 	ProjectileMovement->InitialSpeed = 3000.f;
 	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
-	ProjectileMovement->bShouldBounce = true;
+	ProjectileMovement->bShouldBounce = false;
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
+}
+
+void APostArcanaProjectile::BeginPlay()
+{
+	Super::BeginPlay();
+
 }
 
 void APostArcanaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -37,7 +46,31 @@ void APostArcanaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAct
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
+		//if (ImpactSound)
+		//{
+		//	UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
 
-		Destroy();
+		//}
+		//if (ProjectileFX)
+		//{
+		//	UGameplayStatics::SpawnEmitterAtLocation(this, ProjectileFX, GetActorLocation());
+		//}
 	}
+	Destroy();
+}
+
+void APostArcanaProjectile::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+float APostArcanaProjectile::GetDamage()
+{
+	return Damage;
+}
+
+void APostArcanaProjectile::SetDamage(int intelligence)
+{
+	Damage = intelligence * 50.0f;
 }

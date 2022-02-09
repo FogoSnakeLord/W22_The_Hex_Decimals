@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaAICharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APostArcanaAICharacter, 1061216890);
+	IMPLEMENT_CLASS(APostArcanaAICharacter, 611004608);
 	template<> POSTARCANA_API UClass* StaticClass<APostArcanaAICharacter>()
 	{
 		return APostArcanaAICharacter::StaticClass();

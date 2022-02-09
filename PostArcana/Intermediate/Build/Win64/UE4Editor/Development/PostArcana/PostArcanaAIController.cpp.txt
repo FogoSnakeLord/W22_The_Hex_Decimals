@@ -1,5 +1,5 @@
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaAIController.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaAIController.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AIModule\Classes\AIController.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
@@ -59,7 +59,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AIModule\Classes\Perce
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AIModule\Classes\Perception/AISenseConfig.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISenseConfig.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISenseConfig_Sight.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaAIController.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaAIController.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTree.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTCompositeNode.h
@@ -79,14 +79,14 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTNode.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTCompositeNode.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTree.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcana.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaAICharacter.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\GameObject.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcana.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaAICharacter.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\GameObject.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\GameObject.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaAICharacter.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\GameObject.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaAICharacter.generated.h

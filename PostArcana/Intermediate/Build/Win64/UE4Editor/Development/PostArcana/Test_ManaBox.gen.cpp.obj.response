@@ -231,8 +231,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana
-/I C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source
+/I C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana
+/I C:\W22_The_Hex_Decimals\PostArcana\Source
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
@@ -260,18 +260,18 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\INCLUDE"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\Test_ManaBox.gen.cpp"
-/FI"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h"
-/Fo"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Test_ManaBox.gen.cpp.obj"
+/FI"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\Test_ManaBox.gen.cpp"
+/FI"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h"
+/Fo"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Test_ManaBox.gen.cpp.obj"
 /TP
 /GR-
 /W4

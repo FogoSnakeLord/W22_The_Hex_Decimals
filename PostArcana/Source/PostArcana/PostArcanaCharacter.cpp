@@ -211,7 +211,13 @@ void APostArcanaCharacter::OnFire()
 				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
 				// spawn the projectile at the muzzle
-				World->SpawnActor<APostArcanaProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+				APostArcanaProjectile* spawnedProjectile = World->SpawnActor<APostArcanaProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+				
+				if (spawnedProjectile != nullptr)
+				{
+					//Replace the hard-coded value w/ intelligence stat variable
+					spawnedProjectile->SetDamage(2);
+				}
 
 				UseMana(Cost);
 

@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcana_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x839C0AF7,
+				0x70EEA245,
 				0x02EE90DC,
 				METADATA_PARAMS(nullptr, 0)
 			};

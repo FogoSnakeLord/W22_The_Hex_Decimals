@@ -254,17 +254,17 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\INCLUDE"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/I C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine
-/Yc"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine
+/Yc"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

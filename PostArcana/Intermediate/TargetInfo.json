@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "PostArcana",
-			"Path": "C:\\Users\\Colin\\Documents\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcana.Target.cs",
+			"Path": "C:\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcana.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "PostArcanaEditor",
-			"Path": "C:\\Users\\Colin\\Documents\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcanaEditor.Target.cs",
+			"Path": "C:\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcanaEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

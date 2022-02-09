@@ -1,24 +1,24 @@
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaGameMode.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaGameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaGameMode.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaHUD.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaGameMode.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaHUD.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaHUD.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaCharacter.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaHUD.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\PostArcanaCharacter.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\GameObject.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\GameObject.generated.h
-C:\Users\Colin\Documents\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaCharacter.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Source\PostArcana\GameObject.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\GameObject.generated.h
+C:\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\PostArcanaCharacter.generated.h

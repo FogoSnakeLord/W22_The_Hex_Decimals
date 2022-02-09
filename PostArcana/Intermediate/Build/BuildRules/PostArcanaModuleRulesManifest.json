@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\Colin\\Documents\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcana\\PostArcana.Build.cs",
-		"C:\\Users\\Colin\\Documents\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcana.Target.cs",
-		"C:\\Users\\Colin\\Documents\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcanaEditor.Target.cs"
+		"C:\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcana\\PostArcana.Build.cs",
+		"C:\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcana.Target.cs",
+		"C:\\W22_The_Hex_Decimals\\PostArcana\\Source\\PostArcanaEditor.Target.cs"
 	],
-	"EngineVersion": "4.27.2"
+	"EngineVersion": "4.27.0"
 }

@@ -3,6 +3,7 @@
 
 
 #include "GameObject.h"
+#include "PostArcanaProjectile.h"
 
 // Sets default values
 AGameObject::AGameObject()
@@ -52,6 +53,18 @@ void AGameObject::Tick(float DeltaTime)
 	RegenMana(DeltaTime);
 	DisplayStats();
 
+}
+
+void AGameObject::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if (IsAlive == false)
+		return;
+
+	APostArcanaProjectile* projectile = Cast<APostArcanaProjectile>(OtherActor);
+	if (projectile != nullptr && (OtherComp != nullptr) && OtherActor != this)
+	{
+		TakeDamage(projectile->GetDamage());
+	}
 }
 
 void AGameObject::TakeDamage(int Dmg) //TO TEST

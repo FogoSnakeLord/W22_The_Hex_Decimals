@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaProjectile() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(APostArcanaProjectile::execOnHit)
 	{
@@ -137,6 +138,14 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaProjectile() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovement_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovement;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Damage;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -175,9 +184,28 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaProjectile() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_ProjectileMovement = { "ProjectileMovement", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APostArcanaProjectile, ProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_ProjectileMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_ProjectileMovement_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_MeshComponent_MetaData[] = {
+		{ "Category", "Mesh" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "PostArcanaProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APostArcanaProjectile, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_MeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_MeshComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_Damage_MetaData[] = {
+		{ "Category", "Stats" },
+		{ "Comment", "//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)\n//\x09""class USoundBase* ImpactSound;\n" },
+		{ "ModuleRelativePath", "PostArcanaProjectile.h" },
+		{ "ToolTip", "UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)\n       class USoundBase* ImpactSound;" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APostArcanaProjectile, Damage), METADATA_PARAMS(Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_Damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_Damage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APostArcanaProjectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_CollisionComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_ProjectileMovement,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_MeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaProjectile_Statics::NewProp_Damage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APostArcanaProjectile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APostArcanaProjectile>::IsAbstract,
@@ -206,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APostArcanaProjectile, 4245945699);
+	IMPLEMENT_CLASS(APostArcanaProjectile, 1302141609);
 	template<> POSTARCANA_API UClass* StaticClass<APostArcanaProjectile>()
 	{
 		return APostArcanaProjectile::StaticClass();
