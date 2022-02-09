@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodePostArcana_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x0B0F9BB2,
-				0x6C8E749F,
+				0x839C0AF7,
+				0x02EE90DC,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

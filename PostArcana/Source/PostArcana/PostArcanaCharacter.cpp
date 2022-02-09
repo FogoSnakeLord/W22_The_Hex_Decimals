@@ -13,6 +13,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
+#include "Perception/AISense_Sight.h"
+#include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 
@@ -90,6 +92,7 @@ APostArcanaCharacter::APostArcanaCharacter()
 	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &APostArcanaCharacter::OnEndOverlap);
 
 	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
+	PlayerPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 }
 
 void APostArcanaCharacter::BeginPlay()

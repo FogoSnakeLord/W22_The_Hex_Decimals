@@ -260,11 +260,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/I "D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine"
-/Yc"D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"D:\Semester 4\HLD2\Post Arcana\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I "D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine"
+/Yc"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"D:\Semester 4\HLD2\Post Arcana\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\PostArcanaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

@@ -29,6 +29,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaCharacter() {}
 	POSTARCANA_API UClass* Z_Construct_UClass_APostArcanaProjectile_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
+	AIMODULE_API UClass* Z_Construct_UClass_UAIPerceptionStimuliSourceComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(APostArcanaCharacter::execOnEndOverlap)
 	{
@@ -276,6 +277,10 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaCharacter() {}
 #endif
 		static void NewProp_bUsingMotionControllers_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUsingMotionControllers;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerPerceptionStimuliSource_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerPerceptionStimuliSource;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -445,6 +450,14 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaCharacter() {}
 		((APostArcanaCharacter*)Obj)->bUsingMotionControllers = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_bUsingMotionControllers = { "bUsingMotionControllers", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(APostArcanaCharacter), &Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_bUsingMotionControllers_SetBit, METADATA_PARAMS(Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_bUsingMotionControllers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_bUsingMotionControllers_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_PlayerPerceptionStimuliSource_MetaData[] = {
+		{ "Category", "Perception" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "PostArcanaCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_PlayerPerceptionStimuliSource = { "PlayerPerceptionStimuliSource", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APostArcanaCharacter, PlayerPerceptionStimuliSource), Z_Construct_UClass_UAIPerceptionStimuliSourceComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_PlayerPerceptionStimuliSource_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_PlayerPerceptionStimuliSource_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APostArcanaCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_Mesh1P,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_FP_Gun,
@@ -461,6 +474,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_FireSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_FireAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_bUsingMotionControllers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APostArcanaCharacter_Statics::NewProp_PlayerPerceptionStimuliSource,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APostArcanaCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APostArcanaCharacter>::IsAbstract,
@@ -489,7 +503,7 @@ void EmptyLinkFunctionForGeneratedCodePostArcanaCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APostArcanaCharacter, 245206343);
+	IMPLEMENT_CLASS(APostArcanaCharacter, 2573725729);
 	template<> POSTARCANA_API UClass* StaticClass<APostArcanaCharacter>()
 	{
 		return APostArcanaCharacter::StaticClass();

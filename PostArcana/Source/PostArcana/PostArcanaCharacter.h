@@ -52,6 +52,7 @@ class APostArcanaCharacter : public AGameObject
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UMotionControllerComponent* L_MotionController;
 
+
 public:
 	APostArcanaCharacter();
 
@@ -93,6 +94,9 @@ public:
 	UFUNCTION()
 		void OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perception")
+		class UAIPerceptionStimuliSourceComponent* PlayerPerceptionStimuliSource;
 
 protected:
 	
