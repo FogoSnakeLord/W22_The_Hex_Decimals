@@ -93,6 +93,7 @@ APostArcanaCharacter::APostArcanaCharacter()
 
 	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
 	PlayerPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
+	PlayerPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 }
 
 void APostArcanaCharacter::BeginPlay()

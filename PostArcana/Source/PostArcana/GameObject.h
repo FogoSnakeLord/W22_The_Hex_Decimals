@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GenericTeamAgentInterface.h"
 #include "GameFramework/Character.h"
 #include "GameObject.generated.h"
 
 UCLASS()
-class POSTARCANA_API AGameObject : public ACharacter
+class POSTARCANA_API AGameObject : public ACharacter, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
@@ -41,6 +42,8 @@ protected:
 		int BaseSprintSpeed;
 	UPROPERTY(EditAnywhere, Category = Stats)
 		int Defence;
+	UPROPERTY(EditAnywhere, Category = "TEAM_ID")
+		FGenericTeamId GenericTeamId; // 0 = Player, 1 = chasing character
 
 	bool IsAlive;
 	float Timer;
@@ -62,5 +65,6 @@ public:
 	void GainMana(int ManaAmnt);
 
 	bool CheckAlive();
-
+private:
+	FGenericTeamId GetGenericTeamId() const override;
 };

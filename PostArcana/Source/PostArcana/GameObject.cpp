@@ -143,4 +143,10 @@ bool AGameObject::CheckAlive() //TO TEST
 		return true;
 }
 
+FGenericTeamId AGameObject::GetGenericTeamId() const
+{
+	return GenericTeamId;
+}
+
+
 
