@@ -12,16 +12,36 @@ AGameObject::AGameObject()
 	PrimaryActorTick.bCanEverTick = true;
 
 
+	Endurance = 0;
+	Intelligence = 0;
+	Will = 0;
+	Agility = 0;
+	Toughness = 0;
+
+	ELevelBonus = 25;
+	ILevelBonus = 25;
+	ALevelBonus = 15;
+	TLevelBonus = 5;
+
+	BaseMaxHealth =  500;
+	BaseMaxMana = 250;
+	BaseMinMoveSpeed = 500;
+	BaseMaxMoveSpeed =  1200;
+	BaseDefence = 50;
+
+	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance);
+	MaxMana = BaseMaxMana + (ILevelBonus * Intelligence);
+	ManaRegen = 1 + Will;
+	BaseMoveSpeed = BaseMinMoveSpeed + (ALevelBonus * Agility);
+	BaseSprintSpeed = BaseMaxMoveSpeed + (ALevelBonus * Agility);
+	Defence = BaseDefence + (TLevelBonus * Toughness);
+
 	//Stats - Ints were used for easy math and floating point number can be prone to error. We can switch this if the team wants floats.
 	//Max Stats were needed... Totally forgot about that while doing the UML
 	Health = 500;
-	MaxHealth = 500;
 	Mana = 200;
-	MaxMana = 250;
-	ManaRegen = 1;
-	BaseMoveSpeed = 500;
-	BaseSprintSpeed = 1200;
-	Defence = 50;
+	
+
 	IsAlive = true;
 
 	//ManaRegenTimer - casues it add the mana regen rate to the mana every second while mana is below max
@@ -44,6 +64,13 @@ void AGameObject::DisplayStats()
 	GEngine->AddOnScreenDebugMessage(4, .1, FColor::Yellow, "BaseMoveSpeed - " + FString::FromInt(BaseMoveSpeed), true);
 	GEngine->AddOnScreenDebugMessage(5, .1, FColor::Orange, "BaseSprintSpeed - " + FString::FromInt(BaseSprintSpeed), true);
 	GEngine->AddOnScreenDebugMessage(6, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
+
+	GEngine->AddOnScreenDebugMessage(7, .1, FColor::Green, "Endurance: " + FString::FromInt(Endurance), true);
+	GEngine->AddOnScreenDebugMessage(8, .1, FColor::Blue, "Intelligence: " + FString::FromInt(Intelligence), true);
+	GEngine->AddOnScreenDebugMessage(9, .1, FColor::Purple, "Will: " + FString::FromInt(Will), true);
+	GEngine->AddOnScreenDebugMessage(10, .1, FColor::Yellow, "Agility: " + FString::FromInt(Agility), true);
+	GEngine->AddOnScreenDebugMessage(11, .1, FColor::Red, "Toughness: " + FString::FromInt(Toughness), true);
+
 }
 
 // Called every frame
@@ -51,8 +78,20 @@ void AGameObject::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	RegenMana(DeltaTime);
-	DisplayStats();
 
+	//To update in real time. We will change this to OnLevelUp Eventually;
+	UpdatePlayerStats();
+
+}
+
+void AGameObject::UpdatePlayerStats()
+{
+	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance);
+	MaxMana = BaseMaxMana + (ILevelBonus * Intelligence);
+	ManaRegen = 1 + Will;
+	BaseMoveSpeed = BaseMinMoveSpeed + (ALevelBonus * Agility);
+	BaseSprintSpeed = BaseMaxMoveSpeed + (ALevelBonus * Agility);
+	Defence = BaseDefence + (TLevelBonus * Toughness);
 }
 
 void AGameObject::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -71,7 +110,8 @@ void AGameObject::TakeDamage(int Dmg) //TO TEST
 {
 	if (IsAlive)
 	{
-		int TrueDmg = abs(Defence - Dmg);
+		int TrueDmg = (Dmg - Defence);
+		if(TrueDmg > 0)
 		Health -= TrueDmg;
 		CheckAlive();
 	}

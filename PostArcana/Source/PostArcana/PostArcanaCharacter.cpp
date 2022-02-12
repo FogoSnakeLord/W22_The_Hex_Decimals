@@ -94,6 +94,14 @@ APostArcanaCharacter::APostArcanaCharacter()
 	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
 	PlayerPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 	PlayerPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
+
+	////test
+	//Endurance = 1;
+	//Intelligence = 2;
+	//Will = 3;
+	//Agility = 5;
+	//Toughness = 6;
+	
 }
 
 void APostArcanaCharacter::BeginPlay()
@@ -190,6 +198,7 @@ void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedCompone
 void APostArcanaCharacter::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 }
+
 
 void APostArcanaCharacter::OnFire()
 {
@@ -355,6 +364,12 @@ bool APostArcanaCharacter::EnableTouchscreenMovement(class UInputComponent* Play
 	}
 	
 	return false;
+}
+
+void APostArcanaCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	DisplayStats();
 }
 
 void APostArcanaCharacter::Sprint()

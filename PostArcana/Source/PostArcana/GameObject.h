@@ -26,22 +26,59 @@ protected:
 	void DisplayStats();
 	//Stats - by making these a uproperty with these parameters you can change the stats of a gameobject in the editor. 
 		 //You will find the stats under the stat catagory. If you need more info please let me know and i can show you where.
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int Health;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int MaxHealth;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int Mana;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int MaxMana;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int ManaRegen;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int BaseMoveSpeed;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int BaseSprintSpeed;
-	UPROPERTY(EditAnywhere, Category = Stats)
+	UPROPERTY(EditAnywhere, Category = GameStats)
 		int Defence;
+
+	//Player level up stats - can be used to make strong enemies as well
+	UPROPERTY(EditAnywhere, Category = PlayerStats)
+		int Endurance;
+	UPROPERTY(EditAnywhere, Category = PlayerStats)
+		int Intelligence;
+	UPROPERTY(EditAnywhere, Category = PlayerStats)
+		int Will;
+	UPROPERTY(EditAnywhere, Category = PlayerStats)
+		int Agility;
+	UPROPERTY(EditAnywhere, Category = PlayerStats)
+		int Toughness;
+
+	//Level up bonus
+	UPROPERTY(EditAnywhere, Category = LevelBonus)
+		int ELevelBonus;
+	UPROPERTY(EditAnywhere, Category = LevelBonus)
+		int ILevelBonus;
+	UPROPERTY(EditAnywhere, Category = LevelBonus)
+		int ALevelBonus;
+	UPROPERTY(EditAnywhere, Category = LevelBonus)
+		int TLevelBonus;
+
+	//Base Stat
+	UPROPERTY(EditAnywhere, Category = BaseStat)
+		int BaseMaxHealth;
+	UPROPERTY(EditAnywhere, Category = BaseStat)
+		int BaseMaxMana;
+	UPROPERTY(EditAnywhere, Category = BaseStat)
+		int BaseMinMoveSpeed;
+	UPROPERTY(EditAnywhere, Category = BaseStat)
+		int BaseMaxMoveSpeed;
+	UPROPERTY(EditAnywhere, Category = BaseStat)
+		int BaseDefence;
+
+
+
 	UPROPERTY(EditAnywhere, Category = "TEAM_ID")
 		FGenericTeamId GenericTeamId; // 0 = Player, 1 = chasing character
 
@@ -51,6 +88,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	void UpdatePlayerStats();
 
 	UFUNCTION()
 		void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);

@@ -100,6 +100,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perception")
 		class UAIPerceptionStimuliSourceComponent* PlayerPerceptionStimuliSource;
 
+
 protected:
 	
 	/** Fires a projectile. */
@@ -153,6 +154,9 @@ protected:
 	bool EnableTouchscreenMovement(UInputComponent* InputComponent);
 
 public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 	/** Returns Mesh1P subobject **/
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	/** Returns FirstPersonCameraComponent subobject **/
