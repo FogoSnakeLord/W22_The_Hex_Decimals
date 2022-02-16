@@ -97,6 +97,12 @@ public:
 
 	// Called to bind functionality to input
 
+	int GetEndurance() const    { return Endurance; }
+	int GetIntelligence() const { return Intelligence; }
+	int GetWill() const         { return Will; }
+	int GetAgility() const      { return Agility; }
+	int GetToughness() const    { return Toughness; }
+
 	void TakeDamage(int Dmg);
 	void Heal(int HealAmnt);
 	void UseMana(int Cost);

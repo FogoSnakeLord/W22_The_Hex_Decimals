@@ -12,6 +12,14 @@ APostArcanaGameMode::APostArcanaGameMode()
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/FirstPersonCharacter"));
 	DefaultPawnClass = PlayerPawnClassFinder.Class;
 
+
+	static ConstructorHelpers::FClassFinder<APlayerController> PlayerController(TEXT("/Game/FirstPersonCPP/Blueprints/BP_PostArcanaPlayerController"));
+
+	if (PlayerController.Class != NULL)
+	{
+		PlayerControllerClass = PlayerController.Class;
+	}
+
 	// use our custom HUD class
 	HUDClass = APostArcanaHUD::StaticClass();
 }
