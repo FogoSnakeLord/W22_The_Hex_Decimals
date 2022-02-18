@@ -14,6 +14,12 @@ class APostArcanaHUD : public AHUD
 public:
 	APostArcanaHUD();
 
+	UPROPERTY(EditAnywhere, Category = "Game Hud")
+		TSubclassOf<class UUserWidget> PlayerGuiClass;
+
+	UPROPERTY()
+		class UUserWidget* PlayerGui;
+
 	/** Primary draw call for the HUD */
 	virtual void DrawHUD() override;
 

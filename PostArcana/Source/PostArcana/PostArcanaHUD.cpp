@@ -6,6 +6,7 @@
 #include "TextureResource.h"
 #include "CanvasItem.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Blueprint/UserWidget.h"
 
 APostArcanaHUD::APostArcanaHUD()
 {
@@ -18,6 +19,9 @@ APostArcanaHUD::APostArcanaHUD()
 void APostArcanaHUD::DrawHUD()
 {
 	Super::DrawHUD();
+
+	PlayerGui = CreateWidget<UUserWidget>(GetGameInstance(), PlayerGuiClass);
+	PlayerGui->AddToViewport();
 
 	// Draw very simple crosshair
 

@@ -95,12 +95,12 @@ APostArcanaCharacter::APostArcanaCharacter()
 	PlayerPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 	PlayerPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 
-	////test
-	//Endurance = 1;
-	//Intelligence = 2;
-	//Will = 3;
-	//Agility = 5;
-	//Toughness = 6;
+	//test
+	Endurance = 1;
+	Intelligence = 2;
+	Will = 3;
+	Agility = 5;
+	Toughness = 6;
 	
 }
 

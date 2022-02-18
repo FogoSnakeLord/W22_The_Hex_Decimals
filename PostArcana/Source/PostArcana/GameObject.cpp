@@ -58,18 +58,12 @@ void AGameObject::BeginPlay()
 
 void AGameObject::DisplayStats()
 {
-	GEngine->AddOnScreenDebugMessage(1, .1, FColor::Green, "Health - " + FString::FromInt(Health) + " / " + FString::FromInt(MaxHealth), true);
-	GEngine->AddOnScreenDebugMessage(2, .1, FColor::Blue, "Mana - " + FString::FromInt(Mana) + " / " + FString::FromInt(MaxMana), true);
 	GEngine->AddOnScreenDebugMessage(3, .1, FColor::Purple, "ManaRegen - " + FString::FromInt(ManaRegen), true);
 	GEngine->AddOnScreenDebugMessage(4, .1, FColor::Yellow, "BaseMoveSpeed - " + FString::FromInt(BaseMoveSpeed), true);
 	GEngine->AddOnScreenDebugMessage(5, .1, FColor::Orange, "BaseSprintSpeed - " + FString::FromInt(BaseSprintSpeed), true);
-	GEngine->AddOnScreenDebugMessage(6, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
-
-	GEngine->AddOnScreenDebugMessage(7, .1, FColor::Green, "Endurance: " + FString::FromInt(Endurance), true);
-	GEngine->AddOnScreenDebugMessage(8, .1, FColor::Blue, "Intelligence: " + FString::FromInt(Intelligence), true);
-	GEngine->AddOnScreenDebugMessage(9, .1, FColor::Purple, "Will: " + FString::FromInt(Will), true);
-	GEngine->AddOnScreenDebugMessage(10, .1, FColor::Yellow, "Agility: " + FString::FromInt(Agility), true);
-	GEngine->AddOnScreenDebugMessage(11, .1, FColor::Red, "Toughness: " + FString::FromInt(Toughness), true);
+	//GEngine->AddOnScreenDebugMessage(1, .1, FColor::Green, "Health - " + FString::FromInt(Health) + " / " + FString::FromInt(MaxHealth), true);
+	//GEngine->AddOnScreenDebugMessage(2, .1, FColor::Blue, "Mana - " + FString::FromInt(Mana) + " / " + FString::FromInt(MaxMana), true);
+	//GEngine->AddOnScreenDebugMessage(6, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
 
 }
 

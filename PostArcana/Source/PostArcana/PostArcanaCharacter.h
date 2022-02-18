@@ -162,6 +162,22 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	//HUD CALLS
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		int GetHealth() { return Health; }
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		int GetMaxHealth() { return MaxHealth; }
+
+	UFUNCTION(BlueprintCallable, Category = "Mana")
+		int GetMana() { return Mana; }
+
+	UFUNCTION(BlueprintCallable, Category = "Mana")
+		int GetMaxMana() { return MaxMana; }
+	
+	UFUNCTION(BlueprintCallable, Category = "Defence")
+		int GetDefence() { return Defence; }
+
 private:
 
 	void Sprint();
