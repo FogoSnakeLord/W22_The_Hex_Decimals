@@ -14,14 +14,16 @@ class APostArcanaHUD : public AHUD
 public:
 	APostArcanaHUD();
 
-	//UPROPERTY(EditAnywhere, Category = "Game Hud")
-	//	TSubclassOf<class UUserWidget> PlayerGuiClass;
+	UPROPERTY(EditAnywhere, Category = "Game Hud")
+		TSubclassOf<class UUserWidget> PlayerGuiClass;
 
-	//UPROPERTY()
-	//	class UUserWidget* PlayerGui;
+	UPROPERTY()
+		class UUserWidget* PlayerGui;
 
 	/** Primary draw call for the HUD */
 	virtual void DrawHUD() override;
+
+	virtual void BeginPlay() override;
 
 private:
 	/** Crosshair asset pointer */

@@ -20,9 +20,6 @@ void APostArcanaHUD::DrawHUD()
 {
 	Super::DrawHUD();
 
-	//PlayerGui = CreateWidget<UUserWidget>(GetGameInstance(), PlayerGuiClass);
-	//PlayerGui->AddToViewport();
-
 	// Draw very simple crosshair
 
 	// find center of the Canvas
@@ -36,4 +33,10 @@ void APostArcanaHUD::DrawHUD()
 	FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
 	TileItem.BlendMode = SE_BLEND_Translucent;
 	Canvas->DrawItem( TileItem );
+}
+
+void APostArcanaHUD::BeginPlay()
+{
+	PlayerGui = CreateWidget<UUserWidget>(GetGameInstance(), PlayerGuiClass);
+	PlayerGui->AddToViewport();
 }
