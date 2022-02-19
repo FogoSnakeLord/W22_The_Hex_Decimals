@@ -20,8 +20,8 @@ void APostArcanaHUD::DrawHUD()
 {
 	Super::DrawHUD();
 
-	PlayerGui = CreateWidget<UUserWidget>(GetGameInstance(), PlayerGuiClass);
-	PlayerGui->AddToViewport();
+	//PlayerGui = CreateWidget<UUserWidget>(GetGameInstance(), PlayerGuiClass);
+	//PlayerGui->AddToViewport();
 
 	// Draw very simple crosshair
 
