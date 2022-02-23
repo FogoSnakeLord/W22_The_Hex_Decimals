@@ -11,6 +11,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "PostArcanaProjectile.h"
 #include "Perception/AISense_Sight.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 //////////////////////////////////////////////////////////////////////////
@@ -36,48 +37,26 @@ APostArcanaAICharacter::APostArcanaAICharacter()
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
 
-	// Create a camera boom (pulls in towards the player if there is a collision)
-	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
-	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
-
-	// Create a follow camera
-	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
-
+	//SetUp for Overlaps
+	GetCapsuleComponent()->OnComponentHit.AddDynamic(this, &Super::OnHit);
 
 	AIPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 	AIPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 
-
 }
 
-void APostArcanaAICharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	// Set up gameplay key bindings
-	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	Super::OnHit(HitComp,OtherActor,OtherComp,NormalImpulse,Hit);
+	if (!CheckAlive()) {
+		this->Destroy();
+	}
+}
 
-	PlayerInputComponent->BindAxis("MoveForward", this, &APostArcanaAICharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &APostArcanaAICharacter::MoveRight);
-
-	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
-	// "turn" handles devices that provide an absolute delta, such as a mouse.
-	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &APostArcanaAICharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &APostArcanaAICharacter::LookUpAtRate);
-
-	// handle touch devices
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &APostArcanaAICharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &APostArcanaAICharacter::TouchStopped);
-
-	// VR headset functionality
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &APostArcanaAICharacter::OnResetVR);
+void APostArcanaAICharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	DisplayStats();
 }
 
 void APostArcanaAICharacter::OnResetVR()

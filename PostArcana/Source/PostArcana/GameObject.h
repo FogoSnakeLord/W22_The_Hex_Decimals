@@ -79,9 +79,7 @@ protected:
 
 
 
-	UPROPERTY(EditAnywhere, Category = "TEAM_ID")
-		FGenericTeamId GenericTeamId; // 0 = Player, 1 = chasing character
-
+	
 	bool IsAlive;
 	float Timer;
 
@@ -92,8 +90,10 @@ public:
 	void UpdatePlayerStats();
 
 	UFUNCTION()
-		void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+		virtual void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
+	UPROPERTY(EditAnywhere, Category = "TEAM_ID")
+		FGenericTeamId GenericTeamId; // 0 = Player, 1 = chasing character
 
 	// Called to bind functionality to input
 

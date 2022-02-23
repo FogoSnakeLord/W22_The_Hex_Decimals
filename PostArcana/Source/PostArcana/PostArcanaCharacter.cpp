@@ -101,7 +101,7 @@ APostArcanaCharacter::APostArcanaCharacter()
 	Will = 3;
 	Agility = 5;
 	Toughness = 6;
-	
+	GenericTeamId = 0;
 }
 
 void APostArcanaCharacter::BeginPlay()
@@ -369,7 +369,7 @@ bool APostArcanaCharacter::EnableTouchscreenMovement(class UInputComponent* Play
 void APostArcanaCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	DisplayStats();
+	//DisplayStats();
 }
 
 void APostArcanaCharacter::Sprint()

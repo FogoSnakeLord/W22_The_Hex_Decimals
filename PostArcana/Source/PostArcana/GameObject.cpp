@@ -61,7 +61,7 @@ void AGameObject::DisplayStats()
 	GEngine->AddOnScreenDebugMessage(3, .1, FColor::Purple, "ManaRegen - " + FString::FromInt(ManaRegen), true);
 	GEngine->AddOnScreenDebugMessage(4, .1, FColor::Yellow, "BaseMoveSpeed - " + FString::FromInt(BaseMoveSpeed), true);
 	GEngine->AddOnScreenDebugMessage(5, .1, FColor::Orange, "BaseSprintSpeed - " + FString::FromInt(BaseSprintSpeed), true);
-	//GEngine->AddOnScreenDebugMessage(1, .1, FColor::Green, "Health - " + FString::FromInt(Health) + " / " + FString::FromInt(MaxHealth), true);
+	GEngine->AddOnScreenDebugMessage(1, .1, FColor::Green, "Health - " + FString::FromInt(Health) + " / " + FString::FromInt(MaxHealth), true);
 	//GEngine->AddOnScreenDebugMessage(2, .1, FColor::Blue, "Mana - " + FString::FromInt(Mana) + " / " + FString::FromInt(MaxMana), true);
 	//GEngine->AddOnScreenDebugMessage(6, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
 
