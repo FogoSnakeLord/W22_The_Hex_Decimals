@@ -186,5 +186,16 @@ private:
 	void Sprint();
 	void StopSprint();
 
+	void EnduranceUp() { Endurance++; }      
+	void EnduranceDown() { Endurance--; }
+	void IntelUp() { Intelligence++; }
+	void IntelDown() { Intelligence--; }
+	void WillUp() { Will++; }
+	void WillDown() { Will--; }
+	void AgilUp() { Agility++; }
+	void AgilDown() { Agility--; }
+	void ToughUp() { Toughness++; }
+	void ToughDown() { Toughness--; }
+
 };
 

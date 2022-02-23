@@ -168,6 +168,18 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &APostArcanaCharacter::Sprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &APostArcanaCharacter::StopSprint);
+	
+	
+	PlayerInputComponent->BindAction("E+", IE_Released, this, &APostArcanaCharacter::EnduranceUp);
+	PlayerInputComponent->BindAction("E-", IE_Released, this, &APostArcanaCharacter::EnduranceDown);
+	PlayerInputComponent->BindAction("I+", IE_Released, this, &APostArcanaCharacter::IntelUp);
+	PlayerInputComponent->BindAction("I-", IE_Released, this, &APostArcanaCharacter::IntelDown);
+	PlayerInputComponent->BindAction("W+", IE_Released, this, &APostArcanaCharacter::WillUp);
+	PlayerInputComponent->BindAction("W-", IE_Released, this, &APostArcanaCharacter::WillDown);
+	PlayerInputComponent->BindAction("A+", IE_Released, this, &APostArcanaCharacter::AgilUp);
+	PlayerInputComponent->BindAction("A-", IE_Released, this, &APostArcanaCharacter::AgilDown);
+	PlayerInputComponent->BindAction("T+", IE_Released, this, &APostArcanaCharacter::ToughUp);
+	PlayerInputComponent->BindAction("T-", IE_Released, this, &APostArcanaCharacter::ToughDown);
 }
 
 void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
