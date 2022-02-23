@@ -100,7 +100,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perception")
 		class UAIPerceptionStimuliSourceComponent* PlayerPerceptionStimuliSource;
 
-
+	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) override;
 protected:
 	
 	/** Fires a projectile. */
@@ -152,7 +152,9 @@ protected:
 	 * @returns true if touch controls were enabled.
 	 */
 	bool EnableTouchscreenMovement(UInputComponent* InputComponent);
-
+	//To ensure enemies don't instantly kill the player
+	float invincibleTimer;
+	
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -177,7 +179,8 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "Defence")
 		int GetDefence() { return Defence; }
-
+	void SetInvincible();
+	bool CheckInvincible();
 private:
 
 	void Sprint();

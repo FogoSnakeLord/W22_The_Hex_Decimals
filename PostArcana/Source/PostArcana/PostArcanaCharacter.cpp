@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "PostArcanaCharacter.h"
+#include "PostArcanaAICharacter.h"
 #include "PostArcanaProjectile.h"
 #include "Test_DamageBox.h"
 #include "Test_HealBox.h"
@@ -91,6 +92,9 @@ APostArcanaCharacter::APostArcanaCharacter()
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &APostArcanaCharacter::OnBeginOverlap);
 	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &APostArcanaCharacter::OnEndOverlap);
 
+	//OnHit Settup, for taking Damage
+	GetCapsuleComponent()->OnComponentHit.AddDynamic(this, &Super::OnHit);
+
 	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
 	PlayerPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 	PlayerPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
@@ -101,7 +105,12 @@ APostArcanaCharacter::APostArcanaCharacter()
 	Will = 3;
 	Agility = 5;
 	Toughness = 6;
+
+	//Set Team to player Team
 	GenericTeamId = 0;
+
+	//Set Invinsible Timer
+	invincibleTimer = 0.0f;
 }
 
 void APostArcanaCharacter::BeginPlay()
@@ -199,6 +208,26 @@ void APostArcanaCharacter::OnEndOverlap(UPrimitiveComponent* OverlappedComponent
 {
 }
 
+//Allows enemies to damage the player
+void APostArcanaCharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if (!CheckInvincible()) {
+		//store current health
+		int currentHealth = Health;
+		//checks for enemy and damages player accordingly
+		APostArcanaAICharacter* enemy = Cast<APostArcanaAICharacter>(OtherActor);
+		if (enemy != nullptr && (OtherComp != nullptr))
+		{
+			TakeDamage(enemy->GetDamage());
+		}
+		//Passes back to Gameobject for projectile damage
+		Super::OnHit(HitComp, OtherActor, OtherComp, NormalImpulse, Hit);
+		//Checks if the player was damaged, and sets invincible timer if they were
+		if (Health < currentHealth) {
+			SetInvincible();
+		}
+	}
+}
 
 void APostArcanaCharacter::OnFire()
 {
@@ -366,10 +395,35 @@ bool APostArcanaCharacter::EnableTouchscreenMovement(class UInputComponent* Play
 	return false;
 }
 
+void APostArcanaCharacter::SetInvincible()
+{
+	invincibleTimer = 1.0f;
+}
+
+bool APostArcanaCharacter::CheckInvincible()
+{
+	if (invincibleTimer > 0.0f) {
+		return true;
+	}
+	else {
+		return false;
+	}
+	
+}
+
 void APostArcanaCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//Commented for testing enemies
 	//DisplayStats();
+	
+	//Updates Invincible Timer
+	if (invincibleTimer > 0.0f) {
+		invincibleTimer -= DeltaTime;
+		if (invincibleTimer < 0.0f) {
+			invincibleTimer = 0.0f;
+		}
+	}
 }
 
 void APostArcanaCharacter::Sprint()

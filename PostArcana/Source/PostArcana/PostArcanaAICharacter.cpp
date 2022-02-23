@@ -3,7 +3,7 @@
 
 #include "PostArcanaAICharacter.h"
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
-
+#include "PostArcanaCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -22,11 +22,7 @@ APostArcanaAICharacter::APostArcanaAICharacter()
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	// set our turn rates for input
-	BaseTurnRate = 45.f;
-	BaseLookUpRate = 45.f;
-
-	// Don't rotate when the controller rotates. Let that just affect the camera.
+	// Prevents Janky Twitches
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
@@ -37,17 +33,22 @@ APostArcanaAICharacter::APostArcanaAICharacter()
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
 
-	//SetUp for Overlaps
+	//SetUp for On Hit
 	GetCapsuleComponent()->OnComponentHit.AddDynamic(this, &Super::OnHit);
 
+	//Can see and be seen
 	AIPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 	AIPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 
+	//Set Damage Stat
+	Damage = 100+(5*Intelligence);
 }
 
 void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+	//Checks for projectile Damage
 	Super::OnHit(HitComp,OtherActor,OtherComp,NormalImpulse,Hit);
+	//Deletes itself if it's dead
 	if (!CheckAlive()) {
 		this->Destroy();
 	}
@@ -56,61 +57,7 @@ void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAc
 void APostArcanaAICharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//For Testing
 	DisplayStats();
 }
 
-void APostArcanaAICharacter::OnResetVR()
-{
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
-
-void APostArcanaAICharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
-{
-	Jump();
-}
-
-void APostArcanaAICharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
-{
-	StopJumping();
-}
-
-void APostArcanaAICharacter::TurnAtRate(float Rate)
-{
-	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
-}
-
-void APostArcanaAICharacter::LookUpAtRate(float Rate)
-{
-	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
-}
-
-void APostArcanaAICharacter::MoveForward(float Value)
-{
-	if ((Controller != NULL) && (Value != 0.0f))
-	{
-		// find out which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		// get forward vector
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
-	}
-}
-
-void APostArcanaAICharacter::MoveRight(float Value)
-{
-	if ((Controller != NULL) && (Value != 0.0f))
-	{
-		// find out which way is right
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		// get right vector 
-		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-		// add movement in that direction
-		AddMovementInput(Direction, Value);
-	}
-}
