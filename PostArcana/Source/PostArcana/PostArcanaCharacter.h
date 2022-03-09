@@ -181,21 +181,60 @@ public:
 		int GetDefence() { return Defence; }
 	void SetInvincible();
 	bool CheckInvincible();
+
 private:
 
 	void Sprint();
 	void StopSprint();
+	
 
-	void EnduranceUp() { Endurance++; }      
-	void EnduranceDown() { Endurance--; }
-	void IntelUp() { Intelligence++; }
-	void IntelDown() { Intelligence--; }
-	void WillUp() { Will++; }
-	void WillDown() { Will--; }
-	void AgilUp() { Agility++; }
-	void AgilDown() { Agility--; }
-	void ToughUp() { Toughness++; }
-	void ToughDown() { Toughness--; }
+	void CheckforLevelUp();
+
+
+
+//Skill point allocation 
+public:
+	
+	//Level up variables
+	int SpentPoints;
+
+	int ExperiencePoints;
+	int MaxExperiencePoints;
+	int CurrentLevel;
+	int SkillPoints;
+
+	UFUNCTION(BlueprintCallable, Category = "Xp")
+		int GetSkillPoints() { return SkillPoints; }
+
+	UFUNCTION()
+	void EnduranceUp();
+
+	UFUNCTION()
+	void IntelUp();
+
+	UFUNCTION()
+	void WillUp();
+
+	UFUNCTION()
+	void AgilUp();
+
+	UFUNCTION()
+	void ToughUp();
+
+	UFUNCTION()
+	void Respec();
+
+	////DEBUGGING - REMOVE FOR FINAL GAME 
+	//UFUNCTION()
+	//void EnduranceDown() { Endurance--; }
+	//UFUNCTION()
+	//void IntelDown() { Intelligence--; }
+	//UFUNCTION()
+	//void WillDown() { Will--; }
+	//UFUNCTION()
+	//void AgilDown() { Agility--; }
+	//UFUNCTION()
+	//void ToughDown() { Toughness--; }
 
 };
 

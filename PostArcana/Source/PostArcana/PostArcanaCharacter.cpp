@@ -6,6 +6,7 @@
 #include "Test_DamageBox.h"
 #include "Test_HealBox.h"
 #include "Test_ManaBox.h"
+#include "Test_XpBox.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -100,17 +101,29 @@ APostArcanaCharacter::APostArcanaCharacter()
 	PlayerPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 
 	//test
-	Endurance = 1;
-	Intelligence = 2;
-	Will = 3;
-	Agility = 5;
-	Toughness = 6;
+	//Endurance = 1;
+	//Intelligence = 2;
+	//Will = 3;
+	//Agility = 5;
+	//Toughness = 6;
+	//SkillPoints = 0;
+	//SpentPoints = 17;
 
 	//Set Team to player Team
 	GenericTeamId = 0;
 
 	//Set Invinsible Timer
 	invincibleTimer = 0.0f;
+
+	//Starting Values - including Test stats
+
+	CurrentLevel = 1;
+	ExperiencePoints = 0;
+	MaxExperiencePoints =  100 * CurrentLevel;//Make sure lowest level is 1 other wise use -> 100 + (100 * CurrentLevel)
+
+	////Starting Values - not including Test stats
+	SkillPoints = 5;
+	SpentPoints = 0;
 }
 
 void APostArcanaCharacter::BeginPlay()
@@ -169,17 +182,17 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &APostArcanaCharacter::Sprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &APostArcanaCharacter::StopSprint);
 	
-	
-	PlayerInputComponent->BindAction("E+", IE_Released, this, &APostArcanaCharacter::EnduranceUp);
-	PlayerInputComponent->BindAction("E-", IE_Released, this, &APostArcanaCharacter::EnduranceDown);
-	PlayerInputComponent->BindAction("I+", IE_Released, this, &APostArcanaCharacter::IntelUp);
-	PlayerInputComponent->BindAction("I-", IE_Released, this, &APostArcanaCharacter::IntelDown);
-	PlayerInputComponent->BindAction("W+", IE_Released, this, &APostArcanaCharacter::WillUp);
-	PlayerInputComponent->BindAction("W-", IE_Released, this, &APostArcanaCharacter::WillDown);
-	PlayerInputComponent->BindAction("A+", IE_Released, this, &APostArcanaCharacter::AgilUp);
-	PlayerInputComponent->BindAction("A-", IE_Released, this, &APostArcanaCharacter::AgilDown);
-	PlayerInputComponent->BindAction("T+", IE_Released, this, &APostArcanaCharacter::ToughUp);
-	PlayerInputComponent->BindAction("T-", IE_Released, this, &APostArcanaCharacter::ToughDown);
+	//Debugging REMOVE IN ACTUAL GAME 
+	//PlayerInputComponent->BindAction("E+", IE_Released, this, &APostArcanaCharacter::EnduranceUp);
+	//PlayerInputComponent->BindAction("I+", IE_Released, this, &APostArcanaCharacter::IntelUp);
+	//PlayerInputComponent->BindAction("W+", IE_Released, this, &APostArcanaCharacter::WillUp);
+	//PlayerInputComponent->BindAction("A+", IE_Released, this, &APostArcanaCharacter::AgilUp);
+	//PlayerInputComponent->BindAction("T+", IE_Released, this, &APostArcanaCharacter::ToughUp);
+	//PlayerInputComponent->BindAction("E-", IE_Released, this, &APostArcanaCharacter::EnduranceDown);
+	//PlayerInputComponent->BindAction("I-", IE_Released, this, &APostArcanaCharacter::IntelDown);
+	//PlayerInputComponent->BindAction("W-", IE_Released, this, &APostArcanaCharacter::WillDown);
+	//PlayerInputComponent->BindAction("A-", IE_Released, this, &APostArcanaCharacter::AgilDown);
+	//PlayerInputComponent->BindAction("T-", IE_Released, this, &APostArcanaCharacter::ToughDown);
 }
 
 void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -211,6 +224,16 @@ void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedCompone
 			if (ManaBox != nullptr)
 			{
 				GainMana(ManaBox->ManaAmnt);
+			}
+		}
+		//xp box
+		if (OtherActor != nullptr)
+		{
+			ATest_XpBox* XpBox = Cast<ATest_XpBox>(OtherActor);
+
+			if (XpBox != nullptr)
+			{
+				ExperiencePoints += XpBox->XpAmnt;
 			}
 		}
 	}
@@ -436,6 +459,8 @@ void APostArcanaCharacter::Tick(float DeltaTime)
 			invincibleTimer = 0.0f;
 		}
 	}
+
+	CheckforLevelUp();
 }
 
 void APostArcanaCharacter::Sprint()
@@ -446,4 +471,88 @@ void APostArcanaCharacter::Sprint()
 void APostArcanaCharacter::StopSprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
+}
+
+
+void APostArcanaCharacter::CheckforLevelUp()
+{
+	if (ExperiencePoints >= MaxExperiencePoints)
+	{
+		int overFlow = ExperiencePoints - MaxExperiencePoints;
+		CurrentLevel++;
+		MaxExperiencePoints = 100 * CurrentLevel;//Make sure lowest level is 1 other wise use -> 100 + (100 * CurrentLevel)
+		SkillPoints++;
+		ExperiencePoints = 0;
+
+		if (overFlow > 0)
+		{
+			ExperiencePoints = overFlow;
+		}
+	}
+}
+
+//SPRINT 3
+void APostArcanaCharacter::EnduranceUp()
+{
+	if (SkillPoints > 0)
+	{
+		Endurance++;
+		SkillPoints--;
+		SpentPoints++;
+	}
+}
+
+void APostArcanaCharacter::IntelUp()
+{
+	if (SkillPoints > 0)
+	{
+		Intelligence++;
+		SkillPoints--;
+		SpentPoints++;
+	}
+}
+
+void APostArcanaCharacter::WillUp()
+{
+	if (SkillPoints > 0)
+	{
+		Will++;
+		SkillPoints--;
+		SpentPoints++;
+	}
+}
+
+void APostArcanaCharacter::AgilUp()
+{
+	if (SkillPoints > 0)
+	{
+		Agility++;
+		SkillPoints--;
+		SpentPoints++;
+	}
+}
+
+void APostArcanaCharacter::ToughUp()
+{
+	if (SkillPoints > 0)
+	{
+		Toughness++;
+		SkillPoints--;
+		SpentPoints++;
+	}
+}
+
+void APostArcanaCharacter::Respec()
+{
+	if (SpentPoints > 0)
+	{
+		SkillPoints = SpentPoints + SkillPoints;
+		SpentPoints = 0;
+		Endurance = 0;
+		Intelligence = 0;
+		Will = 0;
+		Agility = 0;
+		Toughness = 0;
+
+	}
 }

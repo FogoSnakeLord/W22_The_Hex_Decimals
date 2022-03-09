@@ -9,6 +9,10 @@
 /**
  * 
  */
+
+class UTextBlock;
+class UProgressBar;
+
 UCLASS()
 class POSTARCANA_API UPostArcanaMenu : public UUserWidget
 {
@@ -17,4 +21,18 @@ class POSTARCANA_API UPostArcanaMenu : public UUserWidget
 	virtual bool Initialize() override;
 
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
+
+	UTextBlock* stats;
+	UTextBlock* SPoints;
+	UTextBlock* PlayerLevel;
+	UTextBlock* ExperienceNumbers;
+	UProgressBar* xpBar;
+
+public:
+	bool IsActive;
+
+	void ToggleInput(bool active);
+
+	virtual void NativeConstruct() override;
+
 };

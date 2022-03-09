@@ -76,6 +76,10 @@ void AGameObject::Tick(float DeltaTime)
 	//To update in real time. We will change this to OnLevelUp Eventually;
 	UpdatePlayerStats();
 
+	if (Health > MaxHealth)
+		Health = MaxHealth;
+	if (Mana > MaxMana)
+		Mana = MaxMana;
 }
 
 void AGameObject::UpdatePlayerStats()
