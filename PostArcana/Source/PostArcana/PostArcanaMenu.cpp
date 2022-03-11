@@ -172,10 +172,15 @@ void UPostArcanaMenu::ToggleInput(bool active)
 	{
 		GEngine->AddOnScreenDebugMessage(10, 10, FColor::Emerald, "Is Active", true);
 		character->DisableInput(Cast<APlayerController>(character->GetController()));
+		UButton* EnduranceInc = Cast<UButton>(GetWidgetFromName("EnduranceInc"));
+		//EnduranceInc->SetFocus();
+		EnduranceInc->IsFocusable = true;
+		EnduranceInc->SetUserFocus(Cast<APlayerController>(character->GetController()));
 	}
 	else
 	{
 		character->EnableInput(Cast<APlayerController>(character->GetController()));
 		GEngine->AddOnScreenDebugMessage(10, 10, FColor::Red, "Not Active", true);
+		bIsFocusable = false;
 	}
 }

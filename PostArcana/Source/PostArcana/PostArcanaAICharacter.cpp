@@ -14,6 +14,7 @@
 #include "PostArcanaProjectile.h"
 #include "Perception/AISense_Sight.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
+#include "Kismet/GameplayStatics.h"
 //////////////////////////////////////////////////////////////////////////
 // PostArcanaAICharacter
 
@@ -48,8 +49,22 @@ void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAc
 {
 	//Checks for projectile Damage
 	Super::OnHit(HitComp,OtherActor,OtherComp,NormalImpulse,Hit);
-	//Deletes itself if it's dead
-	if (!CheckAlive()) {
+	//Adds experience to the player and Deletes itself if it's dead 
+	if (!CheckAlive()) 
+	{
+		
+		if (OtherActor != nullptr)
+		{
+			
+			APostArcanaProjectile* spell = Cast<APostArcanaProjectile>(OtherActor); //Make sure the player's spell killed the enemy
+
+			if (spell != nullptr)
+			{
+				APostArcanaCharacter* character = Cast<APostArcanaCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)); //Get player at index 0 -- for single player games this works to grab the player
+				character->ExperiencePoints += 75;//Amount of experience gained
+			}
+		}
+
 		this->Destroy();
 	}
 }

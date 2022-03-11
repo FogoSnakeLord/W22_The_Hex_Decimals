@@ -20,8 +20,9 @@ void APostArcanaPlayerController::BeginPlay()
 		MenuWidget->SetIsEnabled(false);
 		MenuWidget->ToggleInput(false);
 		MenuWidget->SetVisibility(ESlateVisibility::Hidden);
+		SetTickableWhenPaused(true);
+		bShouldPerformFullTickWhenPaused = true;
 	}
-
 }
 
 void APostArcanaPlayerController::SetupInputComponent()
@@ -43,10 +44,12 @@ void APostArcanaPlayerController::MenuToggle()
 		MenuWidget->ToggleInput(false);
 		MenuWidget->SetVisibility(ESlateVisibility::Hidden);
 		
-		//SPRINT 3
+		//Removes character input
 		bEnableMouseOverEvents = false;
 		bShowMouseCursor = false;
 		bEnableClickEvents = false;
+		SetPause(false);
+	
 		FInputModeGameOnly Game;
 		SetInputMode(Game);//without this you have to click back into the game after clicking the menu when mouse is active - may be worth doing an UI one for the menus
 
@@ -56,11 +59,12 @@ void APostArcanaPlayerController::MenuToggle()
 	{
 		MenuWidget->ToggleInput(true);
 	    MenuWidget->SetVisibility(ESlateVisibility::Visible);
-		
-		//SPRINT 3
+		Pause();
+		//Returns Character input
 		bEnableMouseOverEvents = true;
 		bShowMouseCursor = true;
 		bEnableClickEvents = true;
+		
 		FInputModeGameAndUI  Both;
 		SetInputMode(Both); //Needed to allow for seemless interaction with the UI but game also needs to be there to allow for input to close the window
 	}
