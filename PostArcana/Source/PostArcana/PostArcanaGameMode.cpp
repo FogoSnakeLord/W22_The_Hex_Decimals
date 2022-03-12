@@ -1,8 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "PostArcanaGameMode.h"
-#include "PostArcanaHUD.h"
-#include "PostArcanaCharacter.h"
+#include "UI/PostArcanaHUD.h"
+#include "Player/PostArcanaCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
 APostArcanaGameMode::APostArcanaGameMode()

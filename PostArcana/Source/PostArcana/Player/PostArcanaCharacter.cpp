@@ -1,12 +1,12 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "PostArcanaCharacter.h"
-#include "PostArcanaAICharacter.h"
-#include "PostArcanaProjectile.h"
-#include "Test_DamageBox.h"
-#include "Test_HealBox.h"
-#include "Test_ManaBox.h"
-#include "Test_XpBox.h"
+#include "PostArcana/AI/PostArcanaAICharacter.h"
+#include "PostArcana/PostArcanaProjectile.h"
+#include "PostArcana/Test/Test_DamageBox.h"
+#include "PostArcana/Test/Test_HealBox.h"
+#include "PostArcana/Test/Test_ManaBox.h"
+#include "PostArcana/Test/Test_XpBox.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -290,7 +290,7 @@ void APostArcanaCharacter::OnFire()
 				if (spawnedProjectile != nullptr)
 				{
 					//Replace the hard-coded value w/ intelligence stat variable
-					spawnedProjectile->SetDamage(2);
+					spawnedProjectile->SetDamage(Intelligence);
 				}
 
 				UseMana(Cost);
@@ -346,44 +346,6 @@ void APostArcanaCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const F
 	}
 	TouchItem.bIsPressed = false;
 }
-
-//Commenting this section out to be consistent with FPS BP template.
-//This allows the user to turn without using the right virtual joystick
-
-//void APostArcanaCharacter::TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location)
-//{
-//	if ((TouchItem.bIsPressed == true) && (TouchItem.FingerIndex == FingerIndex))
-//	{
-//		if (TouchItem.bIsPressed)
-//		{
-//			if (GetWorld() != nullptr)
-//			{
-//				UGameViewportClient* ViewportClient = GetWorld()->GetGameViewport();
-//				if (ViewportClient != nullptr)
-//				{
-//					FVector MoveDelta = Location - TouchItem.Location;
-//					FVector2D ScreenSize;
-//					ViewportClient->GetViewportSize(ScreenSize);
-//					FVector2D ScaledDelta = FVector2D(MoveDelta.X, MoveDelta.Y) / ScreenSize;
-//					if (FMath::Abs(ScaledDelta.X) >= 4.0 / ScreenSize.X)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.X * BaseTurnRate;
-//						AddControllerYawInput(Value);
-//					}
-//					if (FMath::Abs(ScaledDelta.Y) >= 4.0 / ScreenSize.Y)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.Y * BaseTurnRate;
-//						AddControllerPitchInput(Value);
-//					}
-//					TouchItem.Location = Location;
-//				}
-//				TouchItem.Location = Location;
-//			}
-//		}
-//	}
-//}
 
 void APostArcanaCharacter::MoveForward(float Value)
 {

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameObject.h"
+#include "PostArcana/GameObject.h"
 #include "GenericTeamAgentInterface.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "PostArcanaAICharacter.generated.h"

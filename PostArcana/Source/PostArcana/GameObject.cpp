@@ -11,24 +11,27 @@ AGameObject::AGameObject()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-
+	//Starting stats
 	Endurance = 0;
 	Intelligence = 0;
 	Will = 0;
 	Agility = 0;
 	Toughness = 0;
 
+	//Amount each abstract stat modifies their concrete stat (eg. toughness and defence)
 	ELevelBonus = 25;
 	ILevelBonus = 25;
 	ALevelBonus = 15;
 	TLevelBonus = 5;
 
+	//Sets the base concrete stats
 	BaseMaxHealth =  500;
 	BaseMaxMana = 250;
 	BaseMinMoveSpeed = 500;
 	BaseMaxMoveSpeed =  1200;
 	BaseDefence = 50;
 
+	//sets the concrete stats using the abstract stats
 	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance);
 	MaxMana = BaseMaxMana + (ILevelBonus * Intelligence);
 	ManaRegen = 1 + Will;
@@ -37,11 +40,10 @@ AGameObject::AGameObject()
 	Defence = BaseDefence + (TLevelBonus * Toughness);
 
 	//Stats - Ints were used for easy math and floating point number can be prone to error. We can switch this if the team wants floats.
-	//Max Stats were needed... Totally forgot about that while doing the UML
 	Health = 500;
 	Mana = 200;
 	
-
+	//Sets the alive boolean
 	IsAlive = true;
 
 	//ManaRegenTimer - casues it add the mana regen rate to the mana every second while mana is below max
@@ -56,6 +58,7 @@ void AGameObject::BeginPlay()
 
 }
 
+//Used for debuging, comment out data you don't want
 void AGameObject::DisplayStats()
 {
 	GEngine->AddOnScreenDebugMessage(3, .1, FColor::Purple, "ManaRegen - " + FString::FromInt(ManaRegen), true);

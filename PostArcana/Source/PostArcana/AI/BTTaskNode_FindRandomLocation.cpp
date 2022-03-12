@@ -6,7 +6,7 @@
 #include "NavigationSystem.h"
 #include "AIController.h"
 
-
+//Finds a random location in a given radius
 UBTTaskNode_FindRandomLocation::UBTTaskNode_FindRandomLocation(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {

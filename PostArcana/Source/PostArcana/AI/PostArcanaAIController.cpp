@@ -5,9 +5,9 @@
 
 #include "DrawDebugHelpers.h"
 #include "BehaviorTree/BehaviorTree.h"
-#include "PostArcana.h"
+#include "PostArcana/PostArcana.h"
 #include "PostArcanaAICharacter.h"
-#include "PostArcanaCharacter.h"
+#include "PostArcana/Player/PostArcanaCharacter.h"
 
 APostArcanaAIController::APostArcanaAIController()
 {
@@ -33,6 +33,7 @@ APostArcanaAIController::APostArcanaAIController()
 
     //Update perception
 	PerceptionComponent->OnPerceptionUpdated.AddDynamic(this, &APostArcanaAIController::OnPerceptionUpdated);
+    //Set the team
 	SetGenericTeamId(FGenericTeamId(5));
 }
 
@@ -58,51 +59,32 @@ void APostArcanaAIController::OnTargetPerceptionUpdate(AActor* Actor, FAIStimulu
 }
 void APostArcanaAIController::OnPerceptionUpdated(const TArray<AActor*>& UpdatedActors)
 {
-
+    //Check for perception component
     if (PerceptionComponent)
     {
+        //make a list for the actors that are seen, and set canSeePlayer to false
         TArray<AActor*> PercievedActors;
         PerceptionComponent->GetCurrentlyPerceivedActors(UAISense_Sight::StaticClass(), PercievedActors);//OR GetKnownPerceivedActors(...) GetCurrentlyPerceivedActors(....)
         bCanSeePlayer = false;
 
+        //If you can't see any actors keep it false
         if (PercievedActors.Num() == 0)
         {
-            /*DrawDebugCone(
-                GetWorld(),
-                GetPawn()->GetActorLocation(),
-                -GetPawn()->GetActorForwardVector(),
-                SightConfig->LoseSightRadius,
-                FMath::DegreesToRadians(SightConfig->PeripheralVisionAngleDegrees),
-                10.0f,
-                100.0f,
-                FColor::Green,
-                false,
-                2.0f
-            );*/
             bCanSeePlayer = false;
         }
+        //if you can see actors, move forward
         else
         {
-
+            //cycle through the percieved actors
             for (auto& Actor : PercievedActors)
             {
+                //try to cast the actor as a player
                 APostArcanaCharacter* CharacterPerceived = Cast<APostArcanaCharacter>(Actor);
+                //if it can be cast as a player, and that player is the correct team ID, set CanSeePlayer to true
                 if (CharacterPerceived)
                 {
                     if (CharacterPerceived->GenericTeamId == 0)
                     {
-                        /*DrawDebugCone(
-                            GetWorld(),
-                            GetPawn()->GetActorLocation(),
-                            -GetPawn()->GetActorForwardVector(),
-                            SightConfig->LoseSightRadius,
-                            FMath::DegreesToRadians(SightConfig->PeripheralVisionAngleDegrees),
-                            10.0f,
-                            100.0f,
-                            FColor::Red,
-                            false,
-                            2.0f
-                        );*/
                         bCanSeePlayer = true;
                     }
                 }

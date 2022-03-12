@@ -3,7 +3,7 @@
 
 #include "PostArcanaAICharacter.h"
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
-#include "PostArcanaCharacter.h"
+#include "PostArcana/Player/PostArcanaCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -11,7 +11,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-#include "PostArcanaProjectile.h"
+#include "PostArcana/PostArcanaProjectile.h"
 #include "Perception/AISense_Sight.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Kismet/GameplayStatics.h"
@@ -52,7 +52,7 @@ void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAc
 	//Adds experience to the player and Deletes itself if it's dead 
 	if (!CheckAlive()) 
 	{
-		
+		//Checks for OtherActor
 		if (OtherActor != nullptr)
 		{
 			

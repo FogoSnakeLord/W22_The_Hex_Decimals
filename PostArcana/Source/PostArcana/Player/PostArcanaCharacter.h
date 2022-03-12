@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GenericTeamAgentInterface.h"
 #include "GameFramework/Character.h"
-#include "GameObject.h"
+#include "PostArcana/GameObject.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "PostArcanaCharacter.generated.h"
 

@@ -72,5 +72,5 @@ float APostArcanaProjectile::GetDamage()
 
 void APostArcanaProjectile::SetDamage(int intelligence)
 {
-	Damage = intelligence * 50.0f;
+	Damage = (2+intelligence) * 50.0f;
 }

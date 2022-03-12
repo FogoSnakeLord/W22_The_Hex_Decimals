@@ -4,7 +4,7 @@
 #include "BTDecorator_CheckBool.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
-
+//This translates a Blackboard compenent to a decorator, specifically the CanSeePlayer Blackboard component
 UBTDecorator_CheckBool::UBTDecorator_CheckBool(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {

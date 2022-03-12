@@ -2,7 +2,7 @@
 
 
 #include "PostArcanaPlayerController.h"
-#include "PostArcanaMenu.h"
+#include "PostArcana/UI/PostArcanaMenu.h"
 #include "PostArcanaCharacter.h"
 
 void APostArcanaPlayerController::BeginPlay()

@@ -2,7 +2,7 @@
 
 
 #include "PostArcanaMenu.h"
-#include "PostArcanaCharacter.h"
+#include "PostArcana/Player/PostArcanaCharacter.h"
 #include "Components/Image.h"
 #include "Components/TextBlock.h"
 #include "Components/ProgressBar.h"

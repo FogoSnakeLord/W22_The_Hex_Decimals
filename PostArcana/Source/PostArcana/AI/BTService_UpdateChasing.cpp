@@ -6,7 +6,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 
-
+//Updates CanSeePlayer in the blackboard
 UBTService_UpdateChasing::UBTService_UpdateChasing(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
@@ -71,7 +71,7 @@ void UBTService_UpdateChasing::TickNode(UBehaviorTreeComponent& OwnerComp, uint8
 		return;
 	}
 
-	//sets the CanSeePlayer key on the BlackBoard
+	//sets the CanSeePlayer key on the BlackBoard Using the AI controller
 	BlackboardComp->SetValueAsBool(CanSeePlayerKey.SelectedKeyName, PostArcanaAIController->bCanSeePlayer);
 
 
