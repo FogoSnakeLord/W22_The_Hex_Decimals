@@ -1,5 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+//Author 1: Sebastian Comette
+//Change Log: Feb 2nd 2022
+			//Game Object Class, and all stats created with a debug message to display them
+//Change Log: Feb 12th 2022
+			//Adding algortihms for stat calculations and how they would scale with current stat level
+			//Made Stats changable inside the editor  
+//Change Log: March 9th 2022
+			//Set up functionality to lower current health and mana if skill points are reset
 
 
 #include "GameObject.h"

@@ -1,4 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+//Space for Danylo (Author 1)
+
+//Author 2: Sebastian Comette
+//Change Log: March 9th 2022
+			  //Added a level up system to the menu, including skill points, experience, and removed buttons to allocate skill points.
+//Change Log: March 11th 2022
+			  //Added Controller input and set focus to the first button on the menu.
 
 #pragma once
 
@@ -31,8 +38,10 @@ class POSTARCANA_API UPostArcanaMenu : public UUserWidget
 public:
 	bool IsActive;
 
+	//Toggles the input while menu is open
 	void ToggleInput(bool active);
 
+	//Used to Set up the buttons to allocate skill points
 	virtual void NativeConstruct() override;
 
 };

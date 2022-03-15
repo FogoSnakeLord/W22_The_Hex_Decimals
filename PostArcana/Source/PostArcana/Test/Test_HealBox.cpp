@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+//Change Log: Feb 2nd 2022
+			//Set up Heal box to test healing 
 
 #include "Test_HealBox.h"
 #include "Components/BoxComponent.h"

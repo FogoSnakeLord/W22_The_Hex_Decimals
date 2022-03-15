@@ -1,4 +1,13 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
+//Author 1: Sebastian Comette
+//Change Log: Feb 2nd 2022
+			//Sprint Functionality set up. Added interaction between test box classes for testing stat changes
+//Change Log: Feb 12th 2022
+			//Added a tick function
+//Change Log: Feb 23rd 2022
+			//Added buttons to test raising stats
+//Change Log: March 9th 2022
+			//Set up level up functionality, experience points, and skill point allocations
 
 #include "PostArcanaCharacter.h"
 #include "PostArcana/AI/PostArcanaAICharacter.h"
@@ -182,17 +191,6 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &APostArcanaCharacter::Sprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &APostArcanaCharacter::StopSprint);
 	
-	//Debugging REMOVE IN ACTUAL GAME 
-	//PlayerInputComponent->BindAction("E+", IE_Released, this, &APostArcanaCharacter::EnduranceUp);
-	//PlayerInputComponent->BindAction("I+", IE_Released, this, &APostArcanaCharacter::IntelUp);
-	//PlayerInputComponent->BindAction("W+", IE_Released, this, &APostArcanaCharacter::WillUp);
-	//PlayerInputComponent->BindAction("A+", IE_Released, this, &APostArcanaCharacter::AgilUp);
-	//PlayerInputComponent->BindAction("T+", IE_Released, this, &APostArcanaCharacter::ToughUp);
-	//PlayerInputComponent->BindAction("E-", IE_Released, this, &APostArcanaCharacter::EnduranceDown);
-	//PlayerInputComponent->BindAction("I-", IE_Released, this, &APostArcanaCharacter::IntelDown);
-	//PlayerInputComponent->BindAction("W-", IE_Released, this, &APostArcanaCharacter::WillDown);
-	//PlayerInputComponent->BindAction("A-", IE_Released, this, &APostArcanaCharacter::AgilDown);
-	//PlayerInputComponent->BindAction("T-", IE_Released, this, &APostArcanaCharacter::ToughDown);
 }
 
 void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

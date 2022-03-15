@@ -1,4 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
+// Author 1: Sebatian Comette
+//Change Log: Feb 18th 2022
+			//Set up hud to show the players health, mana, and defence
+//Change Log: Feb 23rd 2022
+			  //Added animations to the health and mana bar in blueprints.
+
 
 #include "PostArcanaHUD.h"
 #include "Engine/Canvas.h"

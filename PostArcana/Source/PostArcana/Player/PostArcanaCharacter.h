@@ -1,4 +1,13 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
+//Author 1: Sebastian Comette
+//Change Log: Feb 2nd 2022
+			//Sprint Functionality set up. Added interaction between test box classes for testing stat changes
+//Change Log: Feb 12th 2022
+			//Added a tick function
+//Change Log: Feb 23rd 2022
+			//Added buttons to test raising stats
+//Change Log: March 9th 2022
+			//Set up level up functionality, experience points, and skill point allocations
 
 #pragma once
 

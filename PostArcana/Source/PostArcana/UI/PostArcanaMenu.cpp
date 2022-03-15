@@ -1,5 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+//Author 2: Sebastian Comette
+//Change Log: March 9th 2022
+			  //Added a level up system to the menu, including skill points, experience, and buttons to allocate skill points.
+//Change Log: March 11th 2022
+			  //Added Controller input and set focus to the first button on the menu.
 
 #include "PostArcanaMenu.h"
 #include "PostArcana/Player/PostArcanaCharacter.h"
@@ -17,7 +22,7 @@ bool UPostArcanaMenu::Initialize()
 		return false;
 	}
 
-
+	//Set up experince progress bar and stat text block
 	xpBar = Cast<UProgressBar>(GetWidgetFromName("XpBar"));
 	stats = Cast<UTextBlock>(GetWidgetFromName("Stats"));
 	return true;
@@ -33,7 +38,7 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 		return;
 	}
 
-	//Displays the player's stats in a block of text
+	//Updates the player's stats in a block of text
 	stats = Cast<UTextBlock>(GetWidgetFromName("Stats"));
 	if (stats)
 	{   
@@ -41,7 +46,7 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 		character->GetEndurance(), character->GetIntelligence(), character->GetWill(), character->GetAgility(), character->GetToughness())));
 	}
 
-	//Displays the player's xp progress
+	//Updates the player's xp progress
 	xpBar = Cast<UProgressBar>(GetWidgetFromName("XpBar"));
 	if (xpBar)
 	{
@@ -50,7 +55,7 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 		xpBar->SetPercent(xp / Maxxp);
 	}
 
-	//Displays the player's skill points in a block of text
+	//Updates the player's skill points in a block of text
 	SPoints = Cast<UTextBlock>(GetWidgetFromName("SkillPoints"));
 	if (SPoints)
 	{
@@ -58,6 +63,7 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 			character->SkillPoints)));
 	}
 
+	//Updates the amount of experince the player has in a text block
 	ExperienceNumbers = Cast<UTextBlock>(GetWidgetFromName("XPBarText"));
 	if (ExperienceNumbers)
 	{
@@ -65,7 +71,7 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 			character->ExperiencePoints, character->MaxExperiencePoints)));
 	}
 
-	//Displays current level
+	//Updates current level
 	PlayerLevel = Cast<UTextBlock>(GetWidgetFromName("Level"));
 	if (PlayerLevel)
 	{
@@ -75,11 +81,12 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 }
 
 
-//SPRINT 3
+//Used at start to construct the menu
 void UPostArcanaMenu::NativeConstruct()
 {
 	Super::NativeConstruct();
 
+	//Get the owning player and make sure it is not a nullptr
 	APostArcanaCharacter* character = Cast<APostArcanaCharacter>(GetOwningPlayerPawn());
 	if (character == nullptr)
 	{
@@ -95,7 +102,7 @@ void UPostArcanaMenu::NativeConstruct()
 
 
 
-	//SPRINT 3
+	//Buttons used for skill point allocation 
 	UButton* EnduranceInc = Cast<UButton>(GetWidgetFromName("EnduranceInc"));
 	EnduranceInc->OnClicked.AddDynamic(character, &APostArcanaCharacter::EnduranceUp);
 
@@ -154,6 +161,7 @@ void UPostArcanaMenu::NativeConstruct()
 			character->CurrentLevel)));
 	}
 	
+	//Displays the amount of experince the player has in a text block
 	ExperienceNumbers = Cast<UTextBlock>(GetWidgetFromName("XPBarText"));
 	if (ExperienceNumbers)
 	{
@@ -163,7 +171,7 @@ void UPostArcanaMenu::NativeConstruct()
 
 }
 
-//SPRINT 3
+//Removes player input while the menu is open, allowing interaction with the menu
 void UPostArcanaMenu::ToggleInput(bool active)
 {
 	APostArcanaCharacter* character = Cast<APostArcanaCharacter>(GetOwningPlayerPawn());
@@ -173,7 +181,6 @@ void UPostArcanaMenu::ToggleInput(bool active)
 		GEngine->AddOnScreenDebugMessage(10, 10, FColor::Emerald, "Is Active", true);
 		character->DisableInput(Cast<APlayerController>(character->GetController()));
 		UButton* EnduranceInc = Cast<UButton>(GetWidgetFromName("EnduranceInc"));
-		//EnduranceInc->SetFocus();
 		EnduranceInc->IsFocusable = true;
 		EnduranceInc->SetUserFocus(Cast<APlayerController>(character->GetController()));
 	}
