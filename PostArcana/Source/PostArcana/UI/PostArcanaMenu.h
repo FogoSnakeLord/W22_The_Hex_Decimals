@@ -29,6 +29,7 @@ class POSTARCANA_API UPostArcanaMenu : public UUserWidget
 
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
 
+	//Menu sections
 	UTextBlock* stats;
 	UTextBlock* SPoints;
 	UTextBlock* PlayerLevel;

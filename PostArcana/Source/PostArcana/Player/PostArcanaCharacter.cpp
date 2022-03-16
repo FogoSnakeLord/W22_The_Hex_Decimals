@@ -109,14 +109,6 @@ APostArcanaCharacter::APostArcanaCharacter()
 	PlayerPerceptionStimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("PercSS"));
 	PlayerPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 
-	//test
-	//Endurance = 1;
-	//Intelligence = 2;
-	//Will = 3;
-	//Agility = 5;
-	//Toughness = 6;
-	//SkillPoints = 0;
-	//SpentPoints = 17;
 
 	//Set Team to player Team
 	GenericTeamId = 0;
@@ -126,9 +118,10 @@ APostArcanaCharacter::APostArcanaCharacter()
 
 	//Starting Values - including Test stats
 
+	//Starting variables for level system
 	CurrentLevel = 1;
 	ExperiencePoints = 0;
-	MaxExperiencePoints =  100 * CurrentLevel;//Make sure lowest level is 1 other wise use -> 100 + (100 * CurrentLevel)
+	MaxExperiencePoints =  100 * CurrentLevel;//Make sure lowest level is 1 otherwise use -> 100 + (100 * CurrentLevel)
 
 	////Starting Values - not including Test stats
 	SkillPoints = 5;
@@ -188,6 +181,8 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &APostArcanaCharacter::LookUpAtRate);
 
+
+	//Bing Sprint events to 'left shift'
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &APostArcanaCharacter::Sprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &APostArcanaCharacter::StopSprint);
 	
@@ -195,43 +190,50 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 
 void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	//This function handles any begin overlap function on the player
+	//This is currently used for interaction with the test boxes
+
+	//If the player is alive
 	if (CheckAlive())
 	{
+		//Damage box response 
 		if (OtherActor != nullptr)
 		{
 			ATest_DamageBox* DmgBox = Cast<ATest_DamageBox>(OtherActor);
 
 			if (DmgBox != nullptr)
 			{
-				TakeDamage(DmgBox->DMG);
+				TakeDamage(DmgBox->DMG); //takes damage
 			}
 		}
+		//Heal box response 
 		if (OtherActor != nullptr)
 		{
 			ATest_HealBox* HealBox = Cast<ATest_HealBox>(OtherActor);
 
 			if (HealBox != nullptr)
 			{
-				Heal(HealBox->HealAmnt);
+				Heal(HealBox->HealAmnt); //heals 
 			}
 		}
+		//Mana box response 
 		if (OtherActor != nullptr)
 		{
 			ATest_ManaBox* ManaBox = Cast<ATest_ManaBox>(OtherActor);
 
 			if (ManaBox != nullptr)
 			{
-				GainMana(ManaBox->ManaAmnt);
+				GainMana(ManaBox->ManaAmnt); //replens mana
 			}
 		}
-		//xp box
+		//xp box response 
 		if (OtherActor != nullptr)
 		{
 			ATest_XpBox* XpBox = Cast<ATest_XpBox>(OtherActor);
 
 			if (XpBox != nullptr)
 			{
-				ExperiencePoints += XpBox->XpAmnt;
+				ExperiencePoints += XpBox->XpAmnt; //Give experience points 
 			}
 		}
 	}
@@ -419,26 +421,28 @@ void APostArcanaCharacter::Tick(float DeltaTime)
 			invincibleTimer = 0.0f;
 		}
 	}
-
+	//Checking for level up
 	CheckforLevelUp();
 }
 
+//Makes the characters movement speed increase while sprint button is down
 void APostArcanaCharacter::Sprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = BaseSprintSpeed;
 }
 
+//Returns character to normal movement when the sprint button is released
 void APostArcanaCharacter::StopSprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = BaseMoveSpeed;
 }
 
-
+//Handles player level up when the player has the required experience points
 void APostArcanaCharacter::CheckforLevelUp()
 {
 	if (ExperiencePoints >= MaxExperiencePoints)
 	{
-		int overFlow = ExperiencePoints - MaxExperiencePoints;
+		int overFlow = ExperiencePoints - MaxExperiencePoints; //If the player gets more experience than needed for level up it saves the over flow
 		CurrentLevel++;
 		MaxExperiencePoints = 100 * CurrentLevel;//Make sure lowest level is 1 other wise use -> 100 + (100 * CurrentLevel)
 		SkillPoints++;
@@ -446,12 +450,12 @@ void APostArcanaCharacter::CheckforLevelUp()
 
 		if (overFlow > 0)
 		{
-			ExperiencePoints = overFlow;
+			ExperiencePoints = overFlow; //Over flow is added to the next level. 
 		}
 	}
 }
 
-//SPRINT 3
+//If the player has a skill point these functions allocate the skill point. Remove it from current skill points, and add 1 to spent skill points
 void APostArcanaCharacter::EnduranceUp()
 {
 	if (SkillPoints > 0)
@@ -502,6 +506,9 @@ void APostArcanaCharacter::ToughUp()
 	}
 }
 
+
+//Take the players spent skill points and current skill points adds them together and then resets all stats to 0
+//In most games with respecing this does not reset the level as the player still has the number of skill points they would normally have at the current level
 void APostArcanaCharacter::Respec()
 {
 	if (SpentPoints > 0)

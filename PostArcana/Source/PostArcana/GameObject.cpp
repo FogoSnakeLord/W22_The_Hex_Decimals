@@ -68,12 +68,11 @@ void AGameObject::BeginPlay()
 //Used for debuging, comment out data you don't want
 void AGameObject::DisplayStats()
 {
+	//Displays stats that are not reflected by the hud - used for development - REMOVE ON FINAL RELEASE 
 	GEngine->AddOnScreenDebugMessage(3, .1, FColor::Purple, "ManaRegen - " + FString::FromInt(ManaRegen), true);
 	GEngine->AddOnScreenDebugMessage(4, .1, FColor::Yellow, "BaseMoveSpeed - " + FString::FromInt(BaseMoveSpeed), true);
 	GEngine->AddOnScreenDebugMessage(5, .1, FColor::Orange, "BaseSprintSpeed - " + FString::FromInt(BaseSprintSpeed), true);
 	GEngine->AddOnScreenDebugMessage(1, .1, FColor::Green, "Health - " + FString::FromInt(Health) + " / " + FString::FromInt(MaxHealth), true);
-	//GEngine->AddOnScreenDebugMessage(2, .1, FColor::Blue, "Mana - " + FString::FromInt(Mana) + " / " + FString::FromInt(MaxMana), true);
-	//GEngine->AddOnScreenDebugMessage(6, .1, FColor::Red, "Defence - " + FString::FromInt(Defence), true);
 
 }
 
@@ -81,11 +80,14 @@ void AGameObject::DisplayStats()
 void AGameObject::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	//Timer for mana regen. Regen only happens once a second
 	RegenMana(DeltaTime);
 
 	//To update in real time. We will change this to OnLevelUp Eventually;
 	UpdatePlayerStats();
 
+	//Clamp health and mana to not go over the max. Helpful for respecing at full health 
 	if (Health > MaxHealth)
 		Health = MaxHealth;
 	if (Mana > MaxMana)
@@ -94,7 +96,9 @@ void AGameObject::Tick(float DeltaTime)
 
 void AGameObject::UpdatePlayerStats()
 {
-	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance);
+	//Player stat alogirthms calculating the weight of each stat
+	//Built to allow for stats to start at zero
+	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance); 
 	MaxMana = BaseMaxMana + (ILevelBonus * Intelligence);
 	ManaRegen = 1 + Will;
 	BaseMoveSpeed = BaseMinMoveSpeed + (ALevelBonus * Agility);
@@ -106,7 +110,8 @@ void AGameObject::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 {
 	if (IsAlive == false)
 		return;
-
+	
+	//Makes the object take damage based on the power of the projectile it was hit by
 	APostArcanaProjectile* projectile = Cast<APostArcanaProjectile>(OtherActor);
 	if (projectile != nullptr && (OtherComp != nullptr) && OtherActor != this)
 	{
@@ -114,18 +119,20 @@ void AGameObject::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 	}
 }
 
-void AGameObject::TakeDamage(int Dmg) //TO TEST
+void AGameObject::TakeDamage(int Dmg) 
 {
+	//Calculates the amount of true damage taken. True damage represents what is left over after subtracting defence from the damge.
 	if (IsAlive)
 	{
 		int TrueDmg = (Dmg - Defence);
 		if(TrueDmg > 0)
 		Health -= TrueDmg;
-		CheckAlive();
+		CheckAlive(); //Ensure the player has not died
 	}
 }
 
-void AGameObject::Heal(int HealAmnt) //TO TEST
+//Heals the object while clamping the health to not go over the current maximum health
+void AGameObject::Heal(int HealAmnt) 
 {
 	if (IsAlive && Health < MaxHealth)
 	{
@@ -137,7 +144,8 @@ void AGameObject::Heal(int HealAmnt) //TO TEST
 	}
 }
 
-void AGameObject::UseMana(int Cost) //TO TEST
+//Subtracts mana based on the cost of the spell
+void AGameObject::UseMana(int Cost) 
 {
 	if (IsAlive)
 	{
@@ -148,18 +156,19 @@ void AGameObject::UseMana(int Cost) //TO TEST
 	}
 }
 
-void AGameObject::RegenMana(float DeltaTime) //Test and is Working
+//Regens Mana every second 
+void AGameObject::RegenMana(float DeltaTime) 
 {
 	Timer += DeltaTime;
 	if (IsAlive)
 	{
 		if (Mana < MaxMana)
 		{
-			if (Timer >= 1)
+			if (Timer >= 1) //Triggered once every second 
 			{
-				Timer = 0;
+				Timer = 0; //Resets the timer
 				Mana += ManaRegen;
-				if (Mana > MaxMana)
+				if (Mana > MaxMana) //Clamps
 				{
 					Mana = MaxMana;
 				}
@@ -168,6 +177,7 @@ void AGameObject::RegenMana(float DeltaTime) //Test and is Working
 	}
 }
 
+//Replens the objects mana while clamping it to stay below the current maximum mana 
 void AGameObject::GainMana(int ManaAmnt)
 {
 	if (IsAlive && Mana < MaxMana)
@@ -180,7 +190,8 @@ void AGameObject::GainMana(int ManaAmnt)
 	}
 }
 
-bool AGameObject::CheckAlive() //TO TEST
+//Check if the player is alive - Still need a death condition 
+bool AGameObject::CheckAlive()
 {
 	if (Health <= 0)
 	{

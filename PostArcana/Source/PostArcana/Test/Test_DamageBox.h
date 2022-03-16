@@ -32,6 +32,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//Base amount - can be set in the editor for multiple tests at different values 
 	UPROPERTY(EditAnywhere, Category = Damage)
 		int DMG = 10;
 };

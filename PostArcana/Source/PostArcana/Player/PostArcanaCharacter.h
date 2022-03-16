@@ -99,6 +99,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint8 bUsingMotionControllers : 1;
 
+	//Allows begining and ending overlap events to be triggered 
 	UFUNCTION()
 		void OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
@@ -109,6 +110,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Perception")
 		class UAIPerceptionStimuliSourceComponent* PlayerPerceptionStimuliSource;
 
+	//Allows on hit events to be triggered
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) override;
 protected:
 	
@@ -193,10 +195,11 @@ public:
 
 private:
 
+	//increases the players speed while the shift key is held
 	void Sprint();
 	void StopSprint();
 	
-
+	//Checks to see if the player has enough experience to level up
 	void CheckforLevelUp();
 
 
@@ -205,16 +208,18 @@ private:
 public:
 	
 	//Level up variables
-	int SpentPoints;
+	int SpentPoints; //Spent Skill points
+	int ExperiencePoints; //Current Experience points
+	int MaxExperiencePoints; //Experience needed to level up
+	int CurrentLevel; //The players current level
+	int SkillPoints; //The players unspent skill points obtained on level up
 
-	int ExperiencePoints;
-	int MaxExperiencePoints;
-	int CurrentLevel;
-	int SkillPoints;
-
+	//Check the number of skill point. Menu call
 	UFUNCTION(BlueprintCallable, Category = "Xp")
 		int GetSkillPoints() { return SkillPoints; }
 
+
+	//Functions that increase a stat by allocating a skill point to that stat.
 	UFUNCTION()
 	void EnduranceUp();
 
@@ -230,20 +235,11 @@ public:
 	UFUNCTION()
 	void ToughUp();
 
+	//Allows the player to reset all stat levels and get back any spent skill points 
 	UFUNCTION()
 	void Respec();
 
-	////DEBUGGING - REMOVE FOR FINAL GAME 
-	//UFUNCTION()
-	//void EnduranceDown() { Endurance--; }
-	//UFUNCTION()
-	//void IntelDown() { Intelligence--; }
-	//UFUNCTION()
-	//void WillDown() { Will--; }
-	//UFUNCTION()
-	//void AgilDown() { Agility--; }
-	//UFUNCTION()
-	//void ToughDown() { Toughness--; }
+
 
 };
 

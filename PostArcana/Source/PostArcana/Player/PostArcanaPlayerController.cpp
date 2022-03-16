@@ -17,11 +17,13 @@ void APostArcanaPlayerController::BeginPlay()
 		MenuWidget = CreateWidget<UPostArcanaMenu>(this, MenuBP);
 		MenuWidget->AddToViewport();
 		
-		//SPRINT 3
+		//Sets the Stat menu to not be active on start
 		EMouseCursor::Default;
 		MenuWidget->SetIsEnabled(false);
 		MenuWidget->ToggleInput(false);
 		MenuWidget->SetVisibility(ESlateVisibility::Hidden);
+		
+		//Allows for menu input while the game is paused
 		SetTickableWhenPaused(true);
 		bShouldPerformFullTickWhenPaused = true;
 	}
@@ -30,43 +32,50 @@ void APostArcanaPlayerController::BeginPlay()
 void APostArcanaPlayerController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
+
+	//Bind 'k' to open the menu
 	if (InputComponent != nullptr)
 	{
 		InputComponent->BindAction("MenuToggle", IE_Pressed, this, &APostArcanaPlayerController::MenuToggle);
 	}
 }
 
-//SPRINT 3
+//Opens and closes the stat menu
 void APostArcanaPlayerController::MenuToggle()
 {
 	MenuWidget->SetIsEnabled(!MenuWidget->bIsEnabled);
 
-	if (MenuWidget->bIsEnabled == false)
+	if (MenuWidget->bIsEnabled == false) //Closes the menu
 	{
+		//Removes the menu from view
 		MenuWidget->ToggleInput(false);
 		MenuWidget->SetVisibility(ESlateVisibility::Hidden);
 		
-		//Removes character input
+		//disbale mouse input and unpauses the game
 		bEnableMouseOverEvents = false;
 		bShowMouseCursor = false;
 		bEnableClickEvents = false;
 		SetPause(false);
-	
+		
+		//Allows for game input and not menu input
 		FInputModeGameOnly Game;
 		SetInputMode(Game);//without this you have to click back into the game after clicking the menu when mouse is active - may be worth doing an UI one for the menus
 
 
 	}
-	else
+	else //Opens the menu
 	{
+
 		MenuWidget->ToggleInput(true);
 	    MenuWidget->SetVisibility(ESlateVisibility::Visible);
+		
+		//Pauses the game on menu open
 		Pause();
-		//Returns Character input
+		
+		//Allows for menu input with the mouse
 		bEnableMouseOverEvents = true;
 		bShowMouseCursor = true;
 		bEnableClickEvents = true;
-		
 		FInputModeGameAndUI  Both;
 		SetInputMode(Both); //Needed to allow for seemless interaction with the UI but game also needs to be there to allow for input to close the window
 	}

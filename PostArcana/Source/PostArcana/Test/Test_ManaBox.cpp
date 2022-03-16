@@ -13,6 +13,8 @@ ATest_ManaBox::ATest_ManaBox()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//Set up collision box that acts as a trigger 
+	//Text boxes are added in the editor
 	BoxComponent = CreateDefaultSubobject<UBoxComponent>("Collision Box");
 	BoxComponent->SetBoxExtent(FVector(60, 60, 120));
 	BoxComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);

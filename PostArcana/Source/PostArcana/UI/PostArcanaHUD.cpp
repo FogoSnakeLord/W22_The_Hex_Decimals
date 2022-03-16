@@ -43,6 +43,7 @@ void APostArcanaHUD::DrawHUD()
 
 void APostArcanaHUD::BeginPlay()
 {
+	//Creation of the PlayerGui
 	PlayerGui = CreateWidget<UUserWidget>(GetGameInstance(), PlayerGuiClass);
 	PlayerGui->AddToViewport();
 }

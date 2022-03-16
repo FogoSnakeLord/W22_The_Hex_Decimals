@@ -32,6 +32,7 @@ void UPostArcanaMenu::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 {
 	Super::NativeTick(MyGeometry, InDeltaTime);
 
+	//Ensure there is a player
 	APostArcanaCharacter* character = Cast<APostArcanaCharacter>(GetOwningPlayerPawn());
 	if (character == nullptr)
 	{

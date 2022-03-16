@@ -30,10 +30,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	//For Stat Debugging while there is no HUD
+	//For Stat Debugging things that are not displayed in the HUD. Health is included as a double check
 	void DisplayStats();
+	
 	//Stats - by making these a uproperty with these parameters you can change the stats of a gameobject in the editor. 
-		 //You will find the stats under the stat catagory. If you need more info please let me know and i can show you where.
+	
+	//You will find the stats under the GameStats catagory.
 	UPROPERTY(EditAnywhere, Category = GameStats)
 		int Health;
 	UPROPERTY(EditAnywhere, Category = GameStats)
@@ -63,7 +65,7 @@ protected:
 	UPROPERTY(EditAnywhere, Category = PlayerStats)
 		int Toughness;
 
-	//Level up bonus
+	//Level up bonus - how much the stat is altered on level up
 	UPROPERTY(EditAnywhere, Category = LevelBonus)
 		int ELevelBonus;
 	UPROPERTY(EditAnywhere, Category = LevelBonus)
@@ -73,7 +75,7 @@ protected:
 	UPROPERTY(EditAnywhere, Category = LevelBonus)
 		int TLevelBonus;
 
-	//Base Stat
+	//Base/Starting Stats
 	UPROPERTY(EditAnywhere, Category = BaseStat)
 		int BaseMaxHealth;
 	UPROPERTY(EditAnywhere, Category = BaseStat)
@@ -89,14 +91,16 @@ protected:
 
 	
 	bool IsAlive;
-	float Timer;
+	float Timer; //Mana regen timer
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//Updates the stats 
 	void UpdatePlayerStats();
 
+	//For taking damge 
 	UFUNCTION()
 		virtual void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
@@ -105,18 +109,21 @@ public:
 
 	// Called to bind functionality to input
 
+	//Stat getters 
 	int GetEndurance() const    { return Endurance; }
 	int GetIntelligence() const { return Intelligence; }
 	int GetWill() const         { return Will; }
 	int GetAgility() const      { return Agility; }
 	int GetToughness() const    { return Toughness; }
 
-	void TakeDamage(int Dmg);
-	void Heal(int HealAmnt);
-	void UseMana(int Cost);
-	void RegenMana(float DeltaTime);
-	void GainMana(int ManaAmnt);
+	//Stat use cases 
+	void TakeDamage(int Dmg); //Takes away from the players health using true damage
+	void Heal(int HealAmnt); //Heals the object
+	void UseMana(int Cost);  //decreases current mana 
+	void RegenMana(float DeltaTime); //Regens mana every second
+	void GainMana(int ManaAmnt); //Refill mana a set amount
 
+	//Check if the object is alive 
 	bool CheckAlive();
 private:
 	FGenericTeamId GetGenericTeamId() const override;
