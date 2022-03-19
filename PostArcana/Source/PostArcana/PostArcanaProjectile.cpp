@@ -1,5 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
+//Author: Danylo Cardoso
+//Change Log : Feb 9th 2022
+	         //Projectile damages game objects when it hits them
+
 #include "PostArcanaProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
@@ -46,15 +50,7 @@ void APostArcanaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAct
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
-		//if (ImpactSound)
-		//{
-		//	UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
 
-		//}
-		//if (ProjectileFX)
-		//{
-		//	UGameplayStatics::SpawnEmitterAtLocation(this, ProjectileFX, GetActorLocation());
-		//}
 	}
 	Destroy();
 }

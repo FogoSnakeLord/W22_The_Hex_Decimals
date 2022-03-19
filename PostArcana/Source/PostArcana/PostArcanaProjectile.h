@@ -1,5 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
+//Author: Danylo Cardoso
+//Change Log : Feb 9th 2022
+	         //Projectile damages game objects when it hits them
+
 #pragma once
 
 #include "CoreMinimal.h"
@@ -27,15 +31,6 @@ class APostArcanaProjectile : public AActor
 
 	UPROPERTY(EditAnywhere, Category = Mesh)
 		UStaticMeshComponent* MeshComponent;
-
-	//UPROPERTY(EditDefaultsOnly, Category = "Effects")
-	//	class UParticleSystem* ProjectileFX;
-
-	//UPROPERTY(VisibleAnywhere, Category = "Effects")
-	//	class UParticleSystemComponent* ParticleSystemComponent;
-
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	//	class USoundBase* ImpactSound;
 
 	UPROPERTY(VisibleAnywhere, Category = "Stats")
 		float Damage;

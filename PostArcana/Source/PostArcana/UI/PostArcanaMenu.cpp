@@ -1,5 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+//Author 1: Danylo Cardoso
+//Change Log : Feb 16th 2022
+		      //Created menu class, which displays the player's stats when the menu key is pressed
+			  
 //Author 2: Sebastian Comette
 //Change Log: March 9th 2022
 			  //Added a level up system to the menu, including skill points, experience, and buttons to allocate skill points.

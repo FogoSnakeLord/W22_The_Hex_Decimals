@@ -1,4 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+
+//Author: Danylo Cardoso
+//Change Log : Feb 16th 2022
+              //Hooked menu blueprint to player controller.Input to open and close the menu was added as well.
+			  
 //Author 2: Sebastian Comette
 //Change Log: March 11th 2022
 			  //changed menu button to 'k' and added a game pause on menu open/ resume on menu close
