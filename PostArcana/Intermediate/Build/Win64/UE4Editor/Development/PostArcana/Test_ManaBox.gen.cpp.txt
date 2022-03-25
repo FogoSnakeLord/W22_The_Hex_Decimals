@@ -1,0 +1,5 @@
+C:\MiniCapstone\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Development\PostArcana\Definitions.PostArcana.h
+D:\Game Dev\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Game Dev\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\MiniCapstone\W22_The_Hex_Decimals\PostArcana\Source\PostArcana/Test/Test_ManaBox.h
+C:\MiniCapstone\W22_The_Hex_Decimals\PostArcana\Intermediate\Build\Win64\UE4Editor\Inc\PostArcana\Test_ManaBox.generated.h
