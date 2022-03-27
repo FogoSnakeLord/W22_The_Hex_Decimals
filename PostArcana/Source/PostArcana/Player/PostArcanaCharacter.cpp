@@ -16,6 +16,7 @@
 #include "PostArcana/Test/Test_HealBox.h"
 #include "PostArcana/Test/Test_ManaBox.h"
 #include "PostArcana/Test/Test_XpBox.h"
+#include "PostArcana/Doors/BasicDoor.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -164,6 +165,9 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APostArcanaCharacter::OnFire);
 
+	// Interact button
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &APostArcanaCharacter::Interact);
+	
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
 
@@ -362,6 +366,27 @@ void APostArcanaCharacter::MoveRight(float Value)
 	{
 		// add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
+	}
+}
+
+void APostArcanaCharacter::Interact() //bound to E
+{
+	FVector Start = FirstPersonCameraComponent->GetComponentLocation();
+	FVector End = Start + GetControlRotation().Vector() * 500.0f;
+
+	FCollisionQueryParams QueryParams;
+	QueryParams.AddIgnoredActor(this);
+	FHitResult HitResult;
+	if (GetWorld()->LineTraceSingleByObjectType(HitResult, Start, End, FCollisionObjectQueryParams(), QueryParams))
+	{
+		if (AActor* Actor = HitResult.GetActor())
+		{
+			ABasicDoor* BasicDoor = Cast<ABasicDoor>(HitResult.GetActor());
+			if (BasicDoor)
+			{
+				BasicDoor->ToggleDoor();
+			}
+		}
 	}
 }
 
