@@ -7,6 +7,7 @@ Shift - Sprint
 Mouse - Look
 Left Click - Cast Fireball
 K - Open/Close Skill Menue
+E - Interact
 Space - Jump
 Two enemies are placed in the church yard, the yellow one will follow you when it sees you, the red one will wander aimlessly
 In front of the church are two target enemies that do not move, but will take damage and die
