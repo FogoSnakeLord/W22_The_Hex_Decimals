@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "UseInterface.h"
 #include "BasicDoor.generated.h"
 
 UCLASS()
-class POSTARCANA_API ABasicDoor : public AActor
+class POSTARCANA_API ABasicDoor : public AActor, public IUseInterface
 {
 	GENERATED_BODY()
 	
@@ -15,8 +16,6 @@ public:
 	// Sets default values for this actor's properties
 	ABasicDoor();
 
-	UFUNCTION()
-		void ToggleDoor();
 
 
 protected:
@@ -41,6 +40,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void Use_Implementation() override;
 
 	//Questionable
 

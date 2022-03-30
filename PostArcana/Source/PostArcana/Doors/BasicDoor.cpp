@@ -15,11 +15,6 @@ ABasicDoor::ABasicDoor()
 	bDoorOpen = false;
 }
 
-void ABasicDoor::ToggleDoor()
-{
-	bDoorOpen = !bDoorOpen;
-	ToggleAnim();
-}
 
 void ABasicDoor::ToggleAnim()
 {
@@ -51,5 +46,11 @@ void ABasicDoor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ABasicDoor::Use_Implementation()
+{
+	bDoorOpen = !bDoorOpen;
+	ToggleAnim();
 }
 

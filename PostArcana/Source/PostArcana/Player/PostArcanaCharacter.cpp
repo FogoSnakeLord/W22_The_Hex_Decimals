@@ -29,6 +29,7 @@
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "PostArcana/Doors/UseInterface.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -381,10 +382,9 @@ void APostArcanaCharacter::Interact() //bound to E
 	{
 		if (AActor* Actor = HitResult.GetActor())
 		{
-			ABasicDoor* BasicDoor = Cast<ABasicDoor>(HitResult.GetActor());
-			if (BasicDoor)
+			if (Actor->Implements<UUseInterface>())
 			{
-				BasicDoor->ToggleDoor();
+				IUseInterface::Execute_Use(Actor);
 			}
 		}
 	}
