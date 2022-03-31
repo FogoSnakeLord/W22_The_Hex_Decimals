@@ -433,6 +433,11 @@ bool APostArcanaCharacter::CheckInvincible()
 	
 }
 
+APlayerController* APostArcanaCharacter::GetPlayerController()
+{
+	return Cast<APlayerController>(this->GetController());
+}
+
 void APostArcanaCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

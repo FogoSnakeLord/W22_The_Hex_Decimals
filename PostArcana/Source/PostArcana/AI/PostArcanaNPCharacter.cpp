@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "PostArcanaAICharacter.h"
+
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 #include "PostArcana/Player/PostArcanaCharacter.h"
+#include "PostArcana/Player/PostArcanaPlayerController.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -15,10 +16,11 @@
 #include "Perception/AISense_Sight.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "PostArcanaNPCharacter.h"
 //////////////////////////////////////////////////////////////////////////
 // PostArcanaAICharacter
 
-APostArcanaAICharacter::APostArcanaAICharacter()
+APostArcanaNPCharacter::APostArcanaNPCharacter()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -42,39 +44,29 @@ APostArcanaAICharacter::APostArcanaAICharacter()
 	AIPerceptionStimuliSource->RegisterForSense(UAISense_Sight::StaticClass());
 
 	//Set Damage Stat
-	Damage = 100+(5*Intelligence);
-	//Set to Enemy Team
-	GenericTeamId = 1;
+	Damage = 0;
+	//Set to player Team
+	GenericTeamId = 0;
 }
 
-void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+void APostArcanaNPCharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	//Checks for projectile Damage
 	Super::OnHit(HitComp,OtherActor,OtherComp,NormalImpulse,Hit);
-	//Adds experience to the player and Deletes itself if it's dead 
-	if (!CheckAlive()) 
-	{
-		//Checks for OtherActor
-		if (OtherActor != nullptr)
-		{
-			
-			APostArcanaProjectile* spell = Cast<APostArcanaProjectile>(OtherActor); //Make sure the player's spell killed the enemy
+	Health = MaxHealth;
+}
 
-			if (spell != nullptr)
-			{
-				APostArcanaCharacter* character = Cast<APostArcanaCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)); //Get player at index 0 -- for single player games this works to grab the player
-				character->ExperiencePoints += 75;//Amount of experience gained
-			}
-		}
-
-		this->Destroy();
+void APostArcanaNPCharacter::Use_Implementation()
+{
+	if (playerCharacter) {
+		APostArcanaPlayerController* controller = Cast<APostArcanaPlayerController>(playerCharacter->GetPlayerController());
+		controller->SetDialogueText(speechText);
+		controller->DialogueToggle();
 	}
 }
 
-void APostArcanaAICharacter::Tick(float DeltaTime)
+void APostArcanaNPCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//For Testing
-	DisplayStats();
 }
 

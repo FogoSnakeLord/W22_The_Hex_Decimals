@@ -197,6 +197,7 @@ public:
 	void SetInvincible();
 	bool CheckInvincible();
 
+	APlayerController* GetPlayerController();
 private:
 
 	//increases the players speed while the shift key is held

@@ -27,12 +27,19 @@ public:
 	UPROPERTY()
 	class UPostArcanaMenu* MenuWidget;
 
+	UPROPERTY()
+		class UPostArcanaDialogue* DialogueWidget;
+
 	UPROPERTY(EditDefaultsOnly)
 		TSubclassOf<UPostArcanaMenu> MenuBP;
 
+	UPROPERTY(EditDefaultsOnly)
+		TSubclassOf<UPostArcanaDialogue> DialogueBP;
+	void SetDialogueText(FText newText);
+	void DialogueToggle();
 protected:
 	virtual void SetupInputComponent() override;
 	//Turns the menu on and off
 	void MenuToggle();
-	
+
 };

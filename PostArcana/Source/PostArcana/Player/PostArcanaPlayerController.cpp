@@ -11,6 +11,7 @@
 #include "PostArcanaPlayerController.h"
 #include "PostArcana/UI/PostArcanaMenu.h"
 #include "PostArcanaCharacter.h"
+#include "PostArcana/UI/PostArcanaDialogue.h"
 
 void APostArcanaPlayerController::BeginPlay()
 {
@@ -32,6 +33,28 @@ void APostArcanaPlayerController::BeginPlay()
 		SetTickableWhenPaused(true);
 		bShouldPerformFullTickWhenPaused = true;
 	}
+	if (DialogueBP != nullptr)
+	{
+		DialogueWidget = CreateWidget<UPostArcanaDialogue>(this, DialogueBP);
+		DialogueWidget->AddToViewport();
+
+		//Sets the Stat menu to not be active on start
+		EMouseCursor::Default;
+		DialogueWidget->SetIsEnabled(false);
+		DialogueWidget->ToggleInput(false);
+		DialogueWidget->SetVisibility(ESlateVisibility::Hidden);
+
+		//Allows for menu input while the game is paused
+		SetTickableWhenPaused(true);
+		bShouldPerformFullTickWhenPaused = true;
+	}
+}
+
+void APostArcanaPlayerController::SetDialogueText(FText newText)
+{
+	if (DialogueBP) {
+		DialogueWidget->SetText(newText);
+	}
 }
 
 void APostArcanaPlayerController::SetupInputComponent()
@@ -42,6 +65,11 @@ void APostArcanaPlayerController::SetupInputComponent()
 	if (InputComponent != nullptr)
 	{
 		InputComponent->BindAction("MenuToggle", IE_Pressed, this, &APostArcanaPlayerController::MenuToggle);
+	}
+	//Bind 'k' to open the menu
+	if (InputComponent != nullptr)
+	{
+		InputComponent->BindAction("SpeechToggle", IE_Pressed, this, &APostArcanaPlayerController::DialogueToggle);
 	}
 }
 
@@ -83,6 +111,28 @@ void APostArcanaPlayerController::MenuToggle()
 		bEnableClickEvents = true;
 		FInputModeGameAndUI  Both;
 		SetInputMode(Both); //Needed to allow for seemless interaction with the UI but game also needs to be there to allow for input to close the window
+	}
+
+
+}
+
+void APostArcanaPlayerController::DialogueToggle()
+{
+
+	DialogueWidget->SetIsEnabled(!DialogueWidget->bIsEnabled);
+
+	if (DialogueWidget->bIsEnabled == false) //Closes the menu
+	{
+		//Removes the menu from view
+		DialogueWidget->ToggleInput(false);
+		DialogueWidget->SetVisibility(ESlateVisibility::Hidden);
+
+	}
+	else //Opens the menu
+	{
+
+		DialogueWidget->ToggleInput(true);
+		DialogueWidget->SetVisibility(ESlateVisibility::Visible);
 	}
 
 
