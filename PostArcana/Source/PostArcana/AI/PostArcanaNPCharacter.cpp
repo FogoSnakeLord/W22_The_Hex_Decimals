@@ -3,6 +3,7 @@
 
 
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+#include "PostArcanaNPCharacter.h"
 #include "PostArcana/Player/PostArcanaCharacter.h"
 #include "PostArcana/Player/PostArcanaPlayerController.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
@@ -16,7 +17,6 @@
 #include "Perception/AISense_Sight.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Kismet/GameplayStatics.h"
-#include "PostArcanaNPCharacter.h"
 //////////////////////////////////////////////////////////////////////////
 // PostArcanaAICharacter
 
