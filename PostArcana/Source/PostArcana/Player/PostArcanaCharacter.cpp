@@ -8,6 +8,11 @@
 			//Added buttons to test raising stats
 //Change Log: March 9th 2022
 			//Set up level up functionality, experience points, and skill point allocations
+//Change Log: March 29th 2022
+			//Added the interact function and bound it to the letter E. The interact function does a ray cast for the actor and if it is a basic door it opens the door.
+//Change Log: March 30th 2022
+			//Changed the players interact function to use the Use interface. This always the function to do many different things. This things is decided by the actor the door interacts with
+			//Added an overlap response for DoorTriggers
 
 #include "PostArcanaCharacter.h"
 #include "PostArcana/AI/PostArcanaAICharacter.h"
@@ -17,6 +22,7 @@
 #include "PostArcana/Test/Test_ManaBox.h"
 #include "PostArcana/Test/Test_XpBox.h"
 #include "PostArcana/Doors/BasicDoor.h"
+#include "PostArcana/Doors/DoorTrigger.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -166,7 +172,7 @@ void APostArcanaCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APostArcanaCharacter::OnFire);
 
-	// Interact button
+	// Interact button - multiple uses 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &APostArcanaCharacter::Interact);
 	
 	// Enable touchscreen input
@@ -239,6 +245,16 @@ void APostArcanaCharacter::OnBeginOverlap(UPrimitiveComponent* OverlappedCompone
 			if (XpBox != nullptr)
 			{
 				ExperiencePoints += XpBox->XpAmnt; //Give experience points 
+			}
+		}
+		//Door trigger response  
+		if (OtherActor != nullptr)
+		{
+			ADoorTrigger* DoorTrig = Cast<ADoorTrigger>(OtherActor);
+
+			if (DoorTrig != nullptr)
+			{
+				DoorTrig->ToggleDoor(); //Opens the Trigger door that was set in the level. See DoorTrigger for setup
 			}
 		}
 	}
@@ -372,19 +388,21 @@ void APostArcanaCharacter::MoveRight(float Value)
 
 void APostArcanaCharacter::Interact() //bound to E
 {
-	FVector Start = FirstPersonCameraComponent->GetComponentLocation();
-	FVector End = Start + GetControlRotation().Vector() * 500.0f;
+	//RayCast set up
+	FVector Start = FirstPersonCameraComponent->GetComponentLocation(); //Get the player look location
+	FVector End = Start + GetControlRotation().Vector() * 500.0f; //Create a distance for the raycast
+	FCollisionQueryParams QueryParams; //Set up query params for the raycast
+	QueryParams.AddIgnoredActor(this); //makes the raycast ignore the player
+	FHitResult HitResult; //Varible for the actor hit
 
-	FCollisionQueryParams QueryParams;
-	QueryParams.AddIgnoredActor(this);
-	FHitResult HitResult;
+	//RayCast to and return the actor that was hit
 	if (GetWorld()->LineTraceSingleByObjectType(HitResult, Start, End, FCollisionObjectQueryParams(), QueryParams))
 	{
-		if (AActor* Actor = HitResult.GetActor())
+		if (AActor* Actor = HitResult.GetActor()) //if the raycast hit an actor 
 		{
-			if (Actor->Implements<UUseInterface>())
+			if (Actor->Implements<UUseInterface>()) //trigger the use interface. 
 			{
-				IUseInterface::Execute_Use(Actor);
+				IUseInterface::Execute_Use(Actor); //The interface will tell the actor hit to execute its Use_Implementation
 			}
 		}
 	}

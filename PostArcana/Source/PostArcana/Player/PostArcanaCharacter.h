@@ -8,6 +8,11 @@
 			//Added buttons to test raising stats
 //Change Log: March 9th 2022
 			//Set up level up functionality, experience points, and skill point allocations
+//Change Log: March 29th 2022
+			//Added the interact function and bound it to the letter E. The interact function does a ray cast for the actor and if it is a basic door it opens the door.
+//Change Log: March 30th 2022
+			//Changed the players interact function to use the Use interface. This always the function to do many different things. This things is decided by the actor the door interacts with
+			//Added an overlap response for DoorTriggers
 
 #pragma once
 
