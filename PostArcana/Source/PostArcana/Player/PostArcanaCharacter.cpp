@@ -23,6 +23,7 @@
 #include "PostArcana/Test/Test_XpBox.h"
 #include "PostArcana/Doors/BasicDoor.h"
 #include "PostArcana/Doors/DoorTrigger.h"
+#include "PostArcana/Doors/DoorKey.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -400,6 +401,14 @@ void APostArcanaCharacter::Interact() //bound to E
 	{
 		if (AActor* Actor = HitResult.GetActor()) //if the raycast hit an actor 
 		{
+			ADoorKey* pKey = Cast<ADoorKey>(Actor);
+
+			//If the hit actor is a key let the key know this player picked it up
+			if (pKey)
+			{
+				pKey->SetPlayerPointer(this);
+			}
+
 			if (Actor->Implements<UUseInterface>()) //trigger the use interface. 
 			{
 				IUseInterface::Execute_Use(Actor); //The interface will tell the actor hit to execute its Use_Implementation
@@ -454,6 +463,37 @@ bool APostArcanaCharacter::CheckInvincible()
 APlayerController* APostArcanaCharacter::GetPlayerController()
 {
 	return Cast<APlayerController>(this->GetController());
+}
+
+void APostArcanaCharacter::GetKey(ADoorKey* pKey)
+{
+	//add the key to the key ring
+	DoorKeys.Add(pKey);
+
+	//Debuigging - Make sure the player picks up the right key - can be removed on release
+	FString KeyName = DoorKeys.Last()->GetName();
+	GEngine->AddOnScreenDebugMessage(10, 10.0f, FColor::Purple, "KeyAdded: " + KeyName);
+}
+
+ADoorKey* APostArcanaCharacter::CheckKeys(ADoorKey* pKey)
+{
+	//If the player has keys 
+	if (pKey && DoorKeys.Num() > 0)
+	{
+		//Loop through the key ring
+		for (int i = 0; i < DoorKeys.Num(); i++)
+		{
+			//If the player has the right key return a pointer to that key
+			if (DoorKeys[i] == pKey)
+			{
+				return pKey;
+			}
+		}
+		return nullptr;
+
+	}
+	return nullptr;
+
 }
 
 void APostArcanaCharacter::Tick(float DeltaTime)

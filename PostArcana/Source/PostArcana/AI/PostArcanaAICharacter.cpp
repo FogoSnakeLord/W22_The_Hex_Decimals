@@ -15,6 +15,7 @@
 #include "Perception/AISense_Sight.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "PostArcana/Doors/TriggerDoor.h"
 //////////////////////////////////////////////////////////////////////////
 // PostArcanaAICharacter
 
@@ -64,6 +65,12 @@ void APostArcanaAICharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAc
 			{
 				APostArcanaCharacter* character = Cast<APostArcanaCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)); //Get player at index 0 -- for single player games this works to grab the player
 				character->ExperiencePoints += 75;//Amount of experience gained
+
+				//If a door is set, the ai will open it on death - This door can not be closed after being opened
+				if (DoorToOpen)
+				{
+					DoorToOpen->DoorToggle();
+				}
 			}
 		}
 

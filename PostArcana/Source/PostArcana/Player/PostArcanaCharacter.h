@@ -30,6 +30,7 @@ class UCameraComponent;
 class UMotionControllerComponent;
 class UAnimMontage;
 class USoundBase;
+class ADoorKey;
 
 UCLASS(config=Game)
 class APostArcanaCharacter : public AGameObject
@@ -203,6 +204,16 @@ public:
 	bool CheckInvincible();
 
 	APlayerController* GetPlayerController();
+
+	//Get the key the player has picked up
+	void GetKey(ADoorKey* pKey);
+
+	//Check the players key ring to see if they have the proper key
+	ADoorKey* CheckKeys(ADoorKey* pKey);
+
+	//KeyRing
+	TArray<ADoorKey*> DoorKeys;
+
 private:
 
 	//increases the players speed while the shift key is held
