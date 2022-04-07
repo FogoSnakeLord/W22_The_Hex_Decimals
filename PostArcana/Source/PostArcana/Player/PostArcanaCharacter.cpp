@@ -135,6 +135,7 @@ APostArcanaCharacter::APostArcanaCharacter()
 	////Starting Values - not including Test stats
 	SkillPoints = 5;
 	SpentPoints = 0;
+	activeShooting = false;
 }
 
 void APostArcanaCharacter::BeginPlay()
@@ -288,52 +289,54 @@ void APostArcanaCharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActo
 
 void APostArcanaCharacter::OnFire()
 {
-	int Cost = 25;
-	if (Mana > Cost)
-	{
-		// try and fire a projectile
-		if (ProjectileClass != nullptr)
+	if (activeShooting) {
+		int Cost = 25;
+		if (Mana > Cost)
 		{
-			UWorld* const World = GetWorld();
-			if (World != nullptr)
+			// try and fire a projectile
+			if (ProjectileClass != nullptr)
 			{
-
-				const FRotator SpawnRotation = GetControlRotation();
-				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
-
-				//Set Spawn Collision Handling Override
-				FActorSpawnParameters ActorSpawnParams;
-				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-
-				// spawn the projectile at the muzzle
-				APostArcanaProjectile* spawnedProjectile = World->SpawnActor<APostArcanaProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
-				
-				if (spawnedProjectile != nullptr)
+				UWorld* const World = GetWorld();
+				if (World != nullptr)
 				{
-					//Replace the hard-coded value w/ intelligence stat variable
-					spawnedProjectile->SetDamage(Intelligence);
+
+					const FRotator SpawnRotation = GetControlRotation();
+					// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+					const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
+
+					//Set Spawn Collision Handling Override
+					FActorSpawnParameters ActorSpawnParams;
+					ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+					// spawn the projectile at the muzzle
+					APostArcanaProjectile* spawnedProjectile = World->SpawnActor<APostArcanaProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+
+					if (spawnedProjectile != nullptr)
+					{
+						//Replace the hard-coded value w/ intelligence stat variable
+						spawnedProjectile->SetDamage(Intelligence);
+					}
+
+					UseMana(Cost);
+
 				}
-
-				UseMana(Cost);
-
 			}
-		}
 
-		// try and play the sound if specified
-		if (FireSound != nullptr)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-		}
-
-		// try and play a firing animation if specified
-		if (FireAnimation != nullptr)
-		{
-			// Get the animation object for the arms mesh
-			UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
-			if (AnimInstance != nullptr)
+			// try and play the sound if specified
+			if (FireSound != nullptr)
 			{
-				AnimInstance->Montage_Play(FireAnimation, 1.f);
+				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+			}
+
+			// try and play a firing animation if specified
+			if (FireAnimation != nullptr)
+			{
+				// Get the animation object for the arms mesh
+				UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+				if (AnimInstance != nullptr)
+				{
+					AnimInstance->Montage_Play(FireAnimation, 1.f);
+				}
 			}
 		}
 	}

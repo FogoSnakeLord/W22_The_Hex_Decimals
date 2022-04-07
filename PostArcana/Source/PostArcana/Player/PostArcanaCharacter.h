@@ -223,7 +223,7 @@ private:
 	//Checks to see if the player has enough experience to level up
 	void CheckforLevelUp();
 
-
+	
 
 //Skill point allocation 
 public:
@@ -234,7 +234,8 @@ public:
 	int MaxExperiencePoints; //Experience needed to level up
 	int CurrentLevel; //The players current level
 	int SkillPoints; //The players unspent skill points obtained on level up
-
+	UFUNCTION()
+		void ActivateShooting() { activeShooting = true; };
 	//Check the number of skill point. Menu call
 	UFUNCTION(BlueprintCallable, Category = "Xp")
 		int GetSkillPoints() { return SkillPoints; }
@@ -260,7 +261,8 @@ public:
 	UFUNCTION()
 	void Respec();
 
-
+	UPROPERTY(EditAnywhere, Category = "ActivateShooting")
+		bool activeShooting;
 
 };
 

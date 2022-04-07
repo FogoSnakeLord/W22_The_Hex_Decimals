@@ -47,6 +47,7 @@ APostArcanaNPCharacter::APostArcanaNPCharacter()
 	Damage = 0;
 	//Set to player Team
 	GenericTeamId = 0;
+	playerActivate = false;
 }
 
 void APostArcanaNPCharacter::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -61,12 +62,27 @@ void APostArcanaNPCharacter::Use_Implementation()
 	if (playerCharacter) {
 		APostArcanaPlayerController* controller = Cast<APostArcanaPlayerController>(playerCharacter->GetPlayerController());
 		controller->SetDialogueText(speechText);
+		controller->SetDialogueName(name);
 		controller->DialogueToggle();
+		if (playerActivate) {
+			if (!(playerCharacter->activeShooting)) {
+				playerCharacter->ActivateShooting();
+			}
+		}
 	}
 }
 
 void APostArcanaNPCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	if ((this->GetDistanceTo(playerCharacter)) > 500.0f) {
+		APostArcanaPlayerController* controller = Cast<APostArcanaPlayerController>(playerCharacter->GetPlayerController());
+		if (controller->GetDialogueName().EqualTo(name)) {
+			bool isActive = controller->GetDialogueActive();
+			if (isActive) {
+				controller->DialogueToggle();
+			}
+		}
+	}
 }
 

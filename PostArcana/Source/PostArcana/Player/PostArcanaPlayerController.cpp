@@ -57,6 +57,13 @@ void APostArcanaPlayerController::SetDialogueText(FText newText)
 	}
 }
 
+void APostArcanaPlayerController::SetDialogueName(FText newName)
+{
+	if (DialogueBP) {
+		DialogueWidget->SetName(newName);
+	}
+}
+
 void APostArcanaPlayerController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
@@ -116,6 +123,26 @@ void APostArcanaPlayerController::MenuToggle()
 
 }
 
+FText APostArcanaPlayerController::GetDialogueName()
+{
+	if (DialogueBP) {
+		return DialogueWidget->GetName();
+	}
+	else{
+		return FText();
+	}
+}
+
+bool APostArcanaPlayerController::GetDialogueActive()
+{
+	if (DialogueBP) {
+		return DialogueWidget->GetActive();
+	}
+	else {
+		return false;
+	}
+}
+
 void APostArcanaPlayerController::DialogueToggle()
 {
 
@@ -126,13 +153,15 @@ void APostArcanaPlayerController::DialogueToggle()
 		//Removes the menu from view
 		DialogueWidget->ToggleInput(false);
 		DialogueWidget->SetVisibility(ESlateVisibility::Hidden);
-
+		DialogueWidget->SetActive(false);
+		
 	}
 	else //Opens the menu
 	{
 
 		DialogueWidget->ToggleInput(true);
 		DialogueWidget->SetVisibility(ESlateVisibility::Visible);
+		DialogueWidget->SetActive(true);
 	}
 
 

@@ -42,9 +42,17 @@ public:
 	//Toggles the input while menu is open
 	void ToggleInput(bool active);
 	void SetText(FText newText);
+	void SetName(FText newName);
+	UFUNCTION()
+		FText GetName() { return name;}
+	UFUNCTION()
+		bool GetActive() { return IsActive; }
+	void SetActive(bool active) { IsActive=active; }
 	//Used to Set up the buttons to allocate skill points
 	virtual void NativeConstruct() override;
 	UPROPERTY(EditAnywhere,Category = Speech)
 		FText speechText = FText::FromString(FString::Printf(TEXT("TEST DIALOGUE PLEASE CHANGE")));
+	UPROPERTY(EditAnywhere, Category = Speech)
+		FText name = FText::FromString(FString::Printf(TEXT("ERROR: TEST NPC NAME")));
 	
 };

@@ -96,3 +96,8 @@ void UPostArcanaDialogue::SetText(FText newText)
 {
 	speechText = newText;
 }
+
+void UPostArcanaDialogue::SetName(FText newName)
+{
+	name = newName;
+}

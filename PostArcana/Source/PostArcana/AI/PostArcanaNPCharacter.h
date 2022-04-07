@@ -32,6 +32,8 @@ public:
 	
 	UPROPERTY(EditAnywhere, Category = Speech)
 		FText speechText = FText::FromString(FString::Printf(TEXT("TEST DIALOGUE PLEASE CHANGE")));
+	UPROPERTY(EditAnywhere, Category = Speech)
+		FText name = FText::FromString(FString::Printf(TEXT("TEST NAME PLEASE CHANGE")));
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player")
 		APostArcanaCharacter* playerCharacter;
@@ -41,4 +43,6 @@ protected:
 		int Damage;
 	//Updates
 	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(EditAnywhere, Category = "ActivateShooting")
+		bool playerActivate;
 };

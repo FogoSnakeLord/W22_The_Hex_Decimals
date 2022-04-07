@@ -36,10 +36,15 @@ public:
 	UPROPERTY(EditDefaultsOnly)
 		TSubclassOf<UPostArcanaDialogue> DialogueBP;
 	void SetDialogueText(FText newText);
+	void SetDialogueName(FText newName);
+	UFUNCTION()
+		FText GetDialogueName();
+	UFUNCTION()
+		bool GetDialogueActive();
 	void DialogueToggle();
 protected:
 	virtual void SetupInputComponent() override;
 	//Turns the menu on and off
 	void MenuToggle();
-
+	
 };
