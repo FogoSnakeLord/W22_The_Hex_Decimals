@@ -49,14 +49,14 @@ void APostArcanaPlayerController::BeginPlay()
 		bShouldPerformFullTickWhenPaused = true;
 	}
 }
-
+//Setter for Dialogue Text
 void APostArcanaPlayerController::SetDialogueText(FText newText)
 {
 	if (DialogueBP) {
 		DialogueWidget->SetText(newText);
 	}
 }
-
+//Setter for Dialogue name
 void APostArcanaPlayerController::SetDialogueName(FText newName)
 {
 	if (DialogueBP) {
@@ -72,11 +72,6 @@ void APostArcanaPlayerController::SetupInputComponent()
 	if (InputComponent != nullptr)
 	{
 		InputComponent->BindAction("MenuToggle", IE_Pressed, this, &APostArcanaPlayerController::MenuToggle);
-	}
-	//Bind 'k' to open the menu
-	if (InputComponent != nullptr)
-	{
-		InputComponent->BindAction("SpeechToggle", IE_Pressed, this, &APostArcanaPlayerController::DialogueToggle);
 	}
 }
 
@@ -123,6 +118,7 @@ void APostArcanaPlayerController::MenuToggle()
 
 }
 
+//Getter for Diaolgue name
 FText APostArcanaPlayerController::GetDialogueName()
 {
 	if (DialogueBP) {
@@ -133,6 +129,7 @@ FText APostArcanaPlayerController::GetDialogueName()
 	}
 }
 
+//Getter for isActive
 bool APostArcanaPlayerController::GetDialogueActive()
 {
 	if (DialogueBP) {
@@ -153,6 +150,7 @@ void APostArcanaPlayerController::DialogueToggle()
 		//Removes the menu from view
 		DialogueWidget->ToggleInput(false);
 		DialogueWidget->SetVisibility(ESlateVisibility::Hidden);
+		//Denotes the window as inactive
 		DialogueWidget->SetActive(false);
 		
 	}
@@ -161,6 +159,7 @@ void APostArcanaPlayerController::DialogueToggle()
 
 		DialogueWidget->ToggleInput(true);
 		DialogueWidget->SetVisibility(ESlateVisibility::Visible);
+		//Denotes the window as active
 		DialogueWidget->SetActive(true);
 	}
 
