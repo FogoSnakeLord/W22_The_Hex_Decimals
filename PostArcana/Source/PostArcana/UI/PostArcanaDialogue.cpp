@@ -76,22 +76,6 @@ void UPostArcanaDialogue::NativeConstruct()
 	}
 }
 
-//Removes player input while the menu is open, allowing interaction with the menu
-void UPostArcanaDialogue::ToggleInput(bool active)
-{
-	APostArcanaCharacter* character = Cast<APostArcanaCharacter>(GetOwningPlayerPawn());
-
-	if (active)
-	{
-		GEngine->AddOnScreenDebugMessage(10, 10, FColor::Emerald, "Is Active", true);
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(10, 10, FColor::Red, "Not Active", true);
-		bIsFocusable = false;
-	}
-}
-
 void UPostArcanaDialogue::SetText(FText newText)
 {
 	speechText = newText;

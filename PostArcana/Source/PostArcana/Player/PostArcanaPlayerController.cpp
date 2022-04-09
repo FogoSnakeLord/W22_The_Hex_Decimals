@@ -41,7 +41,6 @@ void APostArcanaPlayerController::BeginPlay()
 		//Sets the Stat menu to not be active on start
 		EMouseCursor::Default;
 		DialogueWidget->SetIsEnabled(false);
-		DialogueWidget->ToggleInput(false);
 		DialogueWidget->SetVisibility(ESlateVisibility::Hidden);
 
 		//Allows for menu input while the game is paused
@@ -147,8 +146,6 @@ void APostArcanaPlayerController::DialogueToggle()
 
 	if (DialogueWidget->bIsEnabled == false) //Closes the menu
 	{
-		//Removes the menu from view
-		DialogueWidget->ToggleInput(false);
 		DialogueWidget->SetVisibility(ESlateVisibility::Hidden);
 		//Denotes the window as inactive
 		DialogueWidget->SetActive(false);
@@ -157,7 +154,6 @@ void APostArcanaPlayerController::DialogueToggle()
 	else //Opens the menu
 	{
 
-		DialogueWidget->ToggleInput(true);
 		DialogueWidget->SetVisibility(ESlateVisibility::Visible);
 		//Denotes the window as active
 		DialogueWidget->SetActive(true);

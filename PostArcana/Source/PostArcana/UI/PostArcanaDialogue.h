@@ -34,13 +34,10 @@ class POSTARCANA_API UPostArcanaDialogue : public UUserWidget
 
 	//Menu sections
 	UTextBlock* speech;
-	UPROPERTY(EditAnywhere, Category = NPC)
-		ACharacter* owningNPC;
 public:
 	bool IsActive;
 
 	//Toggles the input while menu is open
-	void ToggleInput(bool active);
 	void SetText(FText newText);
 	void SetName(FText newName);
 	UFUNCTION()
@@ -50,6 +47,7 @@ public:
 	void SetActive(bool active) { IsActive=active; }
 	//Used to Set up the buttons to allocate skill points
 	virtual void NativeConstruct() override;
+
 	UPROPERTY(EditAnywhere,Category = Speech)
 		FText speechText = FText::FromString(FString::Printf(TEXT("TEST DIALOGUE PLEASE CHANGE")));
 	UPROPERTY(EditAnywhere, Category = Speech)
