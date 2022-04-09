@@ -74,6 +74,9 @@ protected:
 		int ALevelBonus;
 	UPROPERTY(EditAnywhere, Category = LevelBonus)
 		int TLevelBonus;
+	UPROPERTY(EditAnywhere, Category = LevelBonus)
+		int WLevelBonus;
+
 
 	//Base/Starting Stats
 	UPROPERTY(EditAnywhere, Category = BaseStat)
@@ -89,7 +92,7 @@ protected:
 
 
 
-	
+	int tempEnd;
 	bool IsAlive;
 	float Timer; //Mana regen timer
 
@@ -116,6 +119,7 @@ public:
 	int GetAgility() const      { return Agility; }
 	int GetToughness() const    { return Toughness; }
 
+	
 	//Stat use cases 
 	void TakeDamage(int Dmg); //Takes away from the players health using true damage
 	void Heal(int HealAmnt); //Heals the object

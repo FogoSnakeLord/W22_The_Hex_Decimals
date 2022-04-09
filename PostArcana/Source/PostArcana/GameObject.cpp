@@ -28,8 +28,9 @@ AGameObject::AGameObject()
 	//Amount each abstract stat modifies their concrete stat (eg. toughness and defence)
 	ELevelBonus = 25;
 	ILevelBonus = 25;
-	ALevelBonus = 15;
+	ALevelBonus = 30;
 	TLevelBonus = 5;
+	WLevelBonus = 2;
 
 	//Sets the base concrete stats
 	BaseMaxHealth =  500;
@@ -40,10 +41,10 @@ AGameObject::AGameObject()
 
 	//sets the concrete stats using the abstract stats
 	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance);
-	MaxMana = BaseMaxMana + (ILevelBonus * Intelligence);
-	ManaRegen = 1 + Will;
+	MaxMana = BaseMaxMana + ((WLevelBonus*12.5) * Will);
+	ManaRegen = 10 + (WLevelBonus * Will);
 	BaseMoveSpeed = BaseMinMoveSpeed + (ALevelBonus * Agility);
-	BaseSprintSpeed = BaseMaxMoveSpeed + (ALevelBonus * Agility);
+	BaseSprintSpeed = BaseMaxMoveSpeed + ((ALevelBonus*2) * Agility);
 	Defence = BaseDefence + (TLevelBonus * Toughness);
 
 	//Stats - Ints were used for easy math and floating point number can be prone to error. We can switch this if the team wants floats.
@@ -98,12 +99,19 @@ void AGameObject::UpdatePlayerStats()
 {
 	//Player stat alogirthms calculating the weight of each stat
 	//Built to allow for stats to start at zero
+	if (tempEnd < Endurance) {
+		Health += (Endurance - tempEnd) * ELevelBonus;
+	}
+	if (tempEnd > Endurance) {
+		Health -= (tempEnd - Endurance) * ELevelBonus;
+	}
 	MaxHealth = BaseMaxHealth + (ELevelBonus * Endurance); 
-	MaxMana = BaseMaxMana + (ILevelBonus * Intelligence);
-	ManaRegen = 1 + Will;
+	MaxMana = BaseMaxMana + ((WLevelBonus * 12.5) * Will);
+	ManaRegen = 10 + (WLevelBonus * Will);
 	BaseMoveSpeed = BaseMinMoveSpeed + (ALevelBonus * Agility);
-	BaseSprintSpeed = BaseMaxMoveSpeed + (ALevelBonus * Agility);
+	BaseSprintSpeed = BaseMaxMoveSpeed + ((ALevelBonus * 2) * Agility);
 	Defence = BaseDefence + (TLevelBonus * Toughness);
+	tempEnd = Endurance;
 }
 
 void AGameObject::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)

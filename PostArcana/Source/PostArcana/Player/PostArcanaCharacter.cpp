@@ -555,6 +555,7 @@ void APostArcanaCharacter::EnduranceUp()
 		SkillPoints--;
 		SpentPoints++;
 	}
+	
 }
 
 void APostArcanaCharacter::IntelUp()
